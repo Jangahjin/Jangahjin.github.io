@@ -3,7 +3,7 @@
 ## 폴더 구조
 
 ```
-site/
+portfolio/   (D:\portfolio)
 ├─ index.html              메인 (버거 → 프로필 → 프로젝트 → 연락처)
 ├─ projects/
 │  ├─ onion.html           하이볼 브랜드 상세
@@ -21,7 +21,7 @@ site/
 
 ## VS Code에서 열기
 
-1. **파일 > 폴더 열기** → `site` 폴더 선택
+1. **파일 > 폴더 열기** → `D:\portfolio` 폴더 선택
 2. 오른쪽 아래 추천 확장 알림 → **Live Server 설치**
 3. `index.html` 연 상태에서 오른쪽 아래 **Go Live**
 4. 저장할 때마다 브라우저가 자동 새로고침돼요
@@ -59,7 +59,9 @@ site/
 
 ## 인터넷에 올리기 (GitHub Pages)
 
-1. github.com/Jangahjin 에서 새 저장소 만들기 (예: `portfolio`)
-2. `site` 폴더 **안의** 파일과 폴더를 전부 올리기 (index.html이 맨 위에 있어야 해요)
-3. 저장소 **Settings > Pages** → Branch `main`, 폴더 `/ (root)` → Save
-4. 1~2분 뒤 `https://jangahjin.github.io/portfolio/` 에서 열려요
+이미 배포되어 있어요.
+
+- 저장소: https://github.com/Jangahjin/Jangahjin.github.io
+- 사이트: https://jangahjin.github.io/
+
+수정한 뒤 커밋하고 `main`에 푸시(Sourcetree의 Push)하면 1~2분 뒤 사이트에 반영돼요.

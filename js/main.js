@@ -10,9 +10,9 @@
      desc:"레이스와 리본으로 꾸민 공주풍 찻잔 브랜드. 프랑스 밀크티 감성을 담았어요.",did:"브랜드 콘셉트 · 패키지 · UI",tags:["Branding","Lace & Ribbon","Milk Tea"],
      pt:[61.6,27.5],top:50},
     {k:"cheese",ing:"Cheese",c:"var(--cheese)",title:"WithUs",cat:"WEB DESIGN · 팀 프로젝트",
-     desc:"케이팝 팬덤 고객에게 메일과 쿠폰을 보내는 CRM 마케팅 자동화 툴.",did:"고객 · 대시보드 · 세그먼트 · 쿠폰 · 로그인 화면 디자인",tags:["Web App","Dashboard","React · Next.js"],
+     desc:"케이팝 팬덤 고객에게 메일과 쿠폰을 보내는 CRM 마케팅 자동화 툴.",did:"고객 · 대시보드 · 세그먼트 · 쿠폰 · 로그인 화면 디자인 및 구현",tags:["Web App","Dashboard","React · Next.js"],
      pt:[61.6,29.8],top:63},
-    {k:"patty",ing:"Patty",c:"var(--patty)",title:"약값알림 재디자인",cat:"WEB DESIGN · 개인 프로젝트",
+    {k:"patty",ing:"Patty",c:"var(--patty)",title:"약값알림 재디자인",cat:"WEB DESIGN · 개인 재디자인",
      desc:"약 이름으로 근처 최저가 약국을 찾는 서비스를, 검색부터 결과까지 쓰기 쉽게 다시 디자인했어요.",did:"사용 흐름 재설계 · UI 리디자인",tags:["Web","Redesign","UX"],
      pt:[64.9,32.8],top:76}
   ];
