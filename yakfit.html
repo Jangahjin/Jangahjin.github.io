@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>YAKFIT — 장아진 포트폴리오</title>
+<meta name="description" content="보이는 것과 작동하는 것, 둘 다 만드는 디자이너 장아진의 포트폴리오">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="css/yakfit.css">
+<script src="js/carousel.js" defer></script>
+</head>
+<body>
+<div class="page" style="width: 1440px; box-sizing: border-box; background: #121310; font-family: 'Geist', 'Noto Sans KR', sans-serif; color: #ECEDE4; display: flex; flex-direction: column">
+
+  <!-- 01 HERO : 프로젝트 타이틀 + 메인 화면 -->
+  <section style="position: relative; height: 720px; flex: none; display: flex; flex-direction: column; border-bottom: 1px solid #3A3D30">
+    <svg class="burst" viewBox="0 0 600 400" style="position: absolute; left: 300px; top: 60px; z-index: 0; opacity: .9; width: 620px; height: 400px" aria-hidden="true"><defs><filter id="sprayLa" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b"></feGaussianBlur><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.2 -.6" result="m"></feColorMatrix><feComposite in="b" in2="m" operator="in"></feComposite></filter></defs><g filter="url(#sprayLa)" fill="#D7F23A"><path d="M300 30 C318 150 345 172 590 200 C345 228 318 250 300 370 C282 250 255 228 10 200 C255 172 282 150 300 30Z"></path><ellipse cx="300" cy="200" rx="120" ry="80"></ellipse></g></svg>
+    <header style="height: 80px; flex: none; padding: 0 72px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid #3A3D30"><span style="display: flex; align-items: baseline; gap: 12px"><a href="home.html" class="serif" style="font-size: 22px; text-decoration: none">Jang Ah Jin</a><span class="mono" style="color: #A3A98F">Session 2027</span></span><span class="mono" style="color: #A3A98F">TRACK 01 / 04 — Web · Solo</span><span class="mono" style="justify-self: end; display: flex; gap: 24px"><a href="home.html#work" style="text-decoration: none">All work</a><a href="home.html#contact" style="text-decoration: none">Contact</a></span></header>
+    <div style="flex: 1; padding: 0 72px; display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 72px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 44px">
+        <div class="tags"><span class="tag">Web · 자체 제작</span><span class="tag">2026</span><span class="tag">Solo</span></div>
+        <h1 class="serif" style="position: relative; z-index: 1; margin: 0; font-size: 112px; line-height: 1; letter-spacing: -0.045em">YAKFIT</h1>
+        <p style="margin: 0; font-size: 18px; font-weight: 500">약 이름으로 근처 최저가 약국을 찾는 서비스</p>
+        <p style="margin: 0; width: 480px; font-size: 15px; line-height: 1.75; color: #B9BCAE">기획부터 디자인, 프론트엔드와 백엔드까지<br>혼자 처음부터 만든 웹사이트예요.<br>검색부터 약국 비교까지<br>한 번에 읽히는 흐름이 목표였어요.</p>
+        <div style="display: flex; gap: 10px"><a href="#" class="btn" style="background: #D7F23A; color: #121310">사이트 보기 <span>→</span></a><a href="https://github.com/Jangahjin" class="btn" style="background: transparent; color: #ECEDE4; box-shadow: inset 0 0 0 1px #ECEDE4">GitHub</a></div>
+      </div>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 12px"><div class="img filled" style="height: 520px"><img class="mock" src="images/yakfit/landing-01.svg" alt="예시 목업 이미지" loading="lazy"></div><figcaption class="mono" style="display: flex; justify-content: space-between; font-size: 11px; color: #A3A98F"><span>Main screen</span><span>Self-built</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 02 OVERVIEW : 문제 정의 + 프로젝트 정보 -->
+  
+
+  <!-- 02-2 FEATURES : 주요 기능 -->
+  <section style="padding: 97px 72px; display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 72px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span class="mono" style="color: #A3A98F">Overview</span>
+      <h2 class="kserif" style="margin: 0; font-size: 32px; letter-spacing: -0.03em; line-height: 1.35">같은 약, 약국마다 다른 가격.<br>어디가 가장 쌀까?</h2>
+      <p style="margin: 0; max-width: 520px; font-size: 15px; line-height: 1.75; color: #A3A98F">약값은 약국마다 다르지만<br>비교할 방법이 마땅치 않아요.<br>약 이름 하나로 근처 약국의 가격을<br>모아 보여주는 것에서 출발했어요.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+    <dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #ECEDE4">
+      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Role</dt><dd style="margin: 8px 0 0; font-size: 15px">기획 · UI 디자인 · 개발 (1인)</dd></div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Contribution</dt><dd style="margin: 8px 0 0; font-size: 15px">100% 단독 제작</dd></div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Scope</dt><dd style="margin: 8px 0 0; font-size: 15px">기획 → 디자인 → 프론트 → 백엔드·DB</dd></div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Period</dt><dd style="margin: 8px 0 0; font-size: 15px">[ 0000.00 — 00.00 ]</dd></div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Stack</dt><dd style="margin: 8px 0 0; font-size: 15px">Figma · React · Spring Boot · MyBatis</dd></div>
+      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Links</dt><dd style="margin: 8px 0 0; font-size: 15px"><a href="#">Live</a> · <a href="https://github.com/Jangahjin">GitHub</a></dd></div>
+    </dl>
+    <div style="padding: 22px 24px; box-shadow: inset 0 0 0 1px #ECEDE4; display: flex; justify-content: space-between; align-items: baseline"><span class="mono" style="color: #A3A98F">Result</span><span style="font-size: 18px">검색부터 최저가 확인까지 <b class="serif" style="font-size: 34px; font-weight: 400">[ ]</b>번 클릭</span></div>
+    </div>
+  </section><section style="padding: 0 72px 97px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Features</span><h2 class="kserif" style="margin: 0; font-size: 32px">주요 기능</h2></div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px"><div class="feat"><span class="mono">01 —</span><b style="font-size: 18px; font-weight: 500">약 이름 검색</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">약 이름을 입력하면<br>판매 중인 약국을 바로 찾아요.</p></div><div class="feat"><span class="mono">02 —</span><b style="font-size: 18px; font-weight: 500">내 주변 약국</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">현재 위치를 기준으로<br>가까운 약국을 지도에 보여줘요.</p></div><div class="feat"><span class="mono">03 —</span><b style="font-size: 18px; font-weight: 500">최저가 비교</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">같은 약의 약국별 가격을<br>낮은 순으로 정렬해 비교해요.</p></div><div class="feat"><span class="mono">04 —</span><b style="font-size: 18px; font-weight: 500">약국 상세</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">가격 · 위치 · 영업 정보를<br>한 화면에서 확인해요.</p></div></div>
+  </section>
+
+  <!-- 03 SCREENS : 주요 화면 캐러셀 -->
+  <section style="background: #151610 radial-gradient(#2E3123 1.1px, transparent 1.4px) 0 0 / 26px 26px; padding: 40px 0 36px; display: flex; flex-direction: column; align-items: center; gap: 24px">
+    <span class="mono" style="color: #A3A98F">Key screens · 주요 화면</span>
+    <div class="carousel" style="position: relative; width: 1440px; height: 380px; overflow: hidden">
+      <div class="slide img filled" style="--bg: url('../images/yakfit/screen-01.svg')"><span>01 — 메인</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-02.svg')"><span>02 — 약 검색</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-02.svg')"><span>03 — 최저가 약국 목록</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-04.svg')"><span>04 — 약국 상세</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-05.svg')"><span>05 — 지도</span></div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 22px">
+      <button class="arrow" data-carousel="prev" aria-label="이전 화면">←</button>
+      <div style="display: flex; gap: 8px">
+        <button class="dotb" aria-label="1번 화면"></button><button class="dotb" aria-label="2번 화면"></button><button class="dotb" aria-label="3번 화면"></button><button class="dotb" aria-label="4번 화면"></button><button class="dotb" aria-label="5번 화면"></button>
+      </div>
+      <button class="arrow" data-carousel="next" aria-label="다음 화면">→</button>
+    </div>
+  </section>
+
+  <!-- 04 BEFORE / AFTER -->
+  <section style="padding: 130px 72px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono" style="color: #A3A98F">Wireframe → Final</span><h2 class="kserif" style="margin: 0; font-size: 32px">설계에서 완성 화면까지</h2></div><a href="#" class="mono" style="text-decoration: none">시연 영상 보기 ▶</a></div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><div class="img filled" style="height: 460px"><img class="mock" src="images/yakfit/landing-02.svg" alt="예시 목업 이미지" loading="lazy"><span>WIREFRAME — 화면 설계</span></div></figure>
+      <figure style="margin: 0; position: relative; display: flex; flex-direction: column; gap: 10px"><div class="img filled" style="height: 460px"><img class="mock" src="images/yakfit/landing-03.svg" alt="예시 목업 이미지" loading="lazy"><span>FINAL — 완성 화면</span></div></figure>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px"><div style="display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid #3A3D30"><span class="mono" style="color: #ECEDE4">01</span><div style="display: flex; flex-direction: column; gap: 4px"><b style="font-size: 15px; font-weight: 600">검색창을 첫 화면 중앙으로</b><span style="font-size: 13px; line-height: 1.6; color: #A3A98F">[ 왜 이렇게 정했는지 한 줄 ]</span></div></div><div style="display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid #3A3D30"><span class="mono" style="color: #ECEDE4">02</span><div style="display: flex; flex-direction: column; gap: 4px"><b style="font-size: 15px; font-weight: 600">가격을 가장 크게</b><span style="font-size: 13px; line-height: 1.6; color: #A3A98F">[ 정한 이유 한 줄 ]</span></div></div><div style="display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid #3A3D30"><span class="mono" style="color: #ECEDE4">03</span><div style="display: flex; flex-direction: column; gap: 4px"><b style="font-size: 15px; font-weight: 600">약국 카드 정보 순서 정리</b><span style="font-size: 13px; line-height: 1.6; color: #A3A98F">[ 정한 이유 한 줄 ]</span></div></div></div>
+  </section>
+
+  <!-- 05 PROCESS -->
+  <section style="padding: 0 72px 130px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px">
+    <div style="display: flex; flex-direction: column; gap: 14px; padding-top: 10px">
+      <span class="mono" style="color: #A3A98F">Process</span>
+      <h2 class="kserif" style="margin: 0; font-size: 32px">만든 과정</h2>
+      <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #A3A98F">문제를 정하고, 구조를 짜고,<br>화면을 그린 뒤 직접 개발했어요.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+      <div class="feat"><span class="ic">01 —</span><b style="font-size: 18px; font-weight: 600">문제 정의</b><p>약값을 비교할 때 불편한 지점을 찾고,<br>서비스의 목표를 정했어요.</p></div>
+      <div class="feat"><span class="ic">02 —</span><b style="font-size: 18px; font-weight: 600">정보 구조</b><p>검색 → 결과 → 약국 상세로 이어지는<br>흐름과 화면 수를 정리했어요.</p></div>
+      <div class="feat"><span class="ic">03 —</span><b style="font-size: 18px; font-weight: 600">UI 디자인</b><p>가격이 가장 먼저 읽히도록<br>글자 크기와 정렬, 색 규칙을 세웠어요.</p></div>
+      <div class="feat"><span class="ic">04 —</span><b style="font-size: 18px; font-weight: 600">개발 · 연결</b><p>프론트엔드와 백엔드·DB를 직접 연결해<br>실제로 동작하는 서비스로 만들었어요.</p></div>
+    </div>
+  </section>
+
+  <!-- 05-2 SYSTEM : 서비스 구조 -->
+  <section style="padding: 0 72px 97px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">System</span><h2 class="kserif" style="margin: 0; font-size: 32px">화면부터 데이터베이스까지</h2></div><p style="margin: 0; font-size: 15px; color: #A3A98F; text-align: right">디자인한 화면을 직접 코드로 옮기고,<br>서버와 데이터베이스까지 혼자 연결했어요.</p></div>
+    <div style="display: flex; gap: 16px"><div style="flex: 1; padding: 26px; border-radius: 8px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; display: flex; flex-direction: column; gap: 10px"><span class="mono" style="color: #D7F23A !important">Frontend</span><b style="font-size: 20px; font-weight: 500">React</b><span style="font-size: 13px; color: #A3A98F">검색 · 지도 · 비교 화면</span></div><span style="flex: none; align-self: center; font-family: 'IBM Plex Mono', monospace; font-size: 18px; color: #D7F23A">→</span><div style="flex: 1; padding: 26px; border-radius: 8px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; display: flex; flex-direction: column; gap: 10px"><span class="mono" style="color: #D7F23A !important">Backend · API</span><b style="font-size: 20px; font-weight: 500">Spring Boot · MyBatis</b><span style="font-size: 13px; color: #A3A98F">약 · 약국 · 가격 데이터 처리</span></div><span style="flex: none; align-self: center; font-family: 'IBM Plex Mono', monospace; font-size: 18px; color: #D7F23A">→</span><div style="flex: 1; padding: 26px; border-radius: 8px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; display: flex; flex-direction: column; gap: 10px"><span class="mono" style="color: #D7F23A !important">Database</span><b style="font-size: 20px; font-weight: 500">[ DB 이름 ]</b><span style="font-size: 13px; color: #A3A98F">약 · 약국 · 가격 정보 저장</span></div></div>
+  </section>
+
+  <!-- 05-3 RETROSPECTIVE : 배운 점 -->
+  <section style="padding: 0 72px 97px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px">
+    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Retrospective</span><h2 class="kserif" style="margin: 0; font-size: 32px">만들며 배운 것</h2></div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px"><div class="feat"><span class="mono">01 —</span><b style="font-size: 18px; font-weight: 500">가장 어려웠던 점</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">[ 막혔던 문제와<br>어떻게 해결했는지 한두 줄 ]</p></div><div class="feat"><span class="mono">02 —</span><b style="font-size: 18px; font-weight: 500">다음에 더할 기능</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">[ 가격 변동 알림, 즐겨찾기 등<br>확장하고 싶은 기능 ]</p></div></div>
+  </section>
+
+  <!-- 06 DESIGN SYSTEM : 컴포넌트 목록 -->
+  <section style="background: #151610 radial-gradient(#2E3123 1.1px, transparent 1.4px) 0 0 / 26px 26px; padding: 72px 0; display: flex; flex-direction: column; gap: 18px">
+    <div style="padding: 0 72px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 10px"><span class="mono" style="color: #A3A98F">Design system</span><h2 class="kserif" style="margin: 0; font-size: 32px">컴포넌트</h2></div>
+    <div class="mq"><div class="mtrack">
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 70%"></span><span class="sig">Search bar</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Pharmacy card</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 60%"></span><span class="sig">Price tag</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 85%"></span><span class="sig">Map pin</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 70%"></span><span class="sig">Search bar</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Pharmacy card</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 60%"></span><span class="sig">Price tag</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 85%"></span><span class="sig">Map pin</span></div>
+    </div></div>
+    <div class="mq"><div class="mtrack rev">
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 75%"></span><span class="sig">Color</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 64%"></span><span class="sig">Typography</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Button</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 50%"></span><span class="sig">Filter chip</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 75%"></span><span class="sig">Color</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 64%"></span><span class="sig">Typography</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Button</span></div>
+      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 50%"></span><span class="sig">Filter chip</span></div>
+    </div></div>
+  </section>
+
+  <!-- 07 NEXT ROOM -->
+  <section class="metal" style="position: relative; overflow: visible; margin: 140px 72px 0; border-radius: 10px; background: #1B1D15; color: #ECEDE4; padding: 56px 48px; display: flex; justify-content: space-between; align-items: center; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono" style="color: #A3A98F">NEXT TRACK ▶ 02</span><h2 class="serif" style="margin: 0; font-size: 48px; letter-spacing: -0.02em">WithUs <span style="font-family: 'Noto Sans KR', sans-serif; font-size: 22px; color: #A3A98F; letter-spacing: -0.02em">— 팬덤 CRM 마케팅 툴</span></h2></div>
+    <a href="withus.html" class="btn" style="height: 58px; padding: 0 30px; background: #1B1D15; color: #ECEDE4; font-size: 15px">NEXT <span>▶</span></a>
+  </section>
+
+  <!-- 08 FOOTER -->
+  <footer style="margin-top: auto; height: 110px; flex: none; padding: 0 72px; display: flex; align-items: center; justify-content: space-between"><a href="home.html#work" class="mono" style="text-decoration: none">← All work</a><span style="display: flex; align-items: center; gap: 24px"><span class="mono" style="display: flex; gap: 24px"><a href="https://www.instagram.com/k.ip0o/" style="text-decoration: none">Instagram</a><a href="https://github.com/Jangahjin" style="text-decoration: none">GitHub</a><a href="mailto:snita8379@gmail.com" style="text-decoration: none">Mail</a></span></span></footer>
+</div>
+</body>
+</html>
