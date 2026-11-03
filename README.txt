@@ -35,8 +35,8 @@
 
 
 ■ 꼭 바꿔야 할 것
-  1) 이미지 — images/ 안의 SVG는 제가 만든 예시 목업이에요.
-     실제 작업 이미지로 교체하세요. 약국 이름 · 가격, 캐릭터 등은 실제가 아니에요.
+  1) 이미지 — YAKFIT · WithUs · 홈 썸네일(01·02)은 실제 화면 캡처(JPG)로 교체됐어요.
+     TIPSY ZEST · Milk First Club의 SVG는 아직 예시 목업이니 실제 작업 이미지로 교체하세요.
      · 같은 이름으로 덮어쓰기: 파일 이름을 똑같이 맞추면 HTML 수정 없이 바뀌어요.
      · PNG/JPG로 바꾸기: HTML에서 src="images/....svg" 의 확장자도 같이 고치세요.
      · 이미지를 바꾸면 alt="예시 목업 이미지" 도 실제 설명으로 바꿔 주세요.
@@ -45,10 +45,8 @@
 
   2) 이력서 — files/resume.pdf 파일을 넣으면 "이력서 PDF" 버튼이 다운로드돼요.
 
-  3) 아직 "#"인 링크
-     · yakfit.html  : 사이트 보기 / Live / 시연 영상 보기
-     · withus.html  : Live 보기
-     실제 배포 주소나 영상 주소가 생기면 href="#" 를 바꿔 주세요.
+  3) 링크 — YAKFIT은 GitHub 프론트·백엔드 저장소, WithUs는 팀 저장소로 연결돼 있어요.
+     실제 배포 주소나 시연 영상이 생기면 그 주소로 바꿔 주세요.
 
   4) [ ] 로 표시된 빈칸 — 기간, 클릭 수, DB 이름, 연도 등은 실제 내용으로 채우세요.
 
@@ -59,8 +57,8 @@
   images/milk-first-club/milkfirst-03.svg       → milk-first-club.html
   images/milk-first-club/milkfirst-04.svg       → milk-first-club.html
   images/milk-first-club/milkfirst-05.svg       → milk-first-club.html
-  images/thumb/main-01.svg                      → home.html, m.html
-  images/thumb/main-02.svg                      → home.html, m.html
+  images/thumb/main-01.jpg                      → home.html, m.html
+  images/thumb/main-02.jpg                      → home.html, m.html
   images/thumb/main-03.svg                      → home.html, m.html
   images/thumb/main-07.svg                      → home.html, m.html
   images/tipsy-zest/branding-01.svg             → tipsy-zest.html
@@ -71,18 +69,23 @@
   images/tipsy-zest/branding-06.svg             → tipsy-zest.html
   images/tipsy-zest/branding-07.svg             → tipsy-zest.html
   images/tipsy-zest/branding-08.svg             → tipsy-zest.html
-  images/withus/project-01.svg                  → withus.html
-  images/withus/project-02.svg                  → withus.html
-  images/withus/project-03.svg                  → withus.html
-  images/withus/project-04.svg                  → withus.html
-  images/withus/project-05.svg                  → withus.html
-  images/yakfit/landing-01.svg                  → yakfit.html
-  images/yakfit/landing-02.svg                  → yakfit.html
-  images/yakfit/landing-03.svg                  → yakfit.html
-  images/yakfit/screen-01.svg                   → yakfit.html
-  images/yakfit/screen-02.svg                   → yakfit.html
-  images/yakfit/screen-04.svg                   → yakfit.html
-  images/yakfit/screen-05.svg                   → yakfit.html
+  images/withus/analytics.jpg                   → withus.html
+  images/withus/dashboard.jpg                   → withus.html
+  images/withus/project-01.jpg                  → withus.html
+  images/withus/project-02.jpg                  → withus.html
+  images/withus/project-03.jpg                  → withus.html
+  images/withus/project-04.jpg                  → withus.html
+  images/withus/project-05.jpg                  → withus.html
+  images/withus/public.jpg                      → withus.html
+  images/withus/roles.jpg                       → withus.html
+  images/yakfit/landing-01.jpg                  → yakfit.html
+  images/yakfit/landing-02.jpg                  → yakfit.html
+  images/yakfit/landing-03.jpg                  → yakfit.html
+  images/yakfit/screen-01.jpg                   → yakfit.html
+  images/yakfit/screen-02.jpg                   → yakfit.html
+  images/yakfit/screen-03.jpg                   → yakfit.html
+  images/yakfit/screen-04.jpg                   → yakfit.html
+  images/yakfit/screen-05.jpg                   → yakfit.html
 
 
 ■ GitHub Pages로 무료 배포
