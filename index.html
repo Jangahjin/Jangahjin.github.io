@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>장아진 포트폴리오</title>
+<!-- 이미 인트로를 본 사람은 화면이 그려지기 전에 바로 홈으로 -->
+<script>
+  (function () {
+    var seen = false;
+    try { seen = localStorage.getItem('ahjin-intro-seen') === '1'; } catch (e) {}
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var force = location.search.indexOf('intro') > -1;   // index.html?intro 로 다시 보기
+    if ((seen || reduce) && !force) location.replace('home.html');
+  })();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&family=IBM+Plex+Sans+KR:wght@300;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  * { box-sizing: border-box; word-break: keep-all; }
+  html, body { margin: 0; height: 100%; background: #121310; overflow: hidden; }
+
+  .stage { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 0 20px; }
+  .stage.out { animation: out .8s cubic-bezier(.7,0,.2,1) forwards; }
+  @keyframes out { to { opacity: 0; transform: translateY(-24px); } }
+
+  .burst { position: absolute; left: 50%; top: 50%; width: min(1120px, 140vw); aspect-ratio: 600 / 400; transform: translate(-50%, -50%); animation: flash 3.6s ease-out both; }
+  @keyframes flash { 0% { transform: translate(-50%,-50%) scale(0); opacity: 0 } 35% { transform: translate(-50%,-50%) scale(1.2); opacity: 1 } 55% { transform: translate(-50%,-50%) scale(.95) } 100% { transform: translate(-50%,-50%) scale(1); opacity: .9 } }
+
+  .word { position: relative; font-family: 'Big Shoulders Display', sans-serif; font-weight: 400; font-size: clamp(72px, 15vw, 220px); line-height: .85; letter-spacing: .01em; color: #D7F23A;
+          -webkit-mask-image: radial-gradient(circle, #000 60%, transparent 66%); mask-image: radial-gradient(circle, #000 60%, transparent 66%);
+          animation: resolve 2.6s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes resolve { 0% { -webkit-mask-size: 48px 48px; mask-size: 48px 48px; opacity: 0; letter-spacing: .3em; filter: blur(8px) } 60% { opacity: 1 } 100% { -webkit-mask-size: 4px 4px; mask-size: 4px 4px; letter-spacing: .01em; filter: blur(0) } }
+
+  .line { position: relative; margin: 0; text-align: center; font-family: 'IBM Plex Sans KR', sans-serif; font-weight: 300; font-size: clamp(17px, 2vw, 24px); line-height: 1.5; letter-spacing: -.02em; color: #ECEDE4;
+          opacity: 0; transform: translateY(14px); animation: up .8s 1.3s cubic-bezier(.2,.7,.2,1) forwards; }
+  .line b { font-weight: 600; color: #D7F23A; }
+  @keyframes up { to { opacity: 1; transform: none; } }
+
+  .skip { position: fixed; right: clamp(20px, 5vw, 72px); bottom: 40px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #7D8270; text-decoration: none; }
+  .skip:hover, .skip:focus-visible { color: #D7F23A; }
+</style>
+</head>
+<body>
+  <main class="stage" id="stage" aria-label="장아진 포트폴리오 인트로">
+    <svg class="burst" viewBox="0 0 600 400" aria-hidden="true"><defs><filter id="spray" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b"/><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.2 -.6" result="m"/><feComposite in="b" in2="m" operator="in"/></filter></defs><g filter="url(#spray)" fill="#D7F23A"><path d="M300 30 C318 150 345 172 590 200 C345 228 318 250 300 370 C282 250 255 228 10 200 C255 172 282 150 300 30Z"/><ellipse cx="300" cy="200" rx="120" ry="80"/></g></svg>
+    <h1 class="word">PORTFOLIO</h1>
+    <p class="line">보이는 것과 작동하는 것,<br>둘 다 만드는 디자이너 <b>장아진</b>입니다.</p>
+  </main>
+
+  <a href="home.html" class="skip" id="skip">Skip</a>
+
+<script>
+  (function () {
+    var done = false;
+    function goHome() {
+      if (done) return; done = true;
+      try { localStorage.setItem('ahjin-intro-seen', '1'); } catch (e) {}
+      document.getElementById('stage').classList.add('out');
+      setTimeout(function () { location.replace('home.html'); }, 800);
+    }
+    setTimeout(goHome, 4400);                                   // 애니메이션이 끝나면 홈으로
+    document.getElementById('skip').addEventListener('click', function (e) { e.preventDefault(); goHome(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') goHome(); });
+  })();
+</script>
+</body>
+</html>
