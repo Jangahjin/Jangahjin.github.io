@@ -78,7 +78,6 @@ img{display:block;max-width:100%}
 .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
 
 /* 01 WHY */
-.pain{display:inline-flex;height:28px;padding:0 12px;align-items:center;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:900;letter-spacing:.1em;margin-bottom:16px}
 .flow{margin-top:28px;display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:24px 28px;border-radius:22px;background:var(--g0)}
 .flow span{height:44px;padding:0 20px;display:inline-flex;align-items:center;border-radius:999px;background:#fff;box-shadow:0 0 0 1px var(--g1);font-size:16px;font-weight:800}
 .flow span.me{background:var(--blue);color:#fff;box-shadow:none}
@@ -92,22 +91,6 @@ img{display:block;max-width:100%}
 .card.mine p{color:rgba(255,255,255,.88)}
 .badge{position:absolute;right:20px;top:20px;height:26px;padding:0 10px;display:inline-flex;align-items:center;border-radius:999px;background:var(--lime);color:var(--ink);font-size:11px;font-weight:900;letter-spacing:.08em}
 
-/* 03 POSITION */
-.mem{border-radius:22px;overflow:hidden;box-shadow:0 0 0 1px var(--g1);display:flex;flex-direction:column}
-.mem .top{position:relative;height:190px;background:var(--g0);padding:22px 26px}
-.mem .top span{font-size:13px;font-weight:900;letter-spacing:.06em;color:#444}
-.mem .top b{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-size:104px;font-weight:900;line-height:1;letter-spacing:-.06em;color:var(--blue)}
-.mem .bd{flex:1;padding:22px 26px 26px;background:#fff}
-.mem .bd > b{display:flex;align-items:baseline;justify-content:space-between;font-size:15px;font-weight:900;letter-spacing:.12em;color:#555}
-.mem .bd > b small{font-size:22px;letter-spacing:-.04em;color:var(--ink)}
-.mem .bd p{margin-top:10px;font-size:15.5px;color:var(--ink2)}
-.mem.me{box-shadow:0 0 0 3px var(--blue)}
-.mem.me .top{background:var(--blue)}
-.mem.me .top span{color:#fff}
-.mem.me .top b{color:var(--lime)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.chips span{height:28px;padding:0 11px;display:inline-flex;align-items:center;border-radius:999px;background:var(--g0);font-size:12.5px;font-weight:800}
-
 /* 04 MY PART */
 .parts{margin-top:40px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .parts .card{position:relative;padding:34px 36px 34px 120px}
@@ -116,56 +99,6 @@ img{display:block;max-width:100%}
 .parts .card.ai{background:var(--tint);box-shadow:none}
 .parts em{font-style:normal;display:inline-flex;height:22px;padding:0 8px;margin-right:6px;align-items:center;border-radius:6px;background:var(--blue);color:#fff;font-size:12px;font-weight:900}
 .parts .wide{grid-column:1/-1}
-
-/* 05 STILLS */
-.stills figure{margin:0}
-.still-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
-.win{border-radius:24px;padding:12px;background:#fff;box-shadow:0 0 0 1px var(--g1),0 30px 60px -36px rgba(0,20,120,.35);overflow:hidden}
-.win img{width:100%;border-radius:14px}
-.dev .win img{height:340px;object-fit:cover;object-position:top left}
-.win.soft{background:var(--tint);box-shadow:none}
-figcaption{margin-top:18px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-size:16px;font-weight:500;color:var(--ink2)}
-figcaption b{font-size:20px;font-weight:900;color:var(--ink);letter-spacing:-.04em}
-.sn{font-size:15px;font-weight:900;color:var(--blue)}
-.pub{margin-top:56px !important}
-.pub .win img{height:520px;object-fit:cover;object-position:center}
-.thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:40px}
-.thumbs img{width:100%;height:120px;object-fit:cover;object-position:top left;border-radius:14px;box-shadow:0 0 0 1px var(--g1);transition:transform .3s}
-.thumbs figure:hover img{transform:translateY(-6px)}
-.thumbs figcaption{margin-top:10px;font-size:14px;font-weight:800}
-
-/* 06 RULES */
-.rn{display:block;margin-bottom:14px;font-size:44px;font-weight:900;line-height:1;letter-spacing:-.05em;color:var(--blue)}
-
-/* 07 STACK */
-.stack{margin-top:40px;display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:28px;align-items:start}
-.stack dl{margin:0;border-radius:22px;overflow:hidden;box-shadow:0 0 0 1px var(--g1)}
-.stack dl div{display:grid;grid-template-columns:150px minmax(0,1fr);border-bottom:1px solid var(--g1)}
-.stack dl div:last-child{border-bottom:0}
-.stack dt{padding:22px 26px;background:var(--ink);color:#fff;font-size:15px;font-weight:900}
-.stack dd{margin:0;padding:22px 26px;font-size:17px;font-weight:700}
-.whys{display:flex;flex-direction:column;gap:14px}
-.why{display:inline-flex;height:26px;padding:0 10px;align-items:center;border-radius:999px;background:var(--lime);font-size:12px;font-weight:900;letter-spacing:.08em;margin-bottom:10px}
-.whys .card b{font-size:19px}
-.whys .card p{font-size:14.5px}
-
-/* 08 SCHEDULE */
-.sched{margin:44px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
-.sched li{padding:22px 20px;border-radius:18px;background:var(--g0);display:flex;flex-direction:column;gap:6px}
-.sched span{font-size:13px;font-weight:800;color:var(--g2)}
-.sched b{font-size:19px;font-weight:900;letter-spacing:-.04em}
-.sched small{font-size:13.5px;font-weight:600;color:var(--ink2)}
-.sched li.on{background:var(--blue);color:#fff}
-.sched li.on span{color:var(--lime)}
-.sched li.on small{color:rgba(255,255,255,.85)}
-
-/* 09 CHART RECORD */
-.metrics strong{display:flex;align-items:baseline;gap:2px;font-size:84px;font-weight:900;line-height:1;letter-spacing:-.06em;margin-bottom:16px}
-.metrics strong small{font-size:24px;font-weight:900;letter-spacing:-.03em;color:var(--blue)}
-.metrics .card p{color:var(--sub)}
-
-/* 10 INTERVIEW */
-.q{display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#fff;font-size:16px;font-weight:900;margin-bottom:16px}
 
 /* 하단 이동 */
 .endnav{margin:160px 72px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:20px}
@@ -184,3 +117,51 @@ figcaption b{font-size:20px;font-weight:900;color:var(--ink);letter-spacing:-.04
 .foot a:hover{color:var(--blue)}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.btn,.endnav a,.thumbs img,.next{transition:none}}
+
+/* 화면 공통 프레임 */
+.win{border-radius:24px;padding:12px;background:#fff;box-shadow:0 0 0 1px var(--g1),0 30px 60px -36px rgba(0,20,120,.35);overflow:hidden}
+.win img{width:100%;border-radius:14px}
+.win.soft{background:var(--tint);box-shadow:none}
+.flow em b{color:var(--blue);font-weight:900}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;padding:1px 6px;border-radius:6px;background:var(--tint);color:var(--blue)}
+
+/* 01 목업 : 노트북 + 휴대폰 2대 */
+.devices{position:relative;height:700px;margin-top:40px;border-radius:36px;background:linear-gradient(160deg,var(--blue),#0024B8);overflow:hidden}
+.devices figure{margin:0;position:absolute}
+.devices .laptop{left:70px;top:80px;width:800px}
+.laptop .lid{padding:20px 20px 24px;border-radius:22px 22px 0 0;background:#14161C;box-shadow:inset 0 0 0 2px #2A2D36}
+.laptop .screen{height:440px;background:#fff;overflow:hidden;border-radius:4px}
+.laptop .screen img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.laptop .base{height:22px;margin:0 -54px;border-radius:0 0 18px 18px;background:linear-gradient(#E4E6EB,#B8BCC6);box-shadow:0 30px 40px -20px rgba(0,0,0,.5)}
+.devices .phone{width:240px;height:440px;padding:12px;border-radius:38px;background:#0B0C10;box-shadow:0 30px 50px -20px rgba(0,0,0,.55),inset 0 0 0 2px #2A2D36}
+.devices .p1{left:870px;top:150px;transform:rotate(-4deg)}
+.devices .p2{left:1050px;top:110px;transform:rotate(5deg)}
+.phone .notch{position:absolute;left:50%;top:12px;width:84px;height:20px;margin-left:-42px;border-radius:0 0 12px 12px;background:#0B0C10;z-index:2}
+.phone .screen{height:100%;border-radius:28px;overflow:hidden;background:#fff}
+.phone .screen img{width:100%;height:100%;object-fit:cover;object-position:top}
+
+/* 03 내가 만든 화면 */
+.stills figure,.screens-list figure{margin:0}
+.screens-list{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:48px 28px}
+.scr .win img{height:330px;object-fit:cover;object-position:top left}
+.scr .win.soft img{object-position:center}
+.scr figcaption{margin-top:18px;display:grid;grid-template-columns:auto 1fr;column-gap:10px;row-gap:8px;align-items:baseline}
+.scr figcaption b{font-size:22px;font-weight:900;letter-spacing:-.04em}
+.scr ul{grid-column:1/-1;margin:0;padding:0 0 0 18px;font-size:15.5px;line-height:1.8;color:var(--ink2)}
+.sn{font-size:15px;font-weight:900;color:var(--blue)}
+.thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:48px}
+.thumbs figure{margin:0}
+.thumbs img{width:100%;height:120px;object-fit:cover;object-position:top left;border-radius:14px;box-shadow:0 0 0 1px var(--g1);transition:transform .3s}
+.thumbs figure:hover img{transform:translateY(-6px)}
+.thumbs figcaption{margin-top:10px;font-size:14px;font-weight:800}
+
+/* 04 코드 */
+.code{margin:20px 0 0;padding:30px 34px;border-radius:24px;background:#0B0C10;color:#E8EAF0;font-family:ui-monospace,Consolas,monospace;font-size:14px;line-height:1.85;overflow-x:auto}
+.code i{font-style:normal;color:#8B93A7}
+.code b{font-weight:700;color:var(--lime)}
+.code s{text-decoration:none;color:#8FB2FF}
+.parts p code{background:#fff}
+/* pre 안의 code 는 인라인 code 배지 스타일을 받지 않는다 */
+.code code{padding:0;border-radius:0;background:none;color:inherit;font-size:inherit}
+.devices .p1{left:770px;top:160px}
+.devices .p2{left:935px;top:120px}
