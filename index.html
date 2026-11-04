@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>장아진 포트폴리오</title>
-<!-- 이미 인트로를 본 사람은 화면이 그려지기 전에 바로 홈으로 -->
+<!-- 같은 방문(탭) 안에서 이미 인트로를 봤으면 바로 홈으로. 새로 들어오면 다시 보여 준다 -->
 <script>
   (function () {
     var seen = false;
-    try { seen = localStorage.getItem('ahjin-intro-seen') === '1'; } catch (e) {}
+    try { seen = sessionStorage.getItem('ahjin-intro-seen') === '1'; } catch (e) {}
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var force = location.search.indexOf('intro') > -1;   // index.html?intro 로 다시 보기
     if ((seen || reduce) && !force) location.replace('home.html');
@@ -58,7 +58,7 @@
     var done = false;
     function goHome() {
       if (done) return; done = true;
-      try { localStorage.setItem('ahjin-intro-seen', '1'); } catch (e) {}
+      try { sessionStorage.setItem('ahjin-intro-seen', '1'); } catch (e) {}
       document.getElementById('stage').classList.add('out');
       setTimeout(function () { location.replace('home.html'); }, 800);
     }
