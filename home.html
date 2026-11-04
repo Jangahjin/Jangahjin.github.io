@@ -7,7 +7,8 @@
 <meta name="description" content="보이는 것과 작동하는 것, 둘 다 만드는 프론트엔드 개발자 장아진의 포트폴리오">
 <script>/* 폰(화면 폭 768px 미만)이면 모바일 홈으로 */ if (screen.width < 768) location.replace('m.html' + location.hash);</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="css/home.css?v=20261104e">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="css/home.css?v=20261104j">
 
 </head>
 <body>
@@ -16,8 +17,6 @@
   <!-- 01 NAV -->
   <header style="height: 80px; flex: none; padding: 0 72px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(18,19,16,.16)">
     <span style="display: flex; align-items: baseline; gap: 12px"><span class="serif" style="font-size: 26px; line-height: 1">Jang Ah Jin</span><span class="mono" style="color: #5F6256">Session 2027</span></span>
-    <nav aria-label="메뉴" style="display: flex; gap: 8px"><a href="#about" class="navlink">Profile</a><a href="#work" class="navlink">Index</a><a href="#contact" class="navlink">Contact</a></nav>
-    <div style="display: flex; gap: 8px"><a href="files/resume.pdf" download class="pill" style="height: 40px; border: 1.5px solid #121310; color: #121310">이력서 PDF <span>↓</span></a><a href="mailto:snita8379@gmail.com" class="pill" style="height: 40px; background: #D7F23A; color: #121310">메일 보내기 <span>→</span></a></div>
   </header>
 
   <!-- 02 HERO -->
@@ -26,13 +25,22 @@
     <div style="position: absolute; left: 1048px; top: 96px; display: flex; align-items: center; gap: 10px"><svg width="56" height="26" viewBox="0 0 56 26" aria-hidden="true"><path d="M0 9 H34 V0 L56 13 L34 26 V17 H0Z" fill="#D7F23A"></path></svg><span class="tag">Live</span><span class="mono" style="color: #D7F23A">Open to work</span></div>
     <div style="display: flex; flex-direction: column; gap: 24px">
       <div class="tags"><span class="tag">2027</span><span class="tag">Frontend Developer</span><span class="tag">Seoul</span></div>
-      <h1 class="serif" style="margin: 0; font-size: 150px; line-height: .84">AH JIN<br>SESSION</h1><p style="margin: 8px 0 0; font-size: 24px; font-weight: 400; letter-spacing: -0.035em; color: #121310">눈에 꽂히는 비주얼, 손에 붙는 인터페이스.</p>
+      <h1 class="serif" style="margin: 0; font-size: 150px; line-height: .84">AH JIN<br>SESSION</h1><p style="margin: 8px 0 0; font-size: 24px; font-weight: 400; letter-spacing: -0.035em; color: #121310">디자인 감각으로 설계하고, <b>코드로 끝까지 구현하는 프론트엔드 개발자.</b></p>
     </div>
     <div style="display: flex; flex-direction: column; gap: 20px; padding-bottom: 14px">
       <p style="margin: 0; font-size: 16px; line-height: 1.8; color: #3F423A">시각디자인 전공을 살려<br>직접 설계한 화면을 Next.js · TypeScript로<br>API와 연결해 만들고 있어요.</p>
-      <a href="#work" class="pill" style="align-self: flex-start; border: 1.5px solid #121310; color: #121310">목차 보기 <span>▶</span></a>
     </div>
     
+  </section>
+
+  <!-- 00 DIRECTION : 지향점 -->
+  <section id="direction" class="dirx">
+    <div class="dirx-head"><span class="mono">[00] Direction · <span class="kr">지향점</span></span><h2 class="dirx-title">이런 프론트엔드 개발자를 <mark class="hl">지향해요</mark></h2></div>
+    <ol class="dirx-list">
+      <li><span class="dn serif">01</span><b>한 번에 읽히는 화면</b><p>사용자가 가장 먼저 봐야 할 정보를 가장 크게 두고, 판단 근거는 배지로 바로 보여 줘요.</p><em>YAKFIT — 정렬 3종 · 배지 3종 · 반경 4단계</em></li>
+      <li><span class="dn serif">02</span><b>꼬이지 않는 상태 구조</b><p>서버 데이터와 화면 상태를 나눠 관리하고, 캐시 규칙은 한 곳에서 정해요.</p><em>TanStack Query + Redux 슬라이스 3개 · 쿼리 키 단일 관리</em></li>
+      <li><span class="dn serif">03</span><b>끝까지 일관된 디자인</b><p>디자인 토큰과 기본 부품을 먼저 만들고, 모든 화면에 같은 규칙을 적용해요.</p><em>WITHUS — 23개 중 22개 화면 · 하루 112파일 개편</em></li>
+    </ol>
   </section>
 
   <!-- 04 ARTIST STATEMENT -->
@@ -86,9 +94,9 @@
     
     <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
       <span style="position: relative"><span class="serif" style="font-size: 150px; line-height: .84">CONTACT</span></span>
-      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 17px; font-weight: 500; padding-bottom: 10px; text-align: right"><div class="tags" style="justify-content: flex-end"><span class="tag">Open to work</span></div><span style="font-size: 14px; color: #3F423A">채용 · 협업 제안은 언제든 메일로 연락 주세요.</span><a href="mailto:snita8379@gmail.com" style="text-decoration: none">snita8379@gmail.com</a><a href="https://github.com/Jangahjin" style="text-decoration: none">github.com/Jangahjin</a><a href="files/resume.pdf" download class="mono" style="text-decoration: none; color: #121310; margin-top: 6px"><span class="kr">이력서 PDF 다운로드</span> ↓</a></div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 17px; font-weight: 500; padding-bottom: 10px; text-align: right"><div class="tags" style="justify-content: flex-end"><span class="tag">Open to work</span></div><span style="font-size: 14px; color: #3F423A">채용 · 협업 제안은 언제든 메일로 연락 주세요.</span><a href="mailto:snita8379@gmail.com" style="text-decoration: none">snita8379@gmail.com</a><a href="https://github.com/Jangahjin" style="text-decoration: none">github.com/Jangahjin</a></div>
     </div>
-    <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(18,19,16,.16); padding-top: 18px; font-size: 14px; color: #5F6256"><span class="mono">© 2027 Jang Ah Jin · Session</span><div style="display: flex; gap: 28px"><a href="mailto:snita8379@gmail.com" class="navlink" style="padding: 0">Email</a><a href="https://github.com/Jangahjin" class="navlink" style="padding: 0">GitHub</a></div></div>
+    <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(18,19,16,.16); padding-top: 18px; font-size: 14px; color: #5F6256"><span class="mono">© 2027 Jang Ah Jin · Session</span></div>
   </footer>
 </div>
 </body>

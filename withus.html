@@ -6,16 +6,17 @@
 <title>WITHUS — 장아진 프론트엔드 포트폴리오</title>
 <meta name="description" content="타겟팅 기반 CRM 마케팅 자동화 솔루션 WITHUS — 4인 팀에서 전환 구간 프론트엔드와 사이트 디자인 담당">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="css/withus.css?v=20261104e">
+<link rel="stylesheet" href="css/project.css?v=20261104k">
+<script>document.documentElement.classList.add('js')</script>
+<script src="js/reveal.js?v=1" defer></script>
 </head>
-<body>
+<body data-theme="withus">
 <div class="page">
 
   <!-- 상단 바 : 이전 / 다음 페이지 이동 -->
   <header class="bar">
-    <a href="yakfit.html" class="prev">← 01 YAKFIT</a>
-    <a href="home.html" class="logo"><i></i>withus <small>02 / 02</small></a>
-    <a href="home.html#contact" class="next">다음 페이지 <b>CONTACT</b> <span>→</span></a>
+    <span class="logo"><i></i>withus</span>
+    <span class="count">02 / 02</span>
   </header>
 
   <!-- HERO -->
@@ -26,27 +27,26 @@
       <p class="h-sub">고객을 타겟팅으로 묶고, 트리거부터 발송·추적까지<br>자동으로 실행하는 CRM 마케팅 솔루션</p>
       <div class="pills"><span>Next.js 15 · TypeScript</span><span>TanStack Query · shadcn/ui</span><span>2026.09.11 — 10.30</span></div>
       <hr>
-      <span class="team-lab">MY ROLE</span>
-      <b class="team">전환 구간 프론트엔드 · 사이트 디자인</b>
-      <span class="team-me">4인 팀 (PL 1 + 팀원 3) 중 팀원 — 대시보드 · 성과 리포트 · 쿠폰 화면 담당</span>
-      <div class="cta"><a href="https://withus2.kro.kr/" class="btn lime">라이브 사이트 →</a><a href="https://github.com/stygia98/withus_frontend" class="btn ghost">프론트엔드 저장소 →</a></div>
+      <span class="role-lab">MY ROLE</span>
+      <b class="role">전환 구간 프론트엔드 · 사이트 디자인</b>
+      <span class="role-sub">4인 팀(PL 1 + 팀원 3) — 대시보드 · 성과 리포트 · 쿠폰 화면 담당</span>
+      <div class="cta"><a href="https://withus2.kro.kr/" class="btn pop">라이브 사이트 →</a><a href="https://github.com/stygia98/withus_frontend" class="btn ghost">프론트엔드 저장소 →</a></div>
     </div>
     <figure class="hero-mock">
       <div class="win"><img src="images/withus/dashboard.jpg" alt="WithUs 관리자 대시보드 — 발송·오픈·클릭·전환 지표와 일별 발송 차트"></div>
-      <span class="sticker">MY<br>PART</span>
     </figure>
   </section>
 
-  <!-- 프로젝트 정보 -->
-  <section class="info">
-    <div><span>My part</span><b>전환 구간 화면</b><small>대시보드 · 성과 리포트 · 쿠폰</small></div>
-    <div><span>Design</span><b>사이트 전체 디자인</b><small>공통 토큰 · 글꼴 · 기본 부품</small></div>
-    <div><span>Frontend</span><b>Next.js 15</b><small>React 19 · TypeScript · Tailwind 4</small></div>
-    <div><span>State · UI</span><b>TanStack Query</b><small>shadcn/ui · Recharts · RHF + Zod</small></div>
-    <div><span>Deploy</span><b>AWS Amplify</b><small>withus2.kro.kr</small></div>
+  <!-- 수치 -->
+  <section class="nums" aria-label="WITHUS 작업 수치">
+    <div><span>My commits</span><b>36<small>개</small></b><em>팀 전체 114개 중 32%</em></div>
+    <div><span>My screens</span><b>7<small>화면</small></b><em>대시보드 1 · 성과 리포트 2 · 쿠폰 4</em></div>
+    <div><span>Components</span><b>15<small>개</small></b><em>analytics · coupon · dashboard 신규</em></div>
+    <div><span>Redesign</span><b>22<small>/23 화면</small></b><em>사이트 전체 96%에 새 디자인</em></div>
+    <div><span>Library</span><b>0<small>개 추가</small></b><em>바코드 인코더 직접 구현</em></div>
   </section>
 
-  <!-- 목업 이미지 : 노트북 + 휴대폰 -->
+  <!-- 01 목업 -->
   <section class="sec">
     <div class="sh"><span class="no">01</span><span class="lab">MOCKUP</span><span class="tag">ADMIN · CUSTOMER</span></div>
     <h2>관리자는 노트북에서, 고객은 <span class="hl">휴대폰</span>에서</h2>
@@ -57,45 +57,45 @@
     </div>
   </section>
 
-  <!-- 사이트 내용 01 : 서비스 소개 -->
+  <!-- 02 사이트 소개 -->
   <section class="sec">
     <div class="sh"><span class="no">02</span><span class="lab">ABOUT SITE</span></div>
     <h2>명단 · 발송 · 쿠폰을 <span class="hl">하나의 흐름</span>으로</h2>
-    <p class="lead">마케터가 엑셀 · 문자 사이트 · 쿠폰 툴을 오가던 일을 한곳에서 해요. 고객을 조건으로 묶고, 워크플로우로 메일 · SMS를 보내고, 반응과 쿠폰 사용까지 추적해요.</p>
+    <p class="lead">마케터가 엑셀 · 문자 사이트 · 쿠폰 툴을 오가던 일을 한곳에서 해요. 고객을 조건으로 묶고, 워크플로우로 메일 · SMS를 보내고, <b>반응과 쿠폰 사용까지 추적</b>해요. 팀은 고객 · 발송 · 전환 구간으로 나눠 만들었고, 저는 <b>전환 구간</b>을 맡았어요.</p>
     <div class="flow"><span>고객 데이터</span><i>→</i><span>타겟팅</span><i>→</i><span>메시지 발송</span><i>→</i><span class="me">반응 (오픈 · 클릭)</span><i>→</i><span class="me">쿠폰 전환</span><i>↺</i><em>다시 고객 데이터로 · <b>파란 구간이 제 담당</b></em></div>
   </section>
 
-  <!-- 사이트 내용 02 : 내가 만든 화면 -->
+  <!-- 03 화면 -->
   <section class="sec">
-    <div class="sh"><span class="no">03</span><span class="lab">MY SCREENS</span></div>
+    <div class="sh"><span class="no">03</span><span class="lab">MY SCREENS</span><span class="tag">7 SCREENS + REDESIGN</span></div>
     <h2>제가 만든 <span class="hl">화면</span></h2>
-    <div class="screens-list">
-      <figure class="scr"><div class="win"><img src="images/withus/dashboard.jpg" alt="WithUs 메인 대시보드" loading="lazy"></div><figcaption><span class="sn">01</span><b>메인 대시보드</b><ul><li>발송 · 오픈 · 클릭 · 전환 KPI 카드와 일별 발송 차트</li><li>최근 7일 · 30일 · 직접 지정 기간 필터</li></ul></figcaption></figure>
-      <figure class="scr"><div class="win"><img src="images/withus/analytics.jpg" alt="WithUs 캠페인 성과 리포트" loading="lazy"></div><figcaption><span class="sn">02</span><b>캠페인 성과 리포트</b><ul><li>워크플로우 단계별 성과 표와 전환 흐름 차트</li><li>AI 성과 요약 카드 (생성 · 재생성)</li></ul></figcaption></figure>
-      <figure class="scr"><div class="win soft"><img src="images/withus/public.jpg" alt="WithUs 고객용 쿠폰·수신거부 화면" loading="lazy"></div><figcaption><span class="sn">03</span><b>고객 쿠폰 · 매장 사용 처리</b><ul><li>메일 링크로 여는 고객 쿠폰 페이지 <code>/c/[token]</code> — 12자리 바코드</li><li>매장 직원용 사용 처리 화면 <code>/coupons/redeem</code></li></ul></figcaption></figure>
-      <figure class="scr"><div class="win"><img src="images/withus/roles.jpg" alt="새 디자인을 적용한 WithUs 관리자 목록 화면" loading="lazy"></div><figcaption><span class="sn">04</span><b>사이트 전체 새 디자인</b><ul><li>공통 디자인 토큰 · 한글 조판 토큰 · 기본 부품을 만들고</li><li>관리자 틀 · 대시보드 · 목록, 로그인 · 홈 · 고객 화면에 적용</li></ul></figcaption></figure>
+    <div class="screens">
+      <figure><div class="win"><img src="images/withus/dashboard.jpg" alt="WithUs 메인 대시보드" loading="lazy"></div><figcaption><span class="sn">01</span><b>메인 대시보드</b><ul><li>발송 · 오픈 · 클릭 · 전환 <strong>KPI 카드 4개</strong>와 일별 발송 차트</li><li>최근 7일 · 30일 · 직접 지정 <strong>기간 필터 3종</strong> (최대 366일)</li></ul></figcaption></figure>
+      <figure><div class="win"><img src="images/withus/analytics.jpg" alt="WithUs 캠페인 성과 리포트" loading="lazy"></div><figcaption><span class="sn">02</span><b>캠페인 성과 리포트 <small>2화면</small></b><ul><li>워크플로우 단계별 성과 표와 전환 흐름 차트</li><li>AI 성과 요약 카드 (생성 · 재생성), 목록은 상태 필터 · 페이지</li></ul></figcaption></figure>
+      <figure><div class="win soft"><img src="images/withus/public.jpg" alt="WithUs 고객용 쿠폰·수신거부 화면" loading="lazy"></div><figcaption><span class="sn">03</span><b>쿠폰 <small>4화면</small></b><ul><li>고객 쿠폰 페이지 <code>/c/[token]</code> — <strong>12자리 바코드</strong></li><li>매장 사용 처리 <code>/coupons/redeem</code> · 쿠폰 목록 · 생성</li></ul></figcaption></figure>
+      <figure><div class="win"><img src="images/withus/roles.jpg" alt="새 디자인을 적용한 WithUs 관리자 목록 화면" loading="lazy"></div><figcaption><span class="sn">04</span><b>사이트 전체 새 디자인 <small>22/23화면</small></b><ul><li>공통 디자인 토큰 · 한글 조판 토큰 · 기본 부품 제작</li><li>10/13 하루 <strong>18커밋 · 112파일</strong> 개편, 이전 디자인 키트 정리(−9,789줄)</li></ul></figcaption></figure>
     </div>
   </section>
 
-  <!-- 프론트엔드 구현 -->
+  <!-- 04 프론트엔드 구현 -->
   <section class="sec">
-    <div class="sh"><span class="no">04</span><span class="lab">FRONTEND</span></div>
+    <div class="sh"><span class="no">04</span><span class="lab">FRONTEND</span><span class="tag">지향점 02 · 03</span></div>
     <h2>프론트엔드 <span class="hl">구현 포인트</span></h2>
     <div class="parts">
-      <div class="card"><span class="pn">01</span><span class="en-s">BARCODE</span><b>바코드를 라이브러리 없이 직접</b><p>새 라이브러리를 넣지 않기로 한 팀 결정에 맞춰, <strong>Code128 C 세트 패턴 표와 검사값 계산을 직접 구현</strong>하고 SVG 막대로 그렸어요.</p></div>
-      <div class="card"><span class="pn">02</span><span class="en-s">PERIOD</span><b>기간 필터와 서울 기준 날짜</b><p>최근 7일 · 30일 · 직접 지정 기간을 <code>usePeriodRange</code>로 모으고, <strong>366일 초과는 요청 전에</strong> 막았어요. '오늘'은 서울 시간으로 계산해 자정이 지나면 자동으로 갱신되고, 서버가 거절(400)하면 서버 메시지로 안내해요.</p></div>
-      <div class="card"><span class="pn">03</span><span class="en-s">TANSTACK QUERY</span><b>쿼리 키는 한 파일에서만</b><p>팀 규칙대로 쿼리 키를 <code>query-keys</code>에서만 만들어 캐시 무효화가 어긋나지 않게 했어요. 필터 · 페이지를 바꿀 때는 <strong>이전 결과를 유지</strong>해 화면이 깜빡이지 않아요.</p></div>
-      <div class="card ai"><span class="pn">04</span><span class="en-s">DESIGN SYSTEM</span><b>디자인 토큰으로 사이트 전체 정리</b><p><strong>공통 디자인 토큰과 기본 부품</strong>을 만들고(버튼 · 차트는 shadcn/ui 활용), 제목 글꼴(나눔스퀘어라운드)과 한글 조판 규칙을 전 화면에 적용했어요.</p></div>
+      <div class="card"><span class="pn">01</span><span class="en">BARCODE</span><b>바코드를 라이브러리 없이 직접</b><p>새 라이브러리를 넣지 않기로 한 팀 결정에 맞춰 <strong>Code128 C 세트 패턴 표와 검사값 계산을 직접 구현</strong>하고 SVG 막대로 그렸어요.</p></div>
+      <div class="card"><span class="pn">02</span><span class="en">PERIOD</span><b>기간 필터와 서울 기준 날짜</b><p><code>usePeriodRange</code>로 기간을 모으고 <strong>366일 초과는 요청 전에</strong> 막았어요. '오늘'은 서울 시간 기준이라 자정이 지나면 자동으로 갱신돼요.</p></div>
+      <div class="card"><span class="pn">03</span><span class="en">TANSTACK QUERY</span><b>쿼리 키 한 곳 관리 · 이전 결과 유지</b><p>쿼리 키는 <code>query-keys</code>에서만 만들어 캐시 무효화가 어긋나지 않게 했고, 필터 · 페이지를 바꿀 때 <strong>이전 결과를 유지</strong>해 깜빡임을 없앴어요.</p></div>
+      <div class="card accent"><span class="pn">04</span><span class="en">DESIGN SYSTEM</span><b>디자인 토큰으로 사이트 전체 정리</b><p><strong>공통 디자인 토큰과 기본 부품</strong>을 만들어 23개 화면 중 22개에 적용하고, 문장은 해요체 · 날짜는 점 형식으로 통일했어요.</p></div>
     </div>
   </section>
 
-  <!-- 이동 -->
-  <nav class="endnav" aria-label="프로젝트 이동">
-    <a href="yakfit.html" class="prevcard"><span>PREV · 01</span><b>YAKFIT</b><small>최저가 약국 찾기 · 개인 프로젝트</small></a>
-    <a href="home.html#contact" class="nextcard"><span>NEXT</span><b>CONTACT <i>→</i></b><small>GitHub · Email</small></a>
-  </nav>
-
-  <footer class="foot"><a href="home.html#index">← Index</a><span>© 2027 Jang Ah Jin</span><span class="links"><a href="https://github.com/Jangahjin">GitHub</a><a href="mailto:snita8379@gmail.com">Mail</a></span></footer>
+  <footer class="foot">
+    <nav class="pager" aria-label="페이지 이동">
+      <a href="yakfit.html" class="pg pg-prev"><span>PREV · 01</span><b>← YAKFIT</b><small>최저가 약국 찾기</small></a>
+      <a href="home.html#contact" class="pg pg-next"><span>NEXT</span><b>CONTACT →</b><small>GitHub · Email</small></a>
+    </nav>
+    <div class="foot-bottom"><span>© 2027 Jang Ah Jin</span></div>
+  </footer>
 </div>
 </body>
 </html>

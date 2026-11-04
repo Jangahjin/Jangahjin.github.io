@@ -4,106 +4,97 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=1440">
 <title>YAKFIT — 장아진 프론트엔드 포트폴리오</title>
-<meta name="description" content="약 이름으로 근처 최저가 약국을 찾는 서비스 YAKFIT — Next.js · TypeScript 개인 프로젝트">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="css/yakfit.css?v=20261104e">
+<meta name="description" content="약 이름으로 근처 최저가 약국을 찾는 서비스 YAKFIT — Next.js · TypeScript 개인 프로젝트, 100% 단독 구현">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="css/project.css?v=20261104k">
+<script>document.documentElement.classList.add('js')</script>
+<script src="js/reveal.js?v=1" defer></script>
 </head>
-<body>
-<div class="topbar" aria-hidden="true"></div>
+<body data-theme="yakfit">
 <div class="page">
 
-  <!-- 상단 바 : 목차 / 다음 페이지 이동 -->
+  <!-- 상단 바 : 이전 / 다음 페이지 이동 -->
   <header class="bar">
-    <a href="home.html#index" class="back">← Index</a>
-    <span class="where">01 / 02 · YAKFIT</span>
-    <a href="withus.html" class="next">다음 프로젝트 <b>WITHUS</b> <span>→</span></a>
+    <span class="logo"><i></i>yakfit</span>
+    <span class="count">01 / 02</span>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="pix" aria-hidden="true"><i class="k" style="--x:0;--y:0"></i><i class="k" style="--x:2;--y:0"></i><i class="k" style="--x:1;--y:1"></i><i class="t" style="--x:3;--y:1"></i><i class="t" style="--x:5;--y:1"></i><i class="t" style="--x:4;--y:2"></i><i class="k" style="--x:5;--y:3"></i></div>
-    <span class="mini">Personal project · 2026</span>
-    <p class="kicker">약 이름으로 근처 최저가 약국을 찾는 서비스</p>
-    <h1>YAKFIT</h1>
-    <div class="hero-foot">
-      <p class="who">Next.js 16 · TypeScript · TanStack Query · Redux Toolkit — 1인 개발</p>
-      <div class="btns"><a href="https://github.com/Jangahjin/miniproject1-frontend" class="btn teal">프론트엔드 코드 →</a><a href="https://github.com/Jangahjin/miniproject1-backend" class="btn line">백엔드 코드 →</a></div>
-      <svg class="arrow" viewBox="0 0 160 70" aria-hidden="true"><path d="M2 35 H150 M120 4 C126 22 136 31 156 35 C136 39 126 48 120 66"/></svg>
+    <div class="hero-txt">
+      <span class="kick"><b>01</b>PERSONAL PROJECT · 2026</span>
+      <h1>YAK<em>FIT</em></h1>
+      <p class="h-sub">약 이름 하나로 근처 약국의 가격을 비교하고<br>가장 합리적인 곳을 찾는 서비스</p>
+      <div class="pills"><span>Next.js 16 · TypeScript</span><span>TanStack Query · Redux Toolkit</span><span>2026.09.15 — 10.27</span></div>
+      <hr>
+      <span class="role-lab">MY ROLE</span>
+      <b class="role">기획 · 디자인 · 프론트엔드 · 백엔드</b>
+      <span class="role-sub">개인 프로젝트 — 처음부터 끝까지 100% 단독 구현</span>
+      <div class="cta"><a href="https://github.com/Jangahjin/miniproject1-frontend" class="btn pop">프론트엔드 코드 →</a><a href="https://github.com/Jangahjin/miniproject1-backend" class="btn ghost">백엔드 코드 →</a></div>
     </div>
-  </section>
-
-  <!-- 목업 이미지 : 노트북 + 휴대폰 -->
-  <section class="mockups" aria-label="YAKFIT 목업 이미지">
-    <figure class="laptop">
-      <div class="lid"><div class="cam"></div><div class="screen"><img src="images/yakfit/landing-01.jpg" alt="YAKFIT 메인 화면 — 약 이름 검색과 인기 검색어"></div></div>
-      <div class="base"></div>
+    <figure class="hero-mock">
+      <div class="win"><img src="images/yakfit/landing-03.jpg" alt="YAKFIT 검색 결과 — 약국 목록과 지도"></div>
     </figure>
-    <figure class="phone">
-      <div class="notch"></div>
-      <div class="screen"><img src="images/yakfit/screen-02.jpg" alt="YAKFIT 모바일 지도 화면 — 약국별 가격 말풍선"></div>
-    </figure>
-    <dl class="info">
-      <div><dt>Role</dt><dd>기획 · UI 디자인 · 프론트엔드<br>(백엔드 · DB까지 1인 개발)</dd></div>
-      <div><dt>Period</dt><dd>2026.09.15 — 10.27</dd></div>
-      <div><dt>Frontend</dt><dd>Next.js 16 (App Router) · React 19<br>TypeScript · Tailwind CSS 4</dd></div>
-      <div><dt>State · Data</dt><dd>TanStack Query · Redux Toolkit<br>React Hook Form · Zod</dd></div>
-      <div><dt>UI · Test</dt><dd>Kakao Maps SDK · Recharts · Vitest</dd></div>
-    </dl>
   </section>
 
-  <!-- 사이트 내용 01 : 서비스 소개 -->
-  <section class="sec two">
-    <div class="head"><span class="eyebrow">사이트 내용</span><h2>같은 약,<br>약국마다<br>다른 가격</h2></div>
-    <div class="body">
-      <p class="para">일반 의약품은 <b>판매자가격표시제</b>라 같은 제품도 약국마다 <b>최대 2배 넘게</b> 가격이 달라요. 그런데 온라인으로 미리 비교할 곳이 없어 직접 발품을 팔아야 해요.<br>YAKFIT은 약 이름 하나로 근처 약국의 가격을 모아 보여 주는 서비스예요.</p>
-    </div>
+  <!-- 수치 -->
+  <section class="nums" aria-label="YAKFIT 작업 수치">
+    <div><span>Period</span><b>43<small>일</small></b><em>기획부터 배포 전 점검까지</em></div>
+    <div><span>Commits</span><b>114<small>개</small></b><em>프론트 72 · 백엔드 33 · 문서 9</em></div>
+    <div><span>Screens</span><b>13<small>화면</small></b><em>사용자 7 · 관리자 6</em></div>
+    <div><span>Components</span><b>33<small>개</small></b><em>커스텀 훅 5 · Redux 슬라이스 3</em></div>
+    <div><span>Data</span><b>87,614<small>건</small></b><em>가격 제보 · 약국 1,040 · 약품 40</em></div>
   </section>
 
-  <!-- 사이트 내용 02 : 핵심 기능 -->
-  <section class="sec two">
-    <div class="head"><span class="eyebrow">사이트 내용</span><h2>핵심 기능</h2></div>
-    <table class="ftable">
-      <thead><tr><th>기능</th><th>화면에서 하는 일</th></tr></thead>
-      <tbody>
-        <tr><th><i>→</i>약 이름 자동완성</th><td>입력하는 동안 관련 약품을 추천, 키보드(↑ ↓ Enter)만으로도 선택</td></tr>
-        <tr><th><i>→</i>지도 기반 가격 비교</th><td>카카오맵에 주변 약국 판매가를 말풍선으로, 반경 500m ~ 5km 조절</td></tr>
-        <tr><th><i>→</i>추천 · 가격 · 거리순 정렬</th><td>가격 · 거리 · 신선도를 함께 따진 추천순이 기본, 탭 하나로 정렬 전환</td></tr>
-        <tr><th><i>→</i>실사용자 가격 제보</th><td>로그인 후 제보 폼 작성, 로그인 화면을 거쳐도 작성 중인 내용 보존</td></tr>
-        </tbody>
-    </table>
-  </section>
-
-  <!-- 사이트 내용 03 : 화면 구성 (목업) -->
-  <section class="sec screens">
-    <div class="center-head"><span class="eyebrow">사이트 내용</span><h2>화면 구성</h2></div>
-    <div class="shots">
-      <figure><div class="frame"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 — 약국 목록과 지도" loading="lazy"></div><figcaption><b>검색 결과 · 지도</b><span>목록과 지도를 나란히, 카드와 말풍선이 같은 약국을 가리켜요</span></figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/screen-03.jpg" alt="YAKFIT 약국 상세 화면" loading="lazy"></div><figcaption><b>약국 상세</b><span>가격 · 위치 · 연락처를 한 화면에서 확인</span></figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"></div><figcaption><b>가격 제보</b><span>로그인으로 이동했다 돌아와도 초안이 그대로 남아요</span></figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/screen-05.jpg" alt="YAKFIT 관리자 통계 — 가격 격차 Top 10" loading="lazy"></div><figcaption><b>관리자 통계</b><span>지역 간 평균가 차이가 큰 약품 Top 10</span></figcaption></figure>
-    </div>
-  </section>
-
-  <!-- 프론트엔드 구현 -->
+  <!-- 01 목업 -->
   <section class="sec">
-    <div class="row-head"><div><span class="eyebrow">Frontend</span><h2>프론트엔드 구현 포인트</h2></div></div>
-    <div class="how">
-      <div><span class="num">1</span><b>서버 상태와 클라이언트 상태 분리</b><p>검색 · 자동완성 · 상세 같은 서버 데이터는 <strong>TanStack Query로 캐시</strong>하고, 위치 · 로그인 · 제보 초안처럼 화면 사이를 오가는 값만 <strong>Redux Toolkit 슬라이스</strong>로 관리했어요.</p></div>
-      <div><span class="num">2</span><b>자동완성 300ms 디바운스</b><p>글자를 칠 때마다 요청하지 않도록 <code>useDebouncedValue</code> 훅을 만들고, <strong>검색어가 있을 때만 쿼리가 실행</strong>되게 했어요. 키보드 탐색과 ARIA 목록 연결도 함께 넣었어요.</p></div>
-      <div><span class="num">3</span><b>로그인을 거쳐도 제보 내용 유지</b><p>제보 · 마이 · 관리자 경로는 <code>proxy.ts</code>에서 로그인으로 보내는데, 이때 메모리가 비워져요. 작성 중인 초안을 <strong>sessionStorage와 동기화</strong>해 로그인 후 돌아오면 그대로 이어서 쓸 수 있게 했어요.</p></div>
-      <div><span class="num">4</span><b>카카오맵 SDK를 타입 안전하게</b><p>SDK를 <code>autoload=false</code>로 불러와 준비된 뒤에만 지도를 그리고, <strong>쓰는 API만 TypeScript 인터페이스로 선언</strong>했어요. 가격 말풍선은 커스텀 오버레이로 만들고 결과 범위에 맞춰 지도를 이동해요.</p></div>
+    <div class="sh"><span class="no">01</span><span class="lab">MOCKUP</span><span class="tag">DESKTOP · MOBILE</span></div>
+    <h2>데스크톱은 목록과 지도를 나란히, 모바일은 <span class="hl">지도 먼저</span></h2>
+    <div class="devices">
+      <figure class="laptop"><div class="lid"><div class="screen"><img src="images/yakfit/landing-01.jpg" alt="YAKFIT 메인 화면 — 약 이름 검색과 인기 검색어" loading="lazy"></div></div><div class="base"></div></figure>
+      <figure class="phone p1"><div class="notch"></div><div class="screen"><img src="images/yakfit/screen-02.jpg" alt="YAKFIT 모바일 지도 화면 — 약국별 가격 말풍선" loading="lazy"></div></figure>
     </div>
   </section>
 
-  <!-- 다음 페이지 -->
-  <a href="withus.html" class="nextband">
-    <span class="mini">Next project · 02</span>
-    <b>WITHUS</b>
-    <span class="desc">타겟팅 기반 CRM 마케팅 자동화 솔루션</span>
-    <svg class="arrow" viewBox="0 0 160 70" aria-hidden="true"><path d="M2 35 H150 M120 4 C126 22 136 31 156 35 C136 39 126 48 120 66"/></svg>
-  </a>
+  <!-- 02 사이트 소개 -->
+  <section class="sec">
+    <div class="sh"><span class="no">02</span><span class="lab">ABOUT SITE</span></div>
+    <h2>같은 약, 약국마다 다른 가격을 <span class="hl">한눈에</span></h2>
+    <p class="lead">일반 의약품은 판매자가격표시제라 같은 제품도 약국마다 <b>최대 2배 넘게</b> 가격이 달라요. 그런데 온라인으로 비교할 곳이 없어 직접 발품을 팔아야 해요. YAKFIT은 <b>약국 1,040곳 · 약품 40종 · 가격 제보 87,614건</b>의 데이터로 근처 약국의 가격을 모아 보여 줘요.</p>
+    <div class="flow"><span>약 이름 검색</span><i>→</i><span>근처 약국 가격 비교</span><i>→</i><span>추천 · 가격 · 거리순 정렬</span><i>→</i><span>약국 상세</span><i>→</i><span class="me">가격 제보</span><i>↺</i><em>대표 가격에 바로 반영 · <b>전 구간 1인 개발</b></em></div>
+  </section>
 
-  <footer class="foot"><a href="home.html#index">← Index</a><span>© 2027 Jang Ah Jin</span><span class="links"><a href="https://github.com/Jangahjin">GitHub</a><a href="mailto:snita8379@gmail.com">Mail</a></span></footer>
+  <!-- 03 화면 -->
+  <section class="sec">
+    <div class="sh"><span class="no">03</span><span class="lab">MY SCREENS</span><span class="tag">13 SCREENS</span></div>
+    <h2>제가 만든 <span class="hl">화면</span></h2>
+    <div class="screens">
+      <figure><div class="win"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 — 약국 목록과 지도" loading="lazy"></div><figcaption><span class="sn">01</span><b>검색 결과 · 지도</b><ul><li>카카오맵 가격 말풍선, 반경 <strong>500m ~ 5km 4단계</strong></li><li>추천 · 가격 · 거리순 <strong>정렬 3종</strong>, 이유를 보여 주는 <strong>배지 3종</strong></li></ul></figcaption></figure>
+      <figure><div class="win"><img src="images/yakfit/screen-03.jpg" alt="YAKFIT 약국 상세 화면" loading="lazy"></div><figcaption><span class="sn">02</span><b>약국 상세</b><ul><li>가격 · 위치 · 연락처를 한 화면에서 확인</li><li>'이 약국에 가격 제보하기'로 바로 이어지는 흐름</li></ul></figcaption></figure>
+      <figure><div class="win"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"></div><figcaption><span class="sn">03</span><b>가격 제보</b><ul><li>로그인으로 이동했다 돌아와도 <strong>작성 중인 초안 유지</strong></li><li>같은 약국 · 약품은 <strong>하루 1회</strong>만 제보</li></ul></figcaption></figure>
+      <figure><div class="win"><img src="images/yakfit/screen-05.jpg" alt="YAKFIT 관리자 통계 — 가격 격차 Top 10" loading="lazy"></div><figcaption><span class="sn">04</span><b>관리자 통계 <small>6화면</small></b><ul><li>제보 검토, 약품 · 지역별 통계, <strong>가격 격차 Top 10</strong></li><li>Recharts로 가격 분포 · 추이 시각화</li></ul></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 04 프론트엔드 구현 -->
+  <section class="sec">
+    <div class="sh"><span class="no">04</span><span class="lab">FRONTEND</span><span class="tag">지향점 01 · 02</span></div>
+    <h2>프론트엔드 <span class="hl">구현 포인트</span></h2>
+    <div class="parts">
+      <div class="card"><span class="pn">01</span><span class="en">STATE</span><b>서버 상태 · 클라이언트 상태 분리</b><p>검색 · 자동완성 · 상세 같은 서버 데이터는 <strong>TanStack Query로 캐시</strong>하고, 위치 · 로그인 · 제보 초안만 <strong>Redux 슬라이스 3개</strong>로 관리했어요.</p></div>
+      <div class="card"><span class="pn">02</span><span class="en">DEBOUNCE</span><b>자동완성 300ms 디바운스</b><p><code>useDebouncedValue</code> 훅으로 입력이 멈춘 뒤에만, <strong>검색어가 있을 때만 요청</strong>해요. ↑ ↓ Enter 키보드 선택과 ARIA 목록 연결도 넣었어요.</p></div>
+      <div class="card"><span class="pn">03</span><span class="en">AUTH FLOW</span><b>로그인을 거쳐도 제보 내용 유지</b><p><code>proxy.ts</code>가 <strong>보호 경로 3개</strong>를 로그인으로 보낼 때 비워지는 초안을 <strong>sessionStorage와 동기화</strong>해 돌아오면 그대로 이어서 써요.</p></div>
+      <div class="card accent"><span class="pn">04</span><span class="en">MAP SDK</span><b>카카오맵 SDK를 타입 안전하게</b><p><code>autoload=false</code>로 준비된 뒤에만 그리고, <strong>쓰는 API만 TypeScript로 선언</strong>했어요. 가격 말풍선은 커스텀 오버레이, 결과 범위에 맞춰 지도를 이동해요.</p></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <nav class="pager" aria-label="페이지 이동">
+      <a href="home.html#work" class="pg pg-prev"><span>BACK</span><b>← INDEX</b><small>목차로 돌아가기</small></a>
+      <a href="withus.html" class="pg pg-next"><span>NEXT · 02</span><b>WITHUS →</b><small>타겟팅 CRM 마케팅 자동화</small></a>
+    </nav>
+    <div class="foot-bottom"><span>© 2027 Jang Ah Jin</span></div>
+  </footer>
 </div>
 </body>
 </html>

@@ -20,8 +20,8 @@
   yakfit.html             01 YAKFIT — 발표 자료(우리동네약값) 디자인 (흰 바탕 · 청록 · 픽셀 장식)
   withus.html             02 WITHUS — 발표 자료(WithUs) 디자인 (코발트 블루 · 네온 라임)
 
-  css/페이지이름.css       각 페이지 스타일 (캔버스 디자인 그대로)
-  js/menu.js              모바일 햄버거 메뉴
+  css/home.css · m.css     홈 스타일 / css/project.css  두 상세 페이지 공통 스타일(색만 프로젝트별)
+  js/reveal.js            상세 페이지 스크롤 등장 모션 · 수치 카운트업
   images/                 이미지 (YAKFIT · WithUs 실제 화면 캡처, paper.jpg = 종이 질감 배경)
   files/                  이력서 PDF 넣는 곳
 
@@ -37,7 +37,7 @@
      · 이미지를 바꾸면 alt 설명도 실제 내용으로 바꿔 주세요.
      · 홈 목차 썸네일은 흑백으로 보이고, 마우스를 올리면 원본 색이 보여요.
 
-  2) 이력서 — files/resume.pdf 파일을 넣으면 "이력서 PDF" 버튼이 다운로드돼요.
+  2) 이력서 — 이력서 버튼은 지금 없어요. 필요하면 files/에 PDF를 넣고 홈에 링크를 추가하세요.
 
   3) 링크 — YAKFIT은 GitHub 프론트·백엔드 저장소, WithUs는 라이브 사이트(withus2.kro.kr)와
      팀 저장소로 연결돼 있어요.

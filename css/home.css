@@ -303,3 +303,39 @@ mark.hl{color:inherit;background:linear-gradient(transparent 60%,#D7F23A 60%,#D7
 p,li,figcaption,dd,td{text-wrap:pretty}
 h1,h2,h3{text-wrap:balance}
 .skl{white-space:nowrap;letter-spacing:.06em!important}
+
+/* ==== Pretendard 적용 + 굵기 대비 (2026-11-04) — 영문 대형 제목·모노 라벨은 그대로 ==== */
+.page,.page p,.page li,.page dd,.page span,.page a,.page b,.page em,.row,.skill,.pill,.btn,.navlink,.kserif,h2.kserif{font-family:'Pretendard Variable',Pretendard,'Malgun Gothic',sans-serif!important}
+.serif,.serif *,h1,.num{font-family:'Big Shoulders Display',sans-serif!important}
+.mono,.mono *,.row em,.tag,.cap,.skl{font-family:'IBM Plex Mono',monospace!important}
+.mono .kr,.kr{font-family:'Pretendard Variable',Pretendard,sans-serif!important}
+.page{letter-spacing:-.02em}
+p[style*="font-size: 24px"]{font-weight:300!important;letter-spacing:-.04em!important}
+p[style*="font-size: 28px"]{font-weight:700!important;letter-spacing:-.045em!important}
+p[style*="font-size: 28px"] > span{font-weight:200!important}
+mark.hl{font-weight:800}
+.row{font-weight:600}
+.row span span{font-weight:300!important}
+.skill{font-weight:500!important}
+.stat > span:last-child{font-weight:300!important}
+.card span[style*="font-size: 24px"]{font-weight:800!important}
+.card > div > span:last-child{font-weight:300!important}
+.navlink,.pill,.btn{font-weight:600!important}
+
+/* ==== 00 지향점 블록 ==== */
+.dirx{position:relative;margin:40px 72px 0;padding:44px 0 8px;border-top:1.5px solid #121310}
+.dirx-head{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
+.dirx-title{margin:0;font-family:'Pretendard Variable',Pretendard,sans-serif!important;font-size:40px;font-weight:300;line-height:1.25;letter-spacing:-.05em;color:#121310!important;-webkit-mask-image:none!important;mask-image:none!important;text-transform:none}
+.dirx-title mark.hl{font-weight:900}
+.dirx-list{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.dirx-list li{position:relative;display:flex;flex-direction:column;gap:10px;padding:26px 26px 24px;border-radius:18px;background:rgba(255,255,255,.78);box-shadow:0 0 0 1px rgba(18,19,16,.14);transition:transform .3s,box-shadow .3s}
+.dirx-list li:hover{transform:translateY(-4px);box-shadow:0 0 0 1.5px #121310}
+.dirx-list .dn{font-size:56px!important;line-height:.9!important;color:#121310!important}
+.dirx-list b{font-size:22px;font-weight:800;letter-spacing:-.045em}
+.dirx-list p{margin:0;font-size:14.5px;font-weight:300;line-height:1.7;color:#3F423A}
+.dirx-list em{margin-top:auto;padding-top:12px;border-top:1px dashed rgba(18,19,16,.2);font-style:normal;font-size:12.5px;font-weight:600;color:#121310;background:none}
+p[style*="font-size: 24px"] b{font-weight:800}
+/* 우선순위 보정: 영문 대형 제목·숫자는 Big Shoulders, 라벨은 Plex Mono 유지 */
+.page .serif,.page .serif *,.page h1,.page .num{font-family:'Big Shoulders Display',sans-serif!important}
+.page .mono,.page .mono *,.page .row em,.page .tag,.page .cap,.page .skl{font-family:'IBM Plex Mono',monospace!important}
+.page .mono .kr,.page .kr{font-family:'Pretendard Variable',Pretendard,sans-serif!important}
