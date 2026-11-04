@@ -14,10 +14,6 @@ a{color:#ECEDE4;transition:color .2s}a:hover{color:#C97B7B}
 .navlink{position:relative;text-decoration:none;padding:8px 16px;font-size:13px;font-weight:500}
 .navlink::after{content:"";position:absolute;left:16px;right:16px;bottom:4px;height:1px;background:#ECEDE4;transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .navlink:hover::after{transform:scaleX(1)}
-.strip{display:flex;gap:12px;height:500px}
-.panel{flex:1;transition:flex .6s cubic-bezier(.2,.7,.2,1)}
-.panel:hover{flex:2.6}
-.panel:hover::before{transform:scale(1.06)}
 .badge{animation:spin 18s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .marquee{overflow:hidden;white-space:nowrap;border-top:1px solid #3A3D30;border-bottom:1px solid #3A3D30}
