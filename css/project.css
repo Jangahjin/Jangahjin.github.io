@@ -221,3 +221,10 @@ html:not(.js) .hl{background-size:100% 100%}
 .phone .screen:has(img.fitw){background:#F3F6FF}
 /* 하단 이동은 프로젝트끼리만: 다음 버튼은 오른쪽 칸, 이전 버튼은 왼쪽 칸 */
 .pager .pg-next:only-child{grid-column:2}
+/* 하단 이동 버튼은 한 개라 가로로 꽉 채운다 */
+.pager{grid-template-columns:1fr}
+.pager .pg-next:only-child{grid-column:auto}
+.pg{padding:30px 40px}
+/* 상단 로고 = 홈 링크 */
+a.brand{transition:opacity .2s}
+a.brand:hover{opacity:.6}
