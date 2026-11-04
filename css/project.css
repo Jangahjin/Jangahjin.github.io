@@ -291,5 +291,6 @@ a.brand:hover{opacity:.6}
   .foot{padding:72px 16px 0}
   .pg{padding:22px 24px;border-radius:18px}
   .pg b{font-size:30px}
-  .foot-bottom{height:64px}
+  .foot-bottom{height:auto;padding:22px 0 28px;flex-direction:column-reverse;align-items:flex-start;gap:10px}
+  .foot-bottom .links{flex-wrap:wrap;gap:8px 16px}
 }
