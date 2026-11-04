@@ -3,56 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>장아진 포트폴리오 — AH JIN SESSION 2027</title>
+<title>장아진 포트폴리오</title>
 <meta name="description" content="보이는 것과 작동하는 것, 둘 다 만드는 디자이너 장아진의 포트폴리오">
 <script>if (window.matchMedia('(min-width: 768px)').matches) location.replace('home.html' + location.hash);</script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="css/m.css">
 <script src="js/menu.js" defer></script>
 </head>
 <body>
-<div class="page" style="width: 390px; box-sizing: border-box; background: #121310; font-family: 'Geist', 'Noto Sans KR', sans-serif; color: #ECEDE4; display: flex; flex-direction: column"><svg width="0" height="0" style="position: absolute" aria-hidden="true"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="table" tableValues="0.843 0.42 0.071"/><feFuncG type="table" tableValues="0.949 0.47 0.075"/><feFuncB type="table" tableValues="0.227 0.16 0.063"/></feComponentTransfer></filter></svg>
+<div class="page">
 
-  <header style="height: 48px; flex: none; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #3A3D30">
-    <span class="serif" style="font-size: 22px">Jang Ah Jin</span>
-    <button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false"><i class="it"></i><i style="width: 24px; margin-left: auto"></i></button>
+  <header class="nav">
+    <a href="m.html" class="logo disp">Jang Ah Jin</a>
+    <button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i></button>
   </header>
-  <nav class="drawer" id="drawer" hidden aria-label="메뉴"><a href="#about">About</a><a href="#work">Work</a><a href="home.html#contact">Contact</a><a href="files/resume.pdf" download class="mono" style="font-family: 'Geist Mono', monospace; font-size: 12px; border: 0; padding-top: 18px">이력서 PDF ↓</a></nav>
+  <nav class="drawer" id="drawer" hidden aria-label="메뉴"><a href="#profile">Profile</a><a href="#index">Index</a><a href="#contact">Contact</a><a href="files/resume.pdf" download class="small">이력서 PDF ↓</a></nav>
 
-  <section style="padding: 40px 20px 32px; display: flex; flex-direction: column; gap: 18px">
-    <div class="tags"><span class="tag">2027</span><span class="tag">UI/UX · Frontend</span></div>
-    <div style="position: relative"><h1 class="serif" style="margin: 0; font-size: 72px; line-height: .9">AH JIN<br>SESSION</h1><p style="margin: 0; font-size: 18px; font-weight: 700; color: #ECEDE4">눈에 꽂히는 비주얼,<br>손에 붙는 인터페이스.</p></div>
-    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #B9BCAE">시각디자인을 전공했고,<br>지금은 직접 그린 화면을<br>코드로 띄우고 있어요.</p>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px"><a href="#work" class="btn" style="background: #D7F23A; color: #121310">작업 보기 ▶</a><a href="mailto:snita8379@gmail.com" class="btn" style="box-shadow: inset 0 0 0 1px #ECEDE4">메일 보내기</a></div>
-  </section>
+  <!-- 01 PROFILE -->
+  <section id="profile" class="sec profile">
+    <svg class="burst" viewBox="0 0 600 400" aria-hidden="true"><defs><filter id="spraym" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b"/><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.2 -.6" result="m"/><feComposite in="b" in2="m" operator="in"/></filter></defs><g filter="url(#spraym)" fill="#D7F23A"><path d="M300 30 C318 150 345 172 590 200 C345 228 318 250 300 370 C282 250 255 228 10 200 C255 172 282 150 300 30Z"/><ellipse cx="300" cy="200" rx="120" ry="80"/></g></svg>
+    <span class="mono">[01] Profile</span>
+    <h1 class="disp ht">Jang<br>Ah Jin</h1>
+    <p class="lead">보이는 것과 작동하는 것,<br>둘 다 만드는 디자이너 <mark>장아진</mark>입니다.</p>
+    <p class="sub">UI/UX · Frontend Designer · Seoul</p>
 
-  <div style="padding: 0 20px; display: flex; gap: 8px; overflow: hidden">
-    <div class="img" style="flex: none; width: 280px; height: 340px"></div>
-    <div class="img" style="flex: none; width: 280px; height: 340px"></div>
-  </div>
-  <span class="mono" style="padding: 10px 20px 0; color: #A3A98F">01 — YAKFIT · Web &nbsp;← swipe</span>
-
-  <section id="about" style="padding: 56px 20px; display: flex; flex-direction: column; gap: 24px">
-    <span class="mono">[01] About</span>
-    <div style="display: flex; gap: 16px; align-items: flex-end"><div style="flex: none; width: 96px; height: 150px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; border-radius: 18px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 18px"><div style="width: 96px; height: 142px; background: radial-gradient(circle, #D7F23A 1.6px, transparent 2px) 0 0 / 7px 7px; -webkit-mask-image: radial-gradient(58% 52% at 50% 46%, #000 30%, transparent 72%); mask-image: radial-gradient(58% 52% at 50% 46%, #000 30%, transparent 72%)" role="img" aria-label="하프톤 프로필 이미지 자리"></div></div><span class="mono" style="font-size: 10px; color: #A3A98F">Profile, 2027<br>Halftone print</span></div>
-    <p style="margin: 0; font-size: 18px; font-weight: 500; line-height: 1.6; letter-spacing: -0.02em">문제를 먼저 정의하고,<br>화면은 그다음에 그려요.</p>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
-      <div style="border-top: 1px solid #ECEDE4; padding-top: 12px"><span class="serif" style="font-size: 56px; line-height: .9">02</span><div style="font-size: 12px; color: #A3A98F; margin-top: 6px">웹 프로젝트</div></div>
-      <div style="border-top: 1px solid #ECEDE4; padding-top: 12px"><span class="serif" style="font-size: 56px; line-height: .9">08</span><div style="font-size: 12px; color: #A3A98F; margin-top: 6px">보유 자격증</div></div>
+    <div class="block">
+      <span class="label"><b>01</b>포부</span>
+      <p class="big">문제를 먼저 정의하고,<br>화면은 그다음에 그려요.<br><span>한 번 보고 이해되는 구조,<br>오래 써도 편한 화면을 목표로 해요.</span></p>
+      <p class="sub">시각디자인을 전공했고, 지금은 프론트엔드를 공부하며 직접 그린 화면을 코드로 띄우고 있어요.</p>
     </div>
-    <div><div class="row"><span>숭의여대 시각디자인과 졸업</span><em>2026.02</em></div><div class="row"><span>CRM플랫폼 개발 국비 과정 · 진행 중</span><em>~2026.11</em></div><div class="row"><span>GTQ 포토샵 · 일러스트 · 인디자인</span><em>1급</em></div><div class="row"><span>컴퓨터그래픽기능사</span><em>취득</em></div><div class="row"><span>ITQ 한글 · 엑셀 · PPT · 인터넷</span><em>A등급</em></div><div class="row"><span>Photoshop · Illustrator · InDesign · Figma</span><em>Design</em></div><div class="row"><span>After Effects · Premiere Pro</span><em>Motion</em></div><div class="row"><span>HTML · CSS · JavaScript · TypeScript · React · Next.js · Tailwind CSS</span><em>Frontend</em></div><div class="row"><span>Java · Spring Boot · MyBatis</span><em>Backend</em></div><div class="row"><span>Oracle · PostgreSQL</span><em>Database</em></div><div class="row"><span>VS Code · IntelliJ · Eclipse · Git · GitHub · Postman · Notion · Slack</span><em>Tools</em></div><div class="row"><span>Claude Code · ChatGPT · Gemini</span><em>AI</em></div></div>
-    <a href="https://github.com/Jangahjin" style="padding: 18px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; border-radius: 18px; font-size: 13px; line-height: 1.6">이 사이트는 <b style="font-weight: 600">직접 디자인하고 코딩</b>했어요.<br><span class="mono">GitHub에서 코드 보기 →</span></a>
+
+    <div class="block">
+      <span class="label"><b>02</b>스킬</span>
+      <div class="skillrow"><span class="mono">Design</span><div><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">InDesign</span><span class="chip">Figma</span></div></div>
+      <div class="skillrow"><span class="mono">Motion</span><div><span class="chip">After Effects</span><span class="chip">Premiere Pro</span></div></div>
+      <div class="skillrow"><span class="mono">Frontend</span><div><span class="chip">HTML · CSS</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span></div></div>
+      <div class="skillrow"><span class="mono">Backend</span><div><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">JPA</span><span class="chip">MyBatis</span></div></div>
+      <div class="skillrow"><span class="mono">Database</span><div><span class="chip">PostgreSQL</span><span class="chip">Oracle</span></div></div>
+      <div class="skillrow"><span class="mono">Tools</span><div><span class="chip">VS Code</span><span class="chip">IntelliJ</span><span class="chip">Eclipse</span><span class="chip">Git · GitHub</span><span class="chip">Postman</span><span class="chip">Notion</span><span class="chip">Slack</span></div></div>
+      <div class="skillrow"><span class="mono">AI</span><div><span class="chip">Claude Code</span><span class="chip">ChatGPT</span><span class="chip">Gemini</span></div></div>
+    </div>
+
+    <div class="block">
+      <span class="label"><b>03</b>자격증</span>
+      <ul class="rows">
+        <li><span>GTQ 포토샵 · 일러스트 · 인디자인</span><em>1급</em></li>
+        <li><span>컴퓨터그래픽기능사</span><em>취득</em></li>
+        <li><span>ITQ 한글 · 엑셀 · 파워포인트 · 인터넷</span><em>A등급</em></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <span class="label"><b>04</b>경력 · 교육</span>
+      <ul class="rows">
+        <li><span>자바·생성형AI 차세대 CRM플랫폼 개발<small>하이미디어IT인재개발학원 · 진행 중</small></span><em>2026.05 — 11</em></li>
+        <li><span>웹개발 기초 · ChatGPT 프롬프트<small>원격 과정 · 수료</small></span><em>2025.12 — 2026.01</em></li>
+        <li><span>숭의여자대학교 시각디자인과<small>졸업</small></span><em>2024 — 2026.02</em></li>
+        <li><span>성보경영고등학교 기업홍보디자인과<small>졸업</small></span><em>Graduated</em></li>
+      </ul>
+    </div>
   </section>
 
-  <section id="work" style="background: #1B1D15; color: #ECEDE4; padding: 56px 20px; display: flex; flex-direction: column; gap: 44px">
-    <div><span class="mono" style="color: #A3A98F">[02] Work</span><h2 class="serif" style="margin: 8px 0 0; font-size: 56px; line-height: .9">WORK</h2></div>
-    <a href="yakfit.html" class="card"><div class="img filled thumb" style="height: 220px"><img class="mock" src="images/thumb/main-01.jpg" alt="YAKFIT 타이레놀 500mg 검색 결과 — 약국 목록과 지도" loading="lazy"></div><div style="display: flex; flex-direction: column; gap: 4px"><span class="mono" style="color: #A3A98F">Track 01 · Web · Solo</span><span style="display: flex; justify-content: space-between; font-size: 18px; font-weight: 600">YAKFIT <span>→</span></span><span style="font-size: 13px; color: #8C7A63">최저가 약국 찾기</span></div></a><a href="withus.html" class="card"><div class="img filled thumb" style="height: 220px"><img class="mock" src="images/thumb/main-02.jpg" alt="WithUs 고객용 쿠폰 화면 — 5,000원 할인 바코드" loading="lazy"></div><div style="display: flex; flex-direction: column; gap: 4px"><span class="mono" style="color: #A3A98F">Track 02 · Web · Team</span><span style="display: flex; justify-content: space-between; font-size: 18px; font-weight: 600">WithUs <span>→</span></span><span style="font-size: 13px; color: #8C7A63">타겟팅 CRM 마케팅 자동화</span></div></a>
+  <!-- 02 INDEX -->
+  <section id="index" class="sec">
+    <span class="mono">[02] Index</span>
+    <h2 class="disp ht">Index</h2>
+    <ol class="toc">
+      <li><a href="yakfit.html"><span class="thumb"><img src="images/thumb/main-01.jpg" alt="YAKFIT 타이레놀 500mg 검색 결과 — 약국 목록과 지도" loading="lazy"></span><span class="no disp">01</span><b class="disp">YAKFIT <i>→</i></b><span class="desc">약 이름으로 근처 최저가 약국을 찾는 서비스</span><span class="mono">Solo · 2026.09 — 10</span></a></li>
+      <li><a href="withus.html"><span class="thumb"><img src="images/thumb/main-02.jpg" alt="WithUs 고객용 쿠폰 화면 — 5,000원 할인 바코드" loading="lazy"></span><span class="no disp">02</span><b class="disp">WITHUS <i>→</i></b><span class="desc">타겟팅 기반 CRM 마케팅 자동화 솔루션</span><span class="mono">Team of 4 · 2026.09 — 10</span></a></li>
+    </ol>
   </section>
 
-  <footer id="contact" style="margin-top: auto; padding: 48px 20px 28px; display: flex; flex-direction: column; gap: 20px">
-    <span class="serif" style="font-size: 84px; line-height: .85; letter-spacing: -0.03em">CONTACT</span>
-    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px"><a href="mailto:snita8379@gmail.com">snita8379@gmail.com</a><span>010-8030-7193</span><a href="files/resume.pdf" download class="mono">이력서 PDF 다운로드 ↓</a></div>
-    <div style="display: flex; justify-content: space-between; border-top: 1px solid #3A3D30; padding-top: 14px"><span class="mono" style="color: #A3A98F">© 2027 Jang Ah Jin</span><span class="mono" style="display: flex; gap: 16px"><a href="https://www.instagram.com/k.ip0o/">IG</a><a href="https://github.com/Jangahjin">GitHub</a></span></div>
+  <!-- 03 CONTACT -->
+  <footer id="contact" class="sec contact">
+    <span class="mono">[03] Contact</span>
+    <h2 class="disp ht">Contact</h2>
+    <a href="https://github.com/Jangahjin" class="link"><span class="mono">GitHub</span><b>github.com/Jangahjin ↗</b></a>
+    <a href="mailto:snita8379@gmail.com" class="link"><span class="mono">Email</span><b>snita8379@gmail.com →</b></a>
+    <span class="mono foot">© 2027 Jang Ah Jin</span>
   </footer>
 </div>
 </body>
