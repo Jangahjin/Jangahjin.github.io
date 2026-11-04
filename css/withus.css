@@ -165,3 +165,15 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;padding:1px 6px;
 .code code{padding:0;border-radius:0;background:none;color:inherit;font-size:inherit}
 .devices .p1{left:770px;top:160px}
 .devices .p2{left:935px;top:120px}
+
+/* ==== 간격 정리 (2026-11-04): 섹션 120px · 제목→내용 40px 리듬 ==== */
+.hero{height:800px}
+.sec{padding-top:120px}
+.sec h2{font-size:52px}
+.lead{margin-top:14px}
+.flow{margin-top:40px}
+.devices{height:660px}
+.screens-list{gap:56px 32px}
+.scr .win img{height:320px}
+.parts{gap:20px}
+.endnav{margin-top:140px}

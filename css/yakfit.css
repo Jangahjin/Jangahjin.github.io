@@ -167,3 +167,19 @@ img{display:block;max-width:100%}
 .info dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
 .info dd{margin:6px 0 0;font-size:14px;line-height:1.6}
 .how p code{font-family:var(--mono);font-size:13px;padding:1px 6px;background:#fff;color:var(--teal)}
+
+/* ==== 간격 정리 (2026-11-04): 섹션 120px · 제목→내용 40px 리듬 ==== */
+.hero{height:600px;padding-bottom:56px}
+.sec{padding-top:120px}
+.two{gap:0 40px}
+.head h2,.row-head h2,.center-head h2{font-size:48px}
+.row-head{margin-bottom:40px}
+.center-head{margin-bottom:40px}
+.para{font-size:19px}
+.ftable tbody th{height:80px}
+.shots{gap:56px 40px}
+.shots .frame img{height:380px}
+.shots figcaption{margin-top:18px}
+.how{gap:16px}
+.how > div{padding:30px 32px 30px 100px}
+.nextband{margin-top:140px}

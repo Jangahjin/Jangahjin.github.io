@@ -6,7 +6,7 @@
 <title>YAKFIT — 장아진 프론트엔드 포트폴리오</title>
 <meta name="description" content="약 이름으로 근처 최저가 약국을 찾는 서비스 YAKFIT — Next.js · TypeScript 개인 프로젝트">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="css/yakfit.css?v=20261104b">
+<link rel="stylesheet" href="css/yakfit.css?v=20261104c">
 </head>
 <body>
 <div class="topbar" aria-hidden="true"></div>
@@ -56,11 +56,6 @@
     <div class="head"><span class="eyebrow">사이트 내용</span><h2>같은 약,<br>약국마다<br>다른 가격</h2></div>
     <div class="body">
       <p class="para">일반 의약품은 <b>판매자가격표시제</b>라 같은 제품도 약국마다 <b>최대 2배 넘게</b> 가격이 달라요. 그런데 온라인으로 미리 비교할 곳이 없어 직접 발품을 팔아야 해요.<br>YAKFIT은 약 이름 하나로 근처 약국의 가격을 모아 보여 주는 서비스예요.</p>
-      <div class="dirs">
-        <article class="dir"><div class="ph"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 화면" loading="lazy"><span>DIRECTION 01</span></div><h3>온라인 가격 비교 <i>→</i></h3><p>여러 약국의 상비약 가격을 한눈에</p></article>
-        <article class="dir"><div class="ph"><img src="images/yakfit/screen-02.jpg" alt="YAKFIT 지도 화면 — 약국별 가격 말풍선" loading="lazy"><span>DIRECTION 02</span></div><h3>위치 기반 최저가 <i>→</i></h3><p>내 위치 주변 약국부터 추천</p></article>
-        <article class="dir"><div class="ph"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"><span>DIRECTION 03</span></div><h3>실사용자 가격 제보 <i>→</i></h3><p>직접 산 가격으로 최신 정보 보완</p></article>
-      </div>
     </div>
   </section>
 
@@ -73,10 +68,8 @@
         <tr><th><i>→</i>약 이름 자동완성</th><td>입력하는 동안 관련 약품을 추천하고, 키보드(↑ ↓ Enter)만으로도 선택해 검색</td></tr>
         <tr><th><i>→</i>지도 기반 가격 비교</th><td>카카오맵에 주변 약국 판매가를 말풍선으로 띄우고, 반경 500m ~ 5km로 조절</td></tr>
         <tr><th><i>→</i>추천 · 가격 · 거리순 정렬</th><td>가격 · 거리 · 신선도를 함께 따진 추천순이 기본, 탭 하나로 정렬 전환</td></tr>
-        <tr><th><i>→</i>인기 상비약 바로가기</th><td>타이레놀 · 게보린 · 판콜에이 등 자주 찾는 약을 칩 한 번으로 검색</td></tr>
         <tr><th><i>→</i>실사용자 가격 제보</th><td>로그인 후 제보 폼 작성, 로그인 화면을 거쳐도 작성 중인 내용 보존</td></tr>
-        <tr><th><i>→</i>관리자 통계</th><td>약품별 가격 분포 · 지역 간 가격 격차 Top 10을 차트로 확인</td></tr>
-      </tbody>
+        </tbody>
     </table>
   </section>
 
@@ -84,67 +77,21 @@
   <section class="sec screens">
     <div class="center-head"><span class="eyebrow">사이트 내용</span><h2>화면 구성</h2></div>
     <div class="shots">
-      <figure><div class="frame"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 — 약국 목록과 지도" loading="lazy"></div><figcaption><b>검색 결과 · 지도</b><span>목록과 지도를 나란히, 카드와 말풍선이 같은 약국을 가리켜요</span><span>최저가 · 최단거리 · 오래된 정보 배지로 순위의 이유 표시</span></figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/screen-03.jpg" alt="YAKFIT 약국 상세 화면" loading="lazy"></div><figcaption><b>약국 상세</b><span>가격 · 위치 · 연락처를 한 화면에서 확인</span><span>'이 약국에 가격 제보하기'로 바로 이어지는 흐름</span></figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"></div><figcaption><b>가격 제보</b><span>약국 · 약품 · 가격 입력, 선택 항목은 접어서 단순하게</span><span>로그인으로 이동했다 돌아와도 초안이 그대로 남아요</span></figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/screen-05.jpg" alt="YAKFIT 관리자 통계 — 가격 격차 Top 10" loading="lazy"></div><figcaption><b>관리자 통계</b><span>지역 간 평균가 차이가 큰 약품 Top 10</span><span>Recharts로 가격 분포 · 추이 시각화</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 — 약국 목록과 지도" loading="lazy"></div><figcaption><b>검색 결과 · 지도</b><span>목록과 지도를 나란히, 카드와 말풍선이 같은 약국을 가리켜요</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-03.jpg" alt="YAKFIT 약국 상세 화면" loading="lazy"></div><figcaption><b>약국 상세</b><span>가격 · 위치 · 연락처를 한 화면에서 확인</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"></div><figcaption><b>가격 제보</b><span>로그인으로 이동했다 돌아와도 초안이 그대로 남아요</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-05.jpg" alt="YAKFIT 관리자 통계 — 가격 격차 Top 10" loading="lazy"></div><figcaption><b>관리자 통계</b><span>지역 간 평균가 차이가 큰 약품 Top 10</span></figcaption></figure>
     </div>
   </section>
 
   <!-- 프론트엔드 구현 -->
   <section class="sec">
-    <div class="row-head"><div><span class="eyebrow">Frontend</span><h2>프론트엔드 구현 포인트</h2></div><p>화면이 빠르고, 상태가 꼬이지 않게.<br>직접 부딪힌 문제를 이렇게 풀었어요.</p></div>
+    <div class="row-head"><div><span class="eyebrow">Frontend</span><h2>프론트엔드 구현 포인트</h2></div></div>
     <div class="how">
       <div><span class="num">1</span><b>서버 상태와 클라이언트 상태 분리</b><p>검색 · 자동완성 · 상세 같은 서버 데이터는 TanStack Query로 캐시하고, 위치 · 로그인 · 제보 초안처럼 화면 사이를 오가는 값만 Redux Toolkit 슬라이스로 관리했어요.</p></div>
       <div><span class="num">2</span><b>자동완성 300ms 디바운스</b><p>글자를 칠 때마다 요청하지 않도록 <code>useDebouncedValue</code> 훅을 만들고, 검색어가 있을 때만 쿼리가 실행되게 했어요. 키보드 탐색과 ARIA 목록 연결도 함께 넣었어요.</p></div>
-      <div><span class="num">3</span><b>위치 권한을 상태로 나누기</b><p>위치 요청 · 허용 · 지역 선택 대체 · 거부 · 사용 불가를 각각의 상태로 정의해, 권한을 거부해도 지역을 골라 계속 쓸 수 있게 했어요. 새로고침해도 sessionStorage에서 복원돼요.</p></div>
-      <div><span class="num">4</span><b>로그인을 거쳐도 제보 내용 유지</b><p>제보 · 마이 · 관리자 경로는 <code>proxy.ts</code>에서 로그인으로 보내는데, 이때 메모리가 비워져요. 작성 중인 초안을 sessionStorage와 동기화해 로그인 후 돌아오면 그대로 이어서 쓸 수 있게 했어요.</p></div>
-      <div><span class="num">5</span><b>카카오맵 SDK를 타입 안전하게</b><p>SDK를 <code>autoload=false</code>로 불러와 준비된 뒤에만 지도를 그리고, 쓰는 API만 TypeScript 인터페이스로 선언했어요. 가격 말풍선은 커스텀 오버레이로 만들고 결과 범위에 맞춰 지도를 이동해요.</p></div>
-      <div><span class="num">6</span><b>검증 · 차트 · 테스트</b><p>로그인 · 회원가입 폼은 React Hook Form + Zod 스키마로 검증하고, 가격 추이와 분포는 Recharts로 그렸어요. API 클라이언트와 위치 슬라이스는 Vitest로 테스트했어요.</p></div>
-    </div>
-    <pre class="code"><code><i>// hooks/use-debounced-value.ts — 입력이 멈춘 뒤에만 값을 넘긴다</i>
-<b>export function</b> useDebouncedValue&lt;T&gt;(value: T, delayMs: <b>number</b>): T {
-  <b>const</b> [debounced, setDebounced] = useState(value);
-  useEffect(() =&gt; {
-    <b>const</b> timer = setTimeout(() =&gt; setDebounced(value), delayMs);
-    <b>return</b> () =&gt; clearTimeout(timer);
-  }, [value, delayMs]);
-  <b>return</b> debounced;
-}
-
-<i>// hooks/use-drug-autocomplete.ts — 검색어가 있을 때만 요청</i>
-<b>export function</b> useDrugAutocomplete(query: <b>string</b>) {
-  <b>return</b> useQuery({
-    queryKey: [<s>"drugs"</s>, <s>"autocomplete"</s>, query],
-    queryFn: () =&gt; apiFetch&lt;DrugSearchResponse&gt;(<s>`/api/v1/drugs?q=${encodeURIComponent(query)}&amp;size=8`</s>),
-    enabled: query.length &gt; <s>0</s>,
-  });
-}</code></pre>
-  </section>
-
-  <!-- UI 개선 : Before / After -->
-  <section class="sec">
-    <div class="row-head"><div><span class="eyebrow">UI 개선</span><h2>첫 버전에서 완성 화면까지</h2></div></div>
-    <div class="ba">
-      <figure><div class="frame"><img src="images/yakfit/landing-02.jpg" alt="디자인 개편 전 첫 버전(약값알림) 검색 결과 화면" loading="lazy"></div><figcaption><span class="tagk">BEFORE</span>첫 버전 (약값알림)</figcaption></figure>
-      <figure><div class="frame"><img src="images/yakfit/landing-03.jpg" alt="개편 후 YAKFIT 검색 결과 화면 — 약국 목록과 지도" loading="lazy"></div><figcaption><span class="tagt">AFTER</span>최종 (YAKFIT)</figcaption></figure>
-    </div>
-    <ol class="points">
-      <li><span>01</span><b>절약 금액을 제목 바로 아래에</b><p>결과를 열자마자 얼마나 아낄 수 있는지부터 읽히게 했어요.</p></li>
-      <li><span>02</span><b>가격을 가장 크게</b><p>같은 약이라 비교 기준은 결국 가격이라, 카드에서 가장 먼저 보이게 했어요.</p></li>
-      <li><span>03</span><b>배지로 추천 이유 보여주기</b><p>최저가 · 최단거리 · 오래된 정보를 배지로 달아 순위의 이유가 바로 보여요.</p></li>
-    </ol>
-  </section>
-
-  <!-- 기술 스택 -->
-  <section class="sec two">
-    <div class="head"><span class="eyebrow">기술 스택</span><h2>화면부터<br>API까지</h2></div>
-    <div class="stack">
-      <div class="st"><span class="lab">Frontend</span><b>Next.js 16 · TypeScript</b><p>App Router · Tailwind CSS 4 · TanStack Query · Redux Toolkit · RHF + Zod · Recharts · Kakao Maps</p></div>
-      <i>→</i>
-      <div class="st"><span class="lab">Backend · API</span><b>Spring Boot · JPA</b><p>REST API · JWT 로그인 · 추천 점수 계산</p></div>
-      <i>→</i>
-      <div class="st"><span class="lab">Database</span><b>PostgreSQL</b><p>약국 1,040 · 약품 40 · 제보 87,614건</p></div>
+      <div><span class="num">3</span><b>로그인을 거쳐도 제보 내용 유지</b><p>제보 · 마이 · 관리자 경로는 <code>proxy.ts</code>에서 로그인으로 보내는데, 이때 메모리가 비워져요. 작성 중인 초안을 sessionStorage와 동기화해 로그인 후 돌아오면 그대로 이어서 쓸 수 있게 했어요.</p></div>
+      <div><span class="num">4</span><b>카카오맵 SDK를 타입 안전하게</b><p>SDK를 <code>autoload=false</code>로 불러와 준비된 뒤에만 지도를 그리고, 쓰는 API만 TypeScript 인터페이스로 선언했어요. 가격 말풍선은 커스텀 오버레이로 만들고 결과 범위에 맞춰 지도를 이동해요.</p></div>
     </div>
   </section>
 
