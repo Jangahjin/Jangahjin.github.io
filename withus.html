@@ -3,173 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=1440">
-<title>WithUs — 장아진 포트폴리오</title>
-<meta name="description" content="보이는 것과 작동하는 것, 둘 다 만드는 디자이너 장아진의 포트폴리오">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<title>WITHUS — 장아진 포트폴리오</title>
+<meta name="description" content="타겟팅 기반 CRM 마케팅 자동화 솔루션 WITHUS — 4인 팀에서 전환 구간 담당">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="css/withus.css">
-
 </head>
 <body>
-<div class="page" style="position: relative; width: 1440px; box-sizing: border-box; background: #121310; font-family: 'Geist', 'Noto Sans KR', sans-serif; color: #ECEDE4; overflow: hidden; display: flex; flex-direction: column">
+<div class="page">
 
-    <header style="height: 80px; flex: none; padding: 0 72px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid #3A3D30"><span style="display: flex; align-items: baseline; gap: 12px"><a href="home.html" class="serif" style="font-size: 22px; text-decoration: none">Jang Ah Jin</a><span class="mono" style="color: #A3A98F">Session 2027</span></span><span class="mono" style="color: #A3A98F">TRACK 02 / 02 — Web · Team</span><span class="mono" style="justify-self: end; display: flex; gap: 24px"><a href="home.html#work" style="text-decoration: none">All work</a><a href="home.html#contact" style="text-decoration: none">Contact</a></span></header>
+  <!-- 상단 바 : 이전 / 다음 페이지 이동 -->
+  <header class="bar">
+    <a href="yakfit.html" class="prev">← 01 YAKFIT</a>
+    <a href="home.html" class="logo"><i></i>withus <small>02 / 02</small></a>
+    <a href="home.html#contact" class="next">다음 페이지 <b>CONTACT</b> <span>→</span></a>
+  </header>
 
-  <!-- 01 HERO : 작품 캡션 + 펼쳐지는 목업 -->
-  <section style="position: relative; height: 950px; flex: none; overflow: hidden; border-bottom: 1px solid #3A3D30">
-    <svg class="burst" viewBox="0 0 600 400" style="position: absolute; left: 260px; top: 20px; z-index: 0; opacity: .9; width: 620px; height: 400px" aria-hidden="true"><defs><filter id="sprayPr" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b"/><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.2 -.6" result="m"/><feComposite in="b" in2="m" operator="in"/></filter></defs><g filter="url(#sprayPr)" fill="#D7F23A"><path d="M300 30 C318 150 345 172 590 200 C345 228 318 250 300 370 C282 250 255 228 10 200 C255 172 282 150 300 30Z"/><ellipse cx="300" cy="200" rx="120" ry="80"/></g></svg>
-    <div style="position: absolute; left: 72px; top: 48px; width: 600px; display: flex; flex-direction: column; gap: 20px; color: #ECEDE4">
-      <div style="display: flex; align-items: center; gap: 16px"><div class="tags"><span class="tag">Web</span><span class="tag">Team</span><span class="tag">2026</span></div></div>
-      <h1 class="serif" style="position: relative; z-index: 1; margin: 14px 0 0; font-size: 112px; line-height: .86; letter-spacing: -0.02em">WITHUS</h1>
-      <p style="margin: 0; font-size: 18px; font-weight: 500">타겟팅 기반 CRM 마케팅 자동화 솔루션</p>
-      <p style="margin: 0; width: 520px; font-size: 15px; line-height: 1.75; color: #B9BCAE">고객을 타겟팅으로 묶고, 트리거부터 메일·SMS 발송,<br>오픈·클릭·쿠폰 전환 추적까지 자동으로 실행하는<br>관리자용 웹 서비스예요.<br>4인 팀에서 <b style="color: #ECEDE4">전환 구간</b>(추적 · 쿠폰 · 성과 리포트 · AI)을 맡고,<br>사이트 디자인과 발표 PPT를 함께 만들었어요.</p>
-      <dl style="margin: 10px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 16px; border-top: 1px solid #3A3D30; padding-top: 16px"><div><dt class="mono" style="font-size: 11px; color: #A3A98F">My part</dt><dd style="margin: 8px 0 0; font-size: 15px">전환 구간 — 추적 · 쿠폰 · 대시보드 · AI</dd></div><div><dt class="mono" style="font-size: 11px; color: #A3A98F">Role</dt><dd style="margin: 8px 0 0; font-size: 15px">사이트 디자인 · 프론트엔드 · 백엔드</dd></div><div><dt class="mono" style="font-size: 11px; color: #A3A98F">Stack</dt><dd style="margin: 8px 0 0; font-size: 15px">Next.js 15 · Spring Boot 4 · PostgreSQL 17</dd></div><div><dt class="mono" style="font-size: 11px; color: #A3A98F">Team</dt><dd style="margin: 8px 0 0; font-size: 15px">4인 팀 (PL 1 + 팀원 3)</dd></div><div><dt class="mono" style="font-size: 11px; color: #A3A98F">Period</dt><dd style="margin: 8px 0 0; font-size: 15px">2026.09.11 — 10.30 (7주)</dd></div><div><dt class="mono" style="font-size: 11px; color: #A3A98F">Deploy</dt><dd style="margin: 8px 0 0; font-size: 15px">AWS (Amplify · EC2 · RDS)</dd></div></dl>
-      <div style="display: flex; gap: 10px"><a href="https://withus2.kro.kr/" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 22px; background: #D7F23A; color: #121310; font-size: 13px; font-weight: 600; text-decoration: none">라이브 사이트 →</a><a href="https://github.com/stygia98/withus_project" style="display: inline-flex; align-items: center; height: 44px; padding: 0 22px; box-shadow: inset 0 0 0 1px #ECEDE4; color: #ECEDE4; font-size: 13px; font-weight: 600; text-decoration: none">팀 저장소</a></div>
+  <!-- 01 HERO -->
+  <section class="hero">
+    <div class="hero-txt">
+      <span class="kick"><b>02</b>PROJECT · 2026</span>
+      <h1>WITH<em>US</em></h1>
+      <p class="h-sub">고객을 타겟팅으로 묶고, 트리거부터 발송·추적까지<br>자동으로 실행</p>
+      <div class="pills"><span>타겟팅 기반 CRM 마케팅 자동화 솔루션</span><span>2026.09.11 — 10.30</span></div>
+      <hr>
+      <span class="team-lab">TEAM</span>
+      <b class="team">위드어스 크루 · 4인 팀</b>
+      <span class="team-me">장아진 — 전환 구간 · 사이트 디자인 · 발표 PPT</span>
+      <div class="cta"><a href="https://withus2.kro.kr/" class="btn lime">라이브 사이트 →</a><a href="https://github.com/stygia98/withus_project" class="btn ghost">팀 저장소 →</a></div>
     </div>
-    <div style="position: absolute; left: 720px; top: 90px; width: 648px; height: 440px; border-radius: 18px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30, 0 30px 60px -36px rgba(120,150,90,.45); overflow: hidden; display: flex; flex-direction: column">
-      <div style="height: 34px; flex: none; display: flex; align-items: center; gap: 6px; padding: 0 14px; background: #202218; border-bottom: 1px solid #3A3D30"><i style="width: 9px; height: 9px; border-radius: 50%; background: #34372B"></i><i style="width: 9px; height: 9px; border-radius: 50%; background: #34372B"></i><i style="width: 9px; height: 9px; border-radius: 50%; background: #34372B"></i><span style="margin-left: 14px; height: 16px; width: 220px; border-radius: 8px; background: #1B1D15; box-shadow: inset 0 0 0 1px #3A3D30"></span></div>
-      <div style="flex: 1; min-height: 0"><img src="images/withus/dashboard.jpg" alt="WithUs 관리자 대시보드 — 발송·오픈·클릭·전환 지표와 일별 발송 차트" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div>
+    <figure class="hero-mock">
+      <div class="win"><img src="images/withus/dashboard.jpg" alt="WithUs 관리자 대시보드 — 발송·오픈·클릭·전환 지표와 일별 발송 차트"></div>
+      <span class="sticker">MY<br>PART</span>
+    </figure>
+  </section>
+
+  <!-- 프로젝트 정보 -->
+  <section class="info">
+    <div><span>My part</span><b>전환 구간</b><small>추적 · 쿠폰 · 대시보드 · AI</small></div>
+    <div><span>Role</span><b>디자인 · 풀스택</b><small>사이트 디자인 · 프론트엔드 · 백엔드</small></div>
+    <div><span>Team</span><b>4인 팀</b><small>PL 1 + 팀원 3</small></div>
+    <div><span>Period</span><b>7주</b><small>2026.09.11 — 10.30</small></div>
+    <div><span>Deploy</span><b>AWS</b><small>Amplify · EC2 · RDS</small></div>
+  </section>
+
+  <!-- 01 WHY CRM -->
+  <section class="sec">
+    <div class="sh"><span class="no">01</span><span class="lab">WHY CRM</span></div>
+    <h2>필요한 건 툴 하나 더가 아니라 <span class="hl">시스템</span>이에요</h2>
+    <p class="lead">CRM은 고객 데이터를 바탕으로 고객과의 관계를 이어 가는 마케팅이에요. 그런데 지금은 흩어진 툴 위에서 돌아가요.</p>
+    <div class="g3">
+      <div class="card"><span class="pain">PAIN 01</span><b>명단은 엑셀에</b><p>고객 데이터가 파일마다 흩어져 대상 고르기부터 손이 많이 가요.</p></div>
+      <div class="card"><span class="pain">PAIN 02</span><b>발송은 문자 사이트에</b><p>누가 열고 눌렀는지, 반응이 발송과 따로 놀아요.</p></div>
+      <div class="card"><span class="pain">PAIN 03</span><b>쿠폰은 또 다른 곳에</b><p>전환은 끝나고 나서야 보이고, 연결은 마케터가 손으로 해요.</p></div>
     </div>
-    <span class="mono" style="position: absolute; left: 720px; top: 548px">Dashboard — 관리자 대시보드</span>
-    <div style="position: absolute; left: 72px; right: 72px; top: 780px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px">
-      <figure class="shot"><span style="background: center / cover no-repeat url('images/withus/project-01.jpg')"></span><figcaption>01 — 홈</figcaption></figure>
-      <figure class="shot"><span style="background: center / cover no-repeat url('images/withus/project-02.jpg')"></span><figcaption>02 — 대시보드</figcaption></figure>
-      <figure class="shot"><span style="background: center / cover no-repeat url('images/withus/project-03.jpg')"></span><figcaption>03 — 고객</figcaption></figure>
-      <figure class="shot"><span style="background: center / cover no-repeat url('images/withus/project-04.jpg')"></span><figcaption>04 — 타겟팅</figcaption></figure>
-      <figure class="shot"><span style="background: center / cover no-repeat url('images/withus/project-05.jpg')"></span><figcaption>05 — 쿠폰</figcaption></figure>
+    <div class="flow"><span>고객 데이터</span><i>→</i><span>타겟팅</span><i>→</i><span>메시지 발송</span><i>→</i><span class="me">반응 (오픈 · 클릭)</span><i>→</i><span class="me">쿠폰 전환</span><i>↺</i><em>다시 고객 데이터로</em></div>
+  </section>
+
+  <!-- 02 HIGHLIGHT -->
+  <section class="sec">
+    <div class="sh"><span class="no">02</span><span class="lab">HIGHLIGHT</span><span class="tag">4 TRACKS</span></div>
+    <h2>주요 기능을 <span class="hl">4개 영역</span>으로 정리</h2>
+    <div class="g4">
+      <div class="card"><b class="en">WORKFLOW</b><b>워크플로우 자동화</b><p>트리거 · 대기 · 조건분기(2단계) · 발송 노드를 폼으로 구성, 고객별 자동 실행</p></div>
+      <div class="card"><b class="en">CAMPAIGN</b><b>템플릿 · 캠페인</b><p>메일/SMS 템플릿(치환자 · 이미지), 일회성 예약 · 테스트 발송, 캠페인 복사 · 삭제</p></div>
+      <div class="card"><b class="en">CUSTOMER</b><b>고객 · 타겟팅</b><p>CSV/xlsx 업로드 · 수신동의 관리, 조건 기반 동적 타겟팅</p></div>
+      <div class="card mine"><span class="badge">MY PART</span><b class="en">TRACKING</b><b>추적 · 쿠폰 · 성과</b><p>오픈 · 클릭 추적(봇 제외), 쿠폰 발급 · 매장 바코드 전환, 성과 대시보드 · AI 요약</p></div>
     </div>
   </section>
 
-  <!-- 02 WHY : 문제 정의 + 핵심 흐름 -->
-  <section style="padding: 97px 72px 72px; display: flex; flex-direction: column; gap: 36px">
-    <div style="display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px; align-items: end">
-      <div style="display: flex; flex-direction: column; gap: 14px"><span class="mono">Why CRM</span><h2 class="kserif" style="margin: 0; font-size: 32px">툴 하나 더가 아니라,<br>시스템이 필요해요</h2></div>
-      <p style="margin: 0; font-size: 15px; color: #A3A98F">CRM은 고객 데이터를 바탕으로 고객과의 관계를 이어 가는 마케팅이에요.<br>그런데 지금은 명단 · 발송 · 쿠폰이 흩어진 툴 위에서 따로 돌아가요.</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">Pain 01</span><b>명단은 엑셀에</b><p>고객 데이터가 파일마다 흩어져<br>대상 고르기부터 손이 많이 가요.</p></div>
-      <div class="wc"><span class="mono">Pain 02</span><b>발송은 문자 사이트에</b><p>누가 열고 눌렀는지,<br>반응이 발송과 따로 놀아요.</p></div>
-      <div class="wc"><span class="mono">Pain 03</span><b>쿠폰은 또 다른 곳에</b><p>전환은 끝나고 나서야 보이고,<br>연결은 마케터가 손으로 해요.</p></div>
-    </div>
-    <div class="flow"><span>트리거</span><i>→</i><span>대기</span><i>→</i><span>조건 분기</span><i>→</i><span>발송 (메일 · SMS)</span><i>→</i><span class="on">오픈 · 클릭 · 쿠폰 전환 추적</span></div>
-    <p style="margin: 0; font-size: 15px; color: #A3A98F">WithUs는 이 흐름을 하나로 이어요 — 고객 데이터가 기준이 되고, 반응이 신호가 되고, 워크플로우가 그 둘을 이어 줘요.<br>이 중 마지막 <b style="color: #D7F23A">전환 구간</b>이 제가 맡은 부분이에요.</p>
-  </section>
-
-  <!-- 03 MY PART : 담당 파트 -->
-  <section style="padding: 72px 72px 97px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px; align-items: start; border-top: 1px solid #3A3D30">
-    <div style="display: flex; flex-direction: column; gap: 14px">
-      <span class="mono">My part · Conversion</span>
-      <h2 class="kserif" style="margin: 0; font-size: 32px">메시지를 보낸 이후,<br>전환 구간을 맡았어요</h2>
-      <p style="margin: 0; font-size: 15px; color: #A3A98F">팀은 고객 → 발송 → 전환 구간으로 나눠 개발했고,<br>저는 오픈 · 클릭 추적부터 쿠폰 전환,<br>성과 리포트와 AI까지 맡았어요.</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px"><span class="chip" style="--c: #8C8A84">PL · 공통 기반</span><span class="chip" style="--c: #8C8A84">고객 구간</span><span class="chip" style="--c: #8C8A84">발송 구간</span><span class="chip" style="--c: #D7F23A">전환 구간 (나)</span></div>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">01 — Tracking</span><b>오픈 · 클릭 추적과 봇 판정</b><p>메일 오픈 픽셀과 클릭 리다이렉트를 UUID 토큰으로 만들고,<br>봇 이벤트를 판정해 지표에서 제외했어요.</p></div>
-      <div class="wc"><span class="mono">02 — Coupon</span><b>쿠폰 발급과 매장 바코드 전환</b><p>정액 · 정률 쿠폰을 발급마다 12자리 번호로 만들고,<br>고객 쿠폰 페이지(바코드)와 매장 사용 처리 · 취소를 구현했어요.</p></div>
-      <div class="wc"><span class="mono">03 — Dashboard</span><b>대시보드 · 성과 리포트</b><p>발송 · 오픈 · 클릭 · 전환 지표 카드와 단계별 차트,<br>최근 이벤트의 오픈 · 클릭 색 구분을 만들었어요.</p></div>
-      <div class="wc"><span class="mono">04 — AI · Gemini</span><b>AI 기능 2종</b><p>캠페인 지표를 5문장 이내로 요약하는 성과 리포트와,<br>목표 한 줄로 타겟팅 · 쿠폰 · 템플릿 초안을 만드는 기획 도우미.<br>고객 이름 · 이메일 · 휴대폰은 LLM에 보내지 않아요.</p></div>
-      <div class="wc" style="grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: space-between; gap: 32px"><div style="display: flex; flex-direction: column; gap: 10px"><span class="mono">05 — Design</span><b>사이트 디자인 · 발표 PPT</b><p>공통 디자인 토큰을 정하고 관리자 · 로그인 · 홈 · 고객 화면에 일관되게 적용했어요.<br>메뉴를 고객 관리 · 고객 타겟팅 · 캠페인 관리 중심으로 정리하고, 용어를 통일했어요.</p></div><span class="mono" style="flex: none">Design system · UX</span></div>
+  <!-- 03 POSITION -->
+  <section class="sec">
+    <div class="sh"><span class="no">03</span><span class="lab">POSITION</span></div>
+    <h2><span class="hl">고객 → 발송 → 전환</span>, 구간별로 나눈 네 포지션</h2>
+    <div class="g4 members">
+      <div class="mem"><div class="top"><span>LEADER · 공통 기반</span><b>01</b></div><div class="bd"><b>FOUNDATION</b><p>저장소 · 인프라 · 공통 기반, 통합과 배포</p></div></div>
+      <div class="mem"><div class="top"><span>MEMBER · 고객 구간</span><b>02</b></div><div class="bd"><b>CUSTOMER</b><p>고객 데이터의 입구와 타겟팅, 수신동의 · 수신거부</p></div></div>
+      <div class="mem"><div class="top"><span>MEMBER · 발송 구간</span><b>03</b></div><div class="bd"><b>SENDING</b><p>발송 큐와 워크플로우 엔진</p></div></div>
+      <div class="mem me"><div class="top"><span>MEMBER · 전환 구간</span><b>04</b></div><div class="bd"><b>CONVERSION <small>장아진</small></b><p>오픈 · 클릭 추적부터 쿠폰 전환, 성과 리포트와 AI</p><div class="chips"><span>오픈·클릭 추적·쿠폰</span><span>대시보드·AI 2종</span><span>사이트 디자인·PPT 제작</span></div></div></div>
     </div>
   </section>
 
-  <!-- 04 WALL 01 : 핵심 화면 -->
-  <section style="padding: 54px 72px 32px; display: grid; grid-template-columns: 280px repeat(4, minmax(0, 1fr)); gap: 16px; align-items: stretch">
-    <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px"><span class="mono" style="color: #A3A98F">Screens</span><p class="ttl">핵심 화면</p><p class="desc" style="font-size: 13px">마케팅 담당자가 매일 쓰는 네 개의 화면이에요.</p></div>
-    <div class="lg"><span class="mk"></span><b>대시보드</b><small>발송 현황 · 성과 요약</small></div>
-    <div class="lg"><span class="mk"></span><b>고객</b><small>검색 · 필터 · CSV 업로드</small></div>
-    <div class="lg"><span class="mk"></span><b>타겟팅</b><small>AND / OR 조건으로 대상 묶기</small></div>
-    <div class="lg"><span class="mk"></span><b>쿠폰</b><small>발급 · 사용 관리</small></div>
-  </section>
-
-  <!-- 03 WALL 02~04 : 지그재그 -->
-  <section style="position: relative; padding: 32px 72px 0">
-
-    <div class="zrow">
-      <div style="display: flex; flex-direction: column; gap: 16px"><span><span class="num">01</span></span><span class="mono" style="color: #A3A98F">Roles</span><p class="ttl">역할별로 달라지는 화면</p><p class="desc">한 조직 안에서 OWNER · MANAGER · STAFF 권한에 따라<br>볼 수 있는 메뉴와 할 수 있는 일이<br>달라지도록 화면을 나눴어요.</p><div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="chip" style="--c: #ECEDE4">OWNER</span><span class="chip" style="--c: #8C8A84">MANAGER</span><span class="chip" style="--c: #4A4D3E">STAFF</span></div></div>
-      <figure class="pcw"><div class="pc"><div class="pc-bar"><i></i><i></i><i></i><span></span></div><div class="pc-screen"><img src="images/withus/roles.jpg" alt="WithUs 고객 목록 화면 — 왼쪽 메뉴와 OWNER 권한 표시" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div></div><div class="pc-neck"></div><div class="pc-foot"></div><figcaption class="mono">Roles — 권한별 메뉴 화면</figcaption></figure>
-    </div>
-
-    <div class="zrow flip">
-      <figure class="pcw"><div class="pc"><div class="pc-bar"><i></i><i></i><i></i><span></span></div><div class="pc-screen"><img src="images/withus/analytics.jpg" alt="WithUs 캠페인 성과 리포트 — 전환 흐름 차트" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div></div><div class="pc-neck"></div><div class="pc-foot"></div><figcaption class="mono">Analytics — 캠페인 성과 · AI 요약</figcaption></figure>
-      <div style="display: flex; flex-direction: column; gap: 16px"><span class="num">02</span><span class="mono" style="color: #A3A98F">Analytics</span><p class="ttl">성과 리포트와 전환 추적</p><p class="desc">메일 오픈·클릭을 추적해 발송 → 오픈 → 클릭 → 쿠폰 사용까지<br>전환 흐름을 한 화면에 보여주고,<br>AI가 캠페인 성과를 요약해 줘요.</p></div>
-    </div>
-
-    <div class="zrow">
-      <div style="display: flex; flex-direction: column; gap: 16px"><span class="num">03</span><span class="mono" style="color: #A3A98F">Public page</span><p class="ttl">로그인 없는 공개 페이지</p><p class="desc">메시지를 받은 팬은 로그인 없이 쿠폰을 열어<br>매장 직원에게 바코드만 보여주면 돼요.<br>수신거부도 한 화면에서 한 번에 끝나요.</p></div>
-      <figure class="pcw"><div class="pc"><div class="pc-bar"><i></i><i></i><i></i><span></span></div><div class="pc-screen"><img src="images/withus/public.jpg" alt="WithUs 고객용 공개 페이지 — 쿠폰 바코드와 수신거부 화면" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div></div><div class="pc-neck"></div><div class="pc-foot"></div><figcaption class="mono">Public page — 쿠폰 바코드 · 수신거부</figcaption></figure>
+  <!-- 04 MY PART -->
+  <section class="sec">
+    <div class="sh"><span class="no">04</span><span class="lab">MY PART</span></div>
+    <h2>메시지를 보낸 <span class="hl">이후</span>를 맡았어요</h2>
+    <div class="parts">
+      <div class="card"><span class="pn">01</span><span class="en-s">TRACKING</span><b>오픈 · 클릭 추적과 봇 판정</b><p>메일 오픈 픽셀과 클릭 리다이렉트를 UUID 토큰으로 만들고, 봇 이벤트를 판정해 지표에서 제외했어요.</p></div>
+      <div class="card"><span class="pn">02</span><span class="en-s">COUPON</span><b>쿠폰 발급과 매장 바코드 전환</b><p>정액 · 정률 쿠폰을 발급마다 12자리 번호로 만들고, 고객 쿠폰 페이지(바코드)와 매장 사용 처리 · 취소를 구현했어요.</p></div>
+      <div class="card"><span class="pn">03</span><span class="en-s">DASHBOARD</span><b>대시보드 · 성과 리포트</b><p>발송 · 오픈 · 클릭 · 전환 지표 카드와 단계별 차트, 최근 이벤트의 오픈 · 클릭 색 구분을 만들었어요.</p></div>
+      <div class="card ai"><span class="pn">04</span><span class="en-s">FEAT. GEMINI</span><b>AI 기능 2종</b><p><em>AI-01</em> 캠페인 지표를 5문장 이내로 요약하는 성과 리포트<br><em>AI-02</em> 목표 한 줄로 타겟팅 · 쿠폰 · 템플릿 초안을 만드는 기획 도우미<br>고객 이름 · 이메일 · 휴대폰은 LLM에 보내지 않아요.</p></div>
+      <div class="card wide"><span class="pn">05</span><span class="en-s">DESIGN</span><b>사이트 디자인 · 발표 PPT</b><p>공통 디자인 토큰을 정하고 관리자 · 로그인 · 홈 · 고객 화면에 일관되게 적용했어요. 메뉴를 고객 관리 · 고객 타겟팅 · 캠페인 관리 중심으로 정리하고, 용어를 통일했어요.</p></div>
     </div>
   </section>
 
-  <!-- 05 RULES : 전환 구간에서 지킨 규칙 -->
-  <section style="padding: 130px 72px 0; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Rules</span><h2 class="kserif" style="margin: 0; font-size: 32px">숫자를 믿을 수 있게 지킨 규칙</h2></div><p style="margin: 0; font-size: 15px; color: #A3A98F; text-align: right">시스템이 지키는 8가지 규칙 중<br>전환 구간과 맞닿은 네 가지예요.</p></div>
-    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">01</span><b>UUID 추적 토큰</b><p>순번 ID는 쓰지 않고, 수신거부 · 쿠폰 · mailto · tel 링크는 치환하지 않아요.</p></div>
-      <div class="wc"><span class="mono">02</span><b>봇 · 테스트 제외</b><p>봇 이벤트와 테스트 · 공지 발송은 모든 지표와 분기에서 빼요.</p></div>
-      <div class="wc"><span class="mono">03</span><b>쿠폰 사용은 POST만</b><p>고객 페이지는 바코드 조회만, 사용 처리는 매장 직원이 POST로 해요.</p></div>
-      <div class="wc"><span class="mono">04</span><b>개인정보 보호</b><p>LLM에는 이름 · 이메일 · 휴대폰을 보내지 않고, 가드레일은 코드로 적용해요.</p></div>
+  <!-- 05 STILLS : 실제 동작 화면 -->
+  <section class="sec stills">
+    <div class="sh"><span class="no">05</span><span class="lab">STILLS</span><span class="tag">ADMIN · CUSTOMER</span></div>
+    <h2>실제 동작 <span class="hl">화면</span></h2>
+    <div class="still-row">
+      <figure class="dev"><div class="win"><img src="images/withus/analytics.jpg" alt="WithUs 캠페인 성과 리포트 — 전환 흐름 차트" loading="lazy"></div><figcaption><span class="sn">01</span><b>성과 리포트</b>단계별 발송 · 오픈 · 클릭 · 전환 차트와 AI 성과 요약</figcaption></figure>
+      <figure class="dev"><div class="win"><img src="images/withus/roles.jpg" alt="WithUs 고객 목록 화면 — 왼쪽 메뉴와 검색·필터" loading="lazy"></div><figcaption><span class="sn">02</span><b>고객 관리</b>검색 · 필터, 개인정보 마스킹, 엑셀 · CSV 업로드</figcaption></figure>
+    </div>
+    <figure class="pub"><div class="win soft"><img src="images/withus/public.jpg" alt="WithUs 고객용 공개 페이지 — 쿠폰 바코드와 수신거부 화면" loading="lazy"></div><figcaption><span class="sn">03</span><b>고객용 공개 페이지 (모바일)</b>메일 · SMS 링크로 들어오는 화면 — 쿠폰은 12자리 바코드만 보여 주고(조회 전용), 사용 처리는 매장 직원이 해요. 수신거부는 채널을 골라 한 번에 끝나요.</figcaption></figure>
+    <div class="thumbs">
+      <figure><img src="images/withus/project-01.jpg" alt="WithUs 홈 화면" loading="lazy"><figcaption>홈</figcaption></figure>
+      <figure><img src="images/withus/project-02.jpg" alt="WithUs 대시보드 화면" loading="lazy"><figcaption>대시보드</figcaption></figure>
+      <figure><img src="images/withus/project-03.jpg" alt="WithUs 고객 관리 화면" loading="lazy"><figcaption>고객</figcaption></figure>
+      <figure><img src="images/withus/project-04.jpg" alt="WithUs 타겟팅 빌더 화면" loading="lazy"><figcaption>타겟팅</figcaption></figure>
+      <figure><img src="images/withus/project-05.jpg" alt="WithUs 쿠폰 화면" loading="lazy"><figcaption>쿠폰</figcaption></figure>
     </div>
   </section>
 
-  <!-- 06 STACK : 기술 스택과 선택 이유 -->
-  <section style="padding: 130px 72px 0; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px; align-items: start">
-    <div style="display: flex; flex-direction: column; gap: 14px"><span class="mono">Stack</span><h2 class="kserif" style="margin: 0; font-size: 32px">스택은 하나로 확정</h2><p style="margin: 0; font-size: 15px; color: #A3A98F">로컬에서 만들고, 프로필만 바꿔<br>AWS로 그대로 배포했어요.</p></div>
-    <div style="display: flex; flex-direction: column; gap: 16px">
-      <dl class="stk">
-        <div><dt class="mono">Frontend</dt><dd>Next.js 15 · React 19 · TypeScript · TanStack Query</dd></div>
-        <div><dt class="mono">Backend</dt><dd>Spring Boot 4 · JDK 21 · Spring Security + JWT(httpOnly 쿠키) · CSRF</dd></div>
-        <div><dt class="mono">Data</dt><dd>PostgreSQL 17 · MyBatis · Flyway (17개 테이블)</dd></div>
-        <div><dt class="mono">Integration · AI</dt><dd>SMTP / SES · S3 · Gemini API</dd></div>
-        <div><dt class="mono">Infra</dt><dd>Docker Compose(로컬) → AWS Amplify · EC2 · RDS</dd></div>
+  <!-- 06 MANNER : 지킨 규칙 -->
+  <section class="sec">
+    <div class="sh"><span class="no">06</span><span class="lab">MANNER GUIDE</span></div>
+    <h2>숫자를 믿을 수 있게 <span class="hl">지킨 규칙</span></h2>
+    <p class="lead">시스템이 지키는 8가지 규칙 중 전환 구간과 맞닿은 네 가지예요.</p>
+    <div class="g4 rules">
+      <div class="card"><span class="rn">01</span><b>UUID 추적 토큰</b><p>순번 ID 금지. 수신거부 · 쿠폰 · mailto · tel 링크는 치환하지 않아요.</p></div>
+      <div class="card"><span class="rn">02</span><b>봇 · 테스트 제외</b><p>봇 이벤트와 테스트 · 공지 발송은 모든 지표와 분기에서 빼요.</p></div>
+      <div class="card"><span class="rn">03</span><b>쿠폰 사용은 POST만</b><p>고객 페이지는 바코드 조회만, 사용 처리는 매장 직원이 POST로 해요.</p></div>
+      <div class="card"><span class="rn">04</span><b>개인정보 보호</b><p>LLM에 이름 · 이메일 · 휴대폰을 보내지 않고, 가드레일은 코드로 적용해요.</p></div>
+    </div>
+  </section>
+
+  <!-- 07 STACK -->
+  <section class="sec">
+    <div class="sh"><span class="no">07</span><span class="lab">PRODUCTION CREDITS</span></div>
+    <h2>스택은 <span class="hl">하나로 확정</span></h2>
+    <div class="stack">
+      <dl>
+        <div><dt>프론트엔드</dt><dd>Next.js 15 · React 19 · TypeScript · TanStack Query</dd></div>
+        <div><dt>백엔드</dt><dd>Spring Boot 4 · JDK 21 · Maven</dd></div>
+        <div><dt>인증</dt><dd>Spring Security + JWT(httpOnly 쿠키) · CSRF</dd></div>
+        <div><dt>데이터</dt><dd>PostgreSQL 17 · MyBatis · Flyway (17개 테이블)</dd></div>
+        <div><dt>연동 · AI</dt><dd>SMTP / SES · S3 · Gemini API</dd></div>
+        <div><dt>인프라</dt><dd>Docker Compose(로컬) → AWS Amplify · EC2 · RDS</dd></div>
       </dl>
-      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-        <div class="wc"><span class="mono">Why 01</span><b>로컬 → 운영 전환</b><p>발송 · 파일 · LLM을 인터페이스 뒤에 두어 프로필만 바꿔 배포해요.</p></div>
-        <div class="wc"><span class="mono">Why 02</span><b>MyBatis + Flyway</b><p>타겟팅 동적 SQL을 직접 제어하고, 스키마는 마이그레이션으로만 바꿔요.</p></div>
-        <div class="wc"><span class="mono">Why 03</span><b>DB 폴링 스케줄러</b><p>SKIP LOCKED로 별도 큐 없이 중복 발송을 막아요.</p></div>
+      <div class="whys">
+        <div class="card"><span class="why">WHY 01</span><b>로컬 → 운영 전환</b><p>발송 · 파일 · LLM을 인터페이스 뒤에 두어 프로필만 바꿔 AWS로 배포</p></div>
+        <div class="card"><span class="why">WHY 02</span><b>MyBatis + Flyway</b><p>타겟팅 동적 SQL을 직접 제어하고, 스키마는 마이그레이션으로만 변경</p></div>
+        <div class="card"><span class="why">WHY 03</span><b>DB 폴링 스케줄러</b><p>DB 폴링과 SKIP LOCKED로 별도 큐 없이 중복 처리를 방지</p></div>
       </div>
     </div>
   </section>
 
-  <!-- 07 PROCESS : 진행 일정 + 협업 방식 -->
-  <section style="padding: 130px 72px 0; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Process · 09/11 — 10/30</span><h2 class="kserif" style="margin: 0; font-size: 32px">7주, 6단계로 진행</h2></div><p style="margin: 0; font-size: 15px; color: #A3A98F; text-align: right">저장소 3개(문서 · 백엔드 · 프론트엔드),<br>모든 변경은 PR로만 병합했어요.</p></div>
-    <ol class="steps">
-      <li><span class="mono">09/11 — 09/19</span><b>기획 · 설계</b><small>PRD · ERD · API 계약</small></li>
-      <li><span class="mono">09/18 — 09/25</span><b>기반 구축</b><small>저장소 · 인프라 · 인증</small></li>
-      <li class="on"><span class="mono">09/24 — 10/16</span><b>핵심 기능 개발</b><small>발송 큐 · 엔진 · 쿠폰 · AI</small></li>
-      <li><span class="mono">10/14 — 10/23</span><b>점검 · 보완</b><small>PRD 점검 · 추가 수정</small></li>
-      <li><span class="mono">10/22 — 10/27</span><b>운영 배포</b><small>AWS 배포 · 재검증</small></li>
-      <li><span class="mono">10/27 — 10/30</span><b>최종 점검</b><small>시연 · 배포</small></li>
+  <!-- 08 SCHEDULE -->
+  <section class="sec">
+    <div class="sh"><span class="no">08</span><span class="lab">PROMOTION SCHEDULE</span><span class="tag">09/11 — 10/30 · 7주</span></div>
+    <h2>저장소 3개, <span class="hl">PR로만 병합</span></h2>
+    <ol class="sched">
+      <li><span>09/11 — 09/19</span><b>기획 및 설계</b><small>PRD · ERD · API 계약</small></li>
+      <li><span>09/18 — 09/25</span><b>기반 구축</b><small>저장소 · 인프라 · 인증</small></li>
+      <li class="on"><span>09/24 — 10/16</span><b>핵심 기능 개발</b><small>발송 큐 · 엔진 · 쿠폰 · AI</small></li>
+      <li><span>10/14 — 10/23</span><b>점검 및 보완</b><small>PRD 점검 · 추가 수정</small></li>
+      <li><span>10/22 — 10/27</span><b>운영 배포</b><small>AWS 배포 · 재검증</small></li>
+      <li><span>10/27 — 10/30</span><b>최종 점검</b><small>시연 · 배포</small></li>
     </ol>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">Roles</span><p>고객 · 발송 · 전환 구간으로 영역을 나누고, 다른 구간 테이블은 조회만, 쓰기는 담당 서비스로만 했어요.</p></div>
-      <div class="wc"><span class="mono">Communication</span><p>구간 사이 연결 지점을 인터페이스로 먼저 합의하고, stub으로 병렬 개발했어요.</p></div>
-      <div class="wc"><span class="mono">Rules</span><p>PR 필수 · 승인 1명, feature/ · fix/ 브랜치와 한글 커밋을 작은 단위로 나눴어요.</p></div>
+    <div class="g3">
+      <div class="card"><b>폴리레포</b><p>메인(문서 · 인프라) · withus_backend · withus_frontend 독립 저장소 3개</p></div>
+      <div class="card"><b>브랜치 · 커밋</b><p>feature/ · fix/ · dev/ · hotfix/ 브랜치, 한글 커밋 메시지를 작은 단위로</p></div>
+      <div class="card"><b>PR 리뷰</b><p>PR 필수 · 승인 1명, 구간 사이 연결 지점은 인터페이스로 먼저 합의하고 stub으로 병렬 개발</p></div>
     </div>
   </section>
 
-  <!-- 08 RESULT : 자가진단 수치 -->
-  <section style="padding: 130px 72px 0; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Result</span><h2 class="kserif" style="margin: 0; font-size: 32px">자가진단 기록</h2></div><span class="mono">Team · Local env · 2026-10</span></div>
-    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
-      <div class="wc metric"><strong>40<small>/40</small></strong><b>PRD 완료 기준</b><p>시연 시나리오 전 항목 충족</p></div>
-      <div class="wc metric"><strong>2.3<small>초</small></strong><b>CSV 1만 행 업로드</b><p>500행 배치 insert, 기준 30초 이내</p></div>
-      <div class="wc metric"><strong>37<small>ms</small></strong><b>10만 명 타겟팅 미리보기</b><p>최대치 기준, 목표 2초 이내</p></div>
-      <div class="wc metric"><strong>700<small>여 건</small></strong><b>백엔드 테스트 통과</b><p>최종 코드 기준, 로컬 환경</p></div>
+  <!-- 09 CHART RECORD -->
+  <section class="sec">
+    <div class="sh"><span class="no">09</span><span class="lab">CHART RECORD</span><span class="tag blue">팀 전체 · 로컬 개발 환경 기준 (2026-10)</span></div>
+    <h2>자가진단 <span class="hl">차트 기록</span></h2>
+    <div class="g4 metrics">
+      <div class="card"><strong>40<small>/40</small></strong><b>PRD 완료 기준</b><p>시연 시나리오 전 항목 충족</p></div>
+      <div class="card"><strong>2.3<small>초</small></strong><b>CSV 1만 행 업로드</b><p>500행 배치 insert, 기준 30초 이내</p></div>
+      <div class="card"><strong>37<small>ms</small></strong><b>10만 명 타겟팅 미리보기</b><p>최대치 기준, 목표 2초 이내</p></div>
+      <div class="card"><strong><small>약</small>700<small>여 건</small></strong><b>백엔드 테스트 통과</b><p>최종 코드 기준, 로컬 환경</p></div>
     </div>
   </section>
 
-  <!-- 09 RETROSPECTIVE : 회고 -->
-  <section style="padding: 130px 72px 0; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px; align-items: start">
-    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Retrospective</span><h2 class="kserif" style="margin: 0; font-size: 32px">돌아보며</h2></div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">Q1 — Best</span><p>PRD 기준 40/40을 채우고, 주요 기능과 AI 2종을 완료했어요. 10만 명 규모 부하까지 검증했어요.</p></div>
-      <div class="wc"><span class="mono">Q2 — Regret</span><p>정상 종료 때 선점분이 누락되는 문제를 통합 점검에서야 발견했고, 디자인 개편과 배포가 후반으로 밀렸어요.</p></div>
-      <div class="wc"><span class="mono">Q3 — Learned</span><p>타이밍 테스트는 느린 환경 기준으로 작성하고, '중복보다 누락' 원칙과 작은 PR로 안정성을 지켰어요.</p></div>
+  <!-- 10 INTERVIEW : 회고 -->
+  <section class="sec">
+    <div class="sh"><span class="no">10</span><span class="lab">BEHIND THE SCENES</span></div>
+    <h2>비하인드 <span class="hl">인터뷰</span></h2>
+    <div class="g3 qa">
+      <div class="card"><span class="q">Q1</span><b>가장 잘한 점은?</b><p>PRD 기준 40/40을 채우고, 주요 기능과 AI 2종을 완료했어요. 10만 명 규모 부하까지 검증했어요.</p></div>
+      <div class="card"><span class="q">Q2</span><b>아쉬웠던 점은?</b><p>정상 종료 때 선점분이 누락되는 문제를 통합 점검에서야 발견했고, 디자인 개편과 배포가 후반으로 밀렸어요.</p></div>
+      <div class="card"><span class="q">Q3</span><b>배운 점은?</b><p>타이밍 테스트는 느린 환경 기준으로 작성하고, '중복보다 누락' 원칙과 작은 PR 단위로 안정성을 지켰어요.</p></div>
     </div>
   </section>
 
-  <section class="metal" style="position: relative; overflow: visible; margin: 140px 72px 0; border-radius: 10px; background: #1B1D15; color: #ECEDE4; padding: 56px 48px; display: flex; justify-content: space-between; align-items: center; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono" style="color: #A3A98F">BACK TO ▶ 01</span><h2 style="margin: 0; display: flex; align-items: baseline; gap: 16px"><span class="serif" style="font-size: 48px; font-weight: 400; letter-spacing: -0.02em">YAKFIT</span><span style="font-size: 18px; font-weight: 500; color: #A3A98F">최저가 약국 찾기 · 1인 제작</span></h2></div><a href="yakfit.html" style="display: inline-flex; align-items: center; gap: 8px; height: 58px; padding: 0 30px; background: #1B1D15; color: #ECEDE4; font-size: 15px; font-weight: 600; text-decoration: none">NEXT <span>▶</span></a></section>
-  <footer style="margin-top: auto; height: 110px; flex: none; padding: 0 72px; display: flex; align-items: center; justify-content: space-between"><a href="yakfit.html" class="mono" style="text-decoration: none">← 01 · YAKFIT</a><span style="display: flex; align-items: center; gap: 24px"><span class="mono" style="display: flex; gap: 24px"><a href="https://www.instagram.com/k.ip0o/" style="text-decoration: none">Instagram</a><a href="https://github.com/Jangahjin" style="text-decoration: none">GitHub</a><a href="mailto:snita8379@gmail.com" style="text-decoration: none">Mail</a></span></span></footer>
+  <!-- NEXT -->
+  <nav class="endnav" aria-label="프로젝트 이동">
+    <a href="yakfit.html" class="prevcard"><span>PREV · 01</span><b>YAKFIT</b><small>최저가 약국 찾기 · 개인 프로젝트</small></a>
+    <a href="home.html#contact" class="nextcard"><span>NEXT</span><b>CONTACT <i>→</i></b><small>GitHub · Email</small></a>
+  </nav>
+
+  <footer class="foot"><a href="home.html#index">← Index</a><span>© 2027 Jang Ah Jin</span><span class="links"><a href="https://github.com/Jangahjin">GitHub</a><a href="mailto:snita8379@gmail.com">Mail</a></span></footer>
 </div>
 </body>
 </html>
