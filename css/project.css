@@ -319,3 +319,21 @@ body[data-theme="withus"] .collab b{color:var(--pop)}
   .collab{padding:14px 16px}
   .collab em{margin-left:0;flex-basis:100%}
 }
+
+/* ==== 홈과 같은 종이 질감 배경: 홈 → 상세로 넘어가도 같은 사이트로 이어지게 ==== */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('../images/paper.jpg') center / cover no-repeat;opacity:.42}
+body{background:#fff}
+.page{background:transparent}
+.flow{background:rgba(245,246,248,.85)}
+.sh .tag{background:rgba(245,246,248,.9)}
+.pg.pg-prev{background:rgba(245,246,248,.9)}
+
+/* ==== 작은 회색 글씨 대비 보강 (11~12px 라벨) ==== */
+.count{font-weight:500;color:#4B5160}
+.card .en{font-size:11px;color:#5B616E}
+.nums em{font-weight:400;color:#5B616E}
+.sh .tag{color:#3D424C}
+.tb .src{color:#5B616E}
+.screens ul,.card p,.tr p{font-weight:400}
+.brand-sub{color:#4E5148}
+.foot-bottom{color:#4B5160}
