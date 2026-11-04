@@ -4,176 +4,180 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=1440">
 <title>YAKFIT — 장아진 포트폴리오</title>
-<meta name="description" content="보이는 것과 작동하는 것, 둘 다 만드는 디자이너 장아진의 포트폴리오">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<meta name="description" content="약 이름으로 근처 최저가 약국을 찾는 서비스 YAKFIT — 장아진 개인 프로젝트">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="css/yakfit.css">
-<script src="js/carousel.js" defer></script>
 </head>
 <body>
-<div class="page" style="width: 1440px; box-sizing: border-box; background: #121310; font-family: 'Geist', 'Noto Sans KR', sans-serif; color: #ECEDE4; display: flex; flex-direction: column">
+<div class="topbar" aria-hidden="true"></div>
+<div class="page">
 
-  <!-- 01 HERO : 프로젝트 타이틀 + 메인 화면 -->
-  <section style="position: relative; height: 720px; flex: none; display: flex; flex-direction: column; border-bottom: 1px solid #3A3D30">
-    <svg class="burst" viewBox="0 0 600 400" style="position: absolute; left: 300px; top: 60px; z-index: 0; opacity: .9; width: 620px; height: 400px" aria-hidden="true"><defs><filter id="sprayLa" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b"></feGaussianBlur><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.2 -.6" result="m"></feColorMatrix><feComposite in="b" in2="m" operator="in"></feComposite></filter></defs><g filter="url(#sprayLa)" fill="#D7F23A"><path d="M300 30 C318 150 345 172 590 200 C345 228 318 250 300 370 C282 250 255 228 10 200 C255 172 282 150 300 30Z"></path><ellipse cx="300" cy="200" rx="120" ry="80"></ellipse></g></svg>
-    <header style="height: 80px; flex: none; padding: 0 72px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid #3A3D30"><span style="display: flex; align-items: baseline; gap: 12px"><a href="home.html" class="serif" style="font-size: 22px; text-decoration: none">Jang Ah Jin</a><span class="mono" style="color: #A3A98F">Session 2027</span></span><span class="mono" style="color: #A3A98F">TRACK 01 / 02 — Web · Solo</span><span class="mono" style="justify-self: end; display: flex; gap: 24px"><a href="home.html#work" style="text-decoration: none">All work</a><a href="home.html#contact" style="text-decoration: none">Contact</a></span></header>
-    <div style="flex: 1; padding: 0 72px; display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 72px; align-items: center">
-      <div style="display: flex; flex-direction: column; gap: 44px">
-        <div class="tags"><span class="tag">Web · 개인 프로젝트</span><span class="tag">2026</span><span class="tag">Solo</span></div>
-        <h1 class="serif" style="position: relative; z-index: 1; margin: 0; font-size: 112px; line-height: 1; letter-spacing: -0.045em">YAKFIT</h1>
-        <p style="margin: 0; font-size: 18px; font-weight: 500">약 이름으로 근처 최저가 약국을 찾는 서비스</p>
-        <p style="margin: 0; width: 480px; font-size: 15px; line-height: 1.75; color: #B9BCAE">기획부터 디자인, 프론트엔드와 백엔드까지<br>혼자 처음부터 만든 웹사이트예요.<br>검색부터 약국 비교까지<br>한 번에 읽히는 흐름이 목표였어요.</p>
-        <div style="display: flex; gap: 10px"><a href="https://github.com/Jangahjin/miniproject1-frontend" class="btn" style="background: #D7F23A; color: #121310">프론트엔드 코드 <span>→</span></a><a href="https://github.com/Jangahjin/miniproject1-backend" class="btn" style="background: transparent; color: #ECEDE4; box-shadow: inset 0 0 0 1px #ECEDE4">백엔드 코드</a></div>
-      </div>
-      <figure style="margin: 0; display: flex; flex-direction: column; gap: 12px"><div class="img filled" style="height: 520px"><img class="mock" src="images/yakfit/landing-01.jpg" alt="YAKFIT 메인 화면 — 약 이름 검색과 인기 검색어" loading="lazy"></div><figcaption class="mono" style="display: flex; justify-content: space-between; font-size: 11px; color: #A3A98F"><span>Main screen</span><span>Self-built</span></figcaption></figure>
+  <!-- 상단 바 : 목차 / 다음 페이지 이동 -->
+  <header class="bar">
+    <a href="home.html#index" class="back">← Index</a>
+    <span class="where">01 / 02 · YAKFIT</span>
+    <a href="withus.html" class="next">다음 프로젝트 <b>WITHUS</b> <span>→</span></a>
+  </header>
+
+  <!-- 01 HERO -->
+  <section class="hero">
+    <div class="pix" aria-hidden="true"><i class="k" style="--x:0;--y:0"></i><i class="k" style="--x:2;--y:0"></i><i class="k" style="--x:1;--y:1"></i><i class="t" style="--x:3;--y:1"></i><i class="t" style="--x:5;--y:1"></i><i class="t" style="--x:4;--y:2"></i><i class="k" style="--x:5;--y:3"></i></div>
+    <span class="mini">Personal project · 2026</span>
+    <p class="kicker">약 이름으로 근처 최저가 약국을 찾는 서비스</p>
+    <h1>YAKFIT</h1>
+    <div class="hero-foot">
+      <p class="who">기획 · UI 디자인 · 프론트엔드 · 백엔드 — 1인 개발</p>
+      <div class="btns"><a href="https://github.com/Jangahjin/miniproject1-frontend" class="btn teal">프론트엔드 코드 →</a><a href="https://github.com/Jangahjin/miniproject1-backend" class="btn line">백엔드 코드 →</a></div>
+      <svg class="arrow" viewBox="0 0 160 70" aria-hidden="true"><path d="M2 35 H150 M120 4 C126 22 136 31 156 35 C136 39 126 48 120 66"/></svg>
     </div>
   </section>
 
-  <!-- 02 OVERVIEW : 문제 정의 + 프로젝트 정보 -->
-  
-
-  <!-- 02-2 FEATURES : 주요 기능 -->
-  <section style="padding: 97px 72px; display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 72px; align-items: start">
-    <div style="display: flex; flex-direction: column; gap: 14px">
-      <span class="mono" style="color: #A3A98F">Overview</span>
-      <h2 class="kserif" style="margin: 0; font-size: 32px; letter-spacing: -0.03em; line-height: 1.35">같은 약, 약국마다 다른 가격.<br>어디가 가장 쌀까?</h2>
-      <p style="margin: 0; max-width: 520px; font-size: 15px; line-height: 1.75; color: #A3A98F">일반 의약품은 판매자가격표시제라<br>같은 제품도 약국의 위치 · 임대료 · 사입 시기에 따라<br><b style="color: #ECEDE4">최대 2배 넘게</b> 가격이 벌어져요.<br>그런데 전자제품처럼 온라인으로 비교할 곳이 없어<br>직접 발품을 팔아야 해요.<br>약 이름 하나로 근처 약국의 가격을<br>모아 보여주는 것에서 출발했어요.</p>
-      <div style="display: flex; flex-direction: column; margin-top: 18px"><span class="mono" style="margin-bottom: 10px">Direction</span><div class="dir"><span>01</span><b>온라인 가격 비교</b><small>여러 약국의 상비약 가격을 한눈에</small></div><div class="dir"><span>02</span><b>위치 기반 최저가 안내</b><small>내 위치 주변 약국부터</small></div><div class="dir"><span>03</span><b>실사용자 가격 제보</b><small>직접 산 가격으로 최신 정보 보완</small></div></div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 20px">
-    <dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #ECEDE4">
-      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Role</dt><dd style="margin: 8px 0 0; font-size: 15px">기획 · UI 디자인 · 개발 (1인)</dd></div>
-      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Contribution</dt><dd style="margin: 8px 0 0; font-size: 15px">100% 단독 구현</dd></div>
-      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Scope</dt><dd style="margin: 8px 0 0; font-size: 15px">기획 → 디자인 → 프론트 → 백엔드·DB</dd></div>
-      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Period</dt><dd style="margin: 8px 0 0; font-size: 15px">2026.09.15 — 10.27</dd></div>
-      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Stack</dt><dd style="margin: 8px 0 0; font-size: 15px">Figma · Next.js · Spring Boot · JPA · PostgreSQL</dd></div>
-      <div style="padding: 18px 0; border-bottom: 1px solid #3A3D30"><dt class="mono" style="font-size: 11px; color: #A3A98F">Links</dt><dd style="margin: 8px 0 0; font-size: 15px"><a href="https://github.com/Jangahjin/miniproject1-frontend">Frontend</a> · <a href="https://github.com/Jangahjin/miniproject1-backend">Backend</a></dd></div>
+  <!-- 02 MOCKUP : 메인 화면 -->
+  <section class="mock-main">
+    <figure class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>yakfit · localhost:3000</span></div><img src="images/yakfit/landing-01.jpg" alt="YAKFIT 메인 화면 — 약 이름 검색과 인기 검색어" loading="lazy"></figure>
+    <dl class="info">
+      <div><dt>Role</dt><dd>기획 · UI 디자인 · 개발 (1인)</dd></div>
+      <div><dt>Contribution</dt><dd>100% 단독 구현</dd></div>
+      <div><dt>Period</dt><dd>2026.09.15 — 10.27</dd></div>
+      <div><dt>Stack</dt><dd>Figma · Next.js · TypeScript<br>Spring Boot · JPA · PostgreSQL</dd></div>
+      <div><dt>Data</dt><dd>약국 1,040 · 약품 40<br>가격 제보 87,614건</dd></div>
     </dl>
-    <div style="padding: 22px 24px; box-shadow: inset 0 0 0 1px #ECEDE4; display: flex; justify-content: space-between; align-items: baseline"><span class="mono" style="color: #A3A98F">Result</span><span style="font-size: 18px">가격 제보 <b class="serif" style="font-size: 34px; font-weight: 400">87,614</b>건으로 추천</span></div>
-    </div>
-  </section><section style="padding: 0 72px 97px; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Features</span><h2 class="kserif" style="margin: 0; font-size: 32px">주요 기능</h2></div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">01 — Search</span><b>약 이름 검색</b><p>약 이름을 입력하면 관련 약품과<br>판매 약국을 바로 찾아요.</p></div>
-      <div class="wc"><span class="mono">02 — Nearby</span><b>근처 약국 가격 비교</b><p>현재 위치를 기준으로 근처 약국의 가격을<br>지도와 목록으로 한눈에 비교해요.</p></div>
-      <div class="wc"><span class="mono">03 — Popular</span><b>인기 상비약 바로 검색</b><p>타이레놀 · 게보린 · 판콜에이 등<br>자주 찾는 상비약을 칩 한 번으로 검색해요.</p></div>
-      <div class="wc"><span class="mono">04 — Sort</span><b>추천순 · 가격순 · 거리순</b><p>가격 · 거리 · 정보의 신선도를 함께 따진 추천순이 기본이고,<br>원하면 가격순 · 거리순으로 바꿔 봐요.</p></div>
-      <div class="wc"><span class="mono">05 — Report</span><b>실사용자 가격 제보</b><p>직접 산 가격을 제보하면<br>대표 가격에 바로 반영돼요.</p></div>
-      <div class="wc"><span class="mono">06 — Admin</span><b>제보 검토 · 운영 현황</b><p>관리자가 이상한 제보를 걸러내고,<br>서비스 운영 지표를 한 화면에서 확인해요.</p></div>
-    </div>
   </section>
 
-  <!-- 02-3 TARGET : 타겟 사용자 -->
-  <section style="padding: 0 72px 97px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px; align-items: start">
-    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Target</span><h2 class="kserif" style="margin: 0; font-size: 32px">이런 분들을 위해</h2></div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">01</span><b>상비약을 자주 사는 소비자</b><p>타이레놀 · 소화제 같은 상비약을<br>조금이라도 싸게 사고 싶은 사람</p></div>
-      <div class="wc"><span class="mono">02</span><b>만성질환자 · 보호자</b><p>정기적으로 약을 사야 해서<br>가격 차이에 민감한 사람</p></div>
-      <div class="wc"><span class="mono">03</span><b>가격 비교에 익숙한 소비자</b><p>다른 물건처럼 약도<br>비교하고 사고 싶은 사람</p></div>
-    </div>
-  </section>
-
-  <!-- 03 SCREENS : 주요 화면 캐러셀 -->
-  <section style="background: #151610 radial-gradient(#2E3123 1.1px, transparent 1.4px) 0 0 / 26px 26px; padding: 40px 0 36px; display: flex; flex-direction: column; align-items: center; gap: 24px">
-    <span class="mono" style="color: #A3A98F">Key screens · 주요 화면</span>
-    <div class="carousel" style="position: relative; width: 1440px; height: 380px; overflow: hidden">
-      <div class="slide img filled" style="--bg: url('../images/yakfit/screen-01.jpg')"><span>01 — 검색 결과</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-02.jpg')"><span>02 — 지도 (모바일)</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-03.jpg')"><span>03 — 약국 상세</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-04.jpg')"><span>04 — 가격 제보</span></div><div class="slide img filled" style="--bg: url('../images/yakfit/screen-05.jpg')"><span>05 — 관리자 통계</span></div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 22px">
-      <button class="arrow" data-carousel="prev" aria-label="이전 화면">←</button>
-      <div style="display: flex; gap: 8px">
-        <button class="dotb" aria-label="1번 화면"></button><button class="dotb" aria-label="2번 화면"></button><button class="dotb" aria-label="3번 화면"></button><button class="dotb" aria-label="4번 화면"></button><button class="dotb" aria-label="5번 화면"></button>
+  <!-- 03 BACKGROUND : 주제 선정 배경 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">주제 선정 배경</span><h2>같은 약,<br>약국마다<br>다른 가격</h2></div>
+    <div class="body">
+      <p class="para">일반 의약품은 <b>판매자가격표시제</b>라 같은 제품도 약국의 위치 · 임대료 · 운영비 · 사입 시기에 따라 가격이 달라져요.<br>그런데 공산품이나 전자제품과 달리 온라인으로 미리 비교할 곳이 없어, 소비자가 직접 발품을 팔아야 해요.</p>
+      <div class="facts">
+        <div class="fact"><span class="eyebrow">Problem 01</span><b>최대 2배 이상</b><p>같은 제품이라도 약국마다 벌어지는 가격 편차</p></div>
+        <div class="fact"><span class="eyebrow">Problem 02</span><b>비교 수단 부재</b><p>온라인으로 가격을 비교 · 통합 조회할 플랫폼이 없음</p></div>
       </div>
-      <button class="arrow" data-carousel="next" aria-label="다음 화면">→</button>
     </div>
   </section>
 
-  <!-- 04 BEFORE / AFTER -->
-  <section style="padding: 130px 72px; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono" style="color: #A3A98F">Before → After</span><h2 class="kserif" style="margin: 0; font-size: 32px">첫 버전에서 완성 화면까지</h2></div><a href="https://github.com/Jangahjin/miniproject1-frontend" class="mono" style="text-decoration: none">코드 보기 ▶</a></div>
-    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-      <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><div class="img filled" style="height: 460px"><img class="mock" src="images/yakfit/landing-02.jpg" alt="디자인 개편 전 첫 버전(약값알림) 검색 결과 화면" loading="lazy"><span>BEFORE — 첫 버전 (약값알림)</span></div></figure>
-      <figure style="margin: 0; position: relative; display: flex; flex-direction: column; gap: 10px"><div class="img filled" style="height: 460px"><img class="mock" src="images/yakfit/landing-03.jpg" alt="개편 후 YAKFIT 검색 결과 화면 — 약국 목록과 지도" loading="lazy"><span>AFTER — 최종 (YAKFIT)</span></div></figure>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px"><div style="display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid #3A3D30"><span class="mono" style="color: #ECEDE4">01</span><div style="display: flex; flex-direction: column; gap: 4px"><b style="font-size: 15px; font-weight: 600">절약 금액을 제목 바로 아래에</b><span style="font-size: 13px; line-height: 1.6; color: #A3A98F">결과를 열자마자 얼마나 아낄 수 있는지부터 읽히게 했어요.</span></div></div><div style="display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid #3A3D30"><span class="mono" style="color: #ECEDE4">02</span><div style="display: flex; flex-direction: column; gap: 4px"><b style="font-size: 15px; font-weight: 600">가격을 가장 크게</b><span style="font-size: 13px; line-height: 1.6; color: #A3A98F">같은 약이라 비교 기준은 결국 가격이라, 카드에서 가장 먼저 보이게 했어요.</span></div></div><div style="display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid #3A3D30"><span class="mono" style="color: #ECEDE4">03</span><div style="display: flex; flex-direction: column; gap: 4px"><b style="font-size: 15px; font-weight: 600">배지로 추천 이유 보여주기</b><span style="font-size: 13px; line-height: 1.6; color: #A3A98F">최저가 · 최단거리 · 오래된 정보를 배지로 달아 순위의 이유가 바로 보여요.</span></div></div></div>
-  </section>
-
-  <!-- 05 PROCESS -->
-  <section style="padding: 0 72px 130px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px">
-    <div style="display: flex; flex-direction: column; gap: 14px; padding-top: 10px">
-      <span class="mono" style="color: #A3A98F">Process</span>
-      <h2 class="kserif" style="margin: 0; font-size: 32px">만든 과정</h2>
-      <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #A3A98F">문제를 정하고, 구조를 짜고,<br>화면을 그린 뒤 직접 개발했어요.</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-      <div class="feat"><span class="ic">01 —</span><b style="font-size: 18px; font-weight: 600">문제 정의</b><p>약값을 비교할 때 불편한 지점을 찾고,<br>서비스의 목표를 정했어요.</p></div>
-      <div class="feat"><span class="ic">02 —</span><b style="font-size: 18px; font-weight: 600">정보 구조</b><p>검색 → 결과 → 약국 상세로 이어지는<br>흐름과 화면 수를 정리했어요.</p></div>
-      <div class="feat"><span class="ic">03 —</span><b style="font-size: 18px; font-weight: 600">UI 디자인</b><p>가격이 가장 먼저 읽히도록<br>글자 크기와 정렬, 색 규칙을 세웠어요.</p></div>
-      <div class="feat"><span class="ic">04 —</span><b style="font-size: 18px; font-weight: 600">개발 · 연결</b><p>프론트엔드와 백엔드·DB를 직접 연결해<br>실제로 동작하는 서비스로 만들었어요.</p></div>
+  <!-- 04 DIRECTION : 문제 해결 방안 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">문제 해결 방안</span><h2>&lt;<em>YAKFIT</em>&gt;</h2></div>
+    <div class="dirs">
+      <article class="dir"><div class="ph"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 화면" loading="lazy"><span>DIRECTION 01</span></div><h3>온라인 가격 비교 제공 <i>→</i></h3><p>여러 약국의 상비약 가격을 한눈에 비교할 수 있는 화면</p></article>
+      <article class="dir"><div class="ph"><img src="images/yakfit/screen-02.jpg" alt="YAKFIT 지도 화면 — 약국별 가격 말풍선" loading="lazy"><span>DIRECTION 02</span></div><h3>위치 기반 최저가 안내 <i>→</i></h3><p>현재 위치 주변 약국의 위치와 가장 저렴한 약국 추천</p></article>
+      <article class="dir"><div class="ph"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"><span>DIRECTION 03</span></div><h3>실사용자 가격 제보 <i>→</i></h3><p>사용자가 직접 산 가격을 공유해 최신 가격 편차를 보완</p></article>
     </div>
   </section>
 
-  <!-- 05-2 SYSTEM : 서비스 구조 -->
-  <section style="padding: 0 72px 97px; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">System</span><h2 class="kserif" style="margin: 0; font-size: 32px">화면부터 데이터베이스까지</h2></div><p style="margin: 0; font-size: 15px; color: #A3A98F; text-align: right">디자인한 화면을 직접 코드로 옮기고,<br>서버와 데이터베이스까지 혼자 연결했어요.</p></div>
-    <div style="display: flex; gap: 16px"><div style="flex: 1; padding: 26px; border-radius: 8px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; display: flex; flex-direction: column; gap: 10px"><span class="mono" style="color: #D7F23A !important">Frontend</span><b style="font-size: 20px; font-weight: 500">Next.js · TypeScript</b><span style="font-size: 13px; color: #A3A98F">검색 · 카카오맵 · 제보 · 관리자 통계</span></div><span style="flex: none; align-self: center; font-family: 'IBM Plex Mono', monospace; font-size: 18px; color: #D7F23A">→</span><div style="flex: 1; padding: 26px; border-radius: 8px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; display: flex; flex-direction: column; gap: 10px"><span class="mono" style="color: #D7F23A !important">Backend · API</span><b style="font-size: 20px; font-weight: 500">Spring Boot · JPA</b><span style="font-size: 13px; color: #A3A98F">추천 점수 계산 · JWT 로그인 · 제보 검증</span></div><span style="flex: none; align-self: center; font-family: 'IBM Plex Mono', monospace; font-size: 18px; color: #D7F23A">→</span><div style="flex: 1; padding: 26px; border-radius: 8px; background: #1B1D15; box-shadow: 0 0 0 1px #3A3D30; display: flex; flex-direction: column; gap: 10px"><span class="mono" style="color: #D7F23A !important">Database</span><b style="font-size: 20px; font-weight: 500">PostgreSQL</b><span style="font-size: 13px; color: #A3A98F">약국 1,040 · 약품 40 · 제보 87,614건</span></div></div>
+  <!-- 05 TARGET : 타겟 사용자 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">프로젝트 설계</span><h2>타겟 사용자</h2></div>
+    <div class="targets">
+      <div><span class="eyebrow">Target 01</span><b>상비약을 자주 구매하는 소비자</b><p>타이레놀 · 소화제 등 상비약을 조금이라도 저렴하게 사고 싶은 일반 소비자</p></div>
+      <div><span class="eyebrow">Target 02</span><b>만성질환자 및 보호자</b><p>정기적으로 약을 구입해야 해 가격 차이에 민감한 사용자</p></div>
+      <div><span class="eyebrow">Target 03</span><b>가격 비교에 익숙한 알뜰 소비자</b><p>다른 카테고리처럼 의약품도 가격을 비교하고 구매하려는 사용자</p></div>
+    </div>
   </section>
 
-  <!-- 05-2b HOW IT WORKS : 핵심 구현 -->
-  <section style="padding: 0 72px 97px; display: flex; flex-direction: column; gap: 32px">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px"><div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">How it works</span><h2 class="kserif" style="margin: 0; font-size: 32px">믿을 수 있는 가격을 만드는 방법</h2></div><p style="margin: 0; font-size: 15px; color: #A3A98F; text-align: right">제보 가격은 들쭉날쭉해요.<br>그래서 대표 가격을 정하는 규칙부터 세웠어요.</p></div>
-    <div class="flow"><span>가격 제보</span><i>→</i><span>하루 1회 중복 차단</span><i>→</i><span>IQR 이상치 제거</span><i>→</i><span>중앙값 = 대표 가격</span><i>→</i><span class="on">추천 점수로 정렬</span></div>
-    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-      <div class="wc"><span class="mono">01 — Representative price</span><b>평균 대신 중앙값</b><p>최근 90일 제보에서 IQR(1.5배) 밖의 값을 걸러내고 중앙값을 대표 가격으로 써요.<br>90일 안에 제보가 없으면 180일까지 넓혀 다시 계산해요.</p></div>
-      <div class="wc"><span class="mono">02 — Score</span><b>가격 0.60 · 거리 0.25 · 신선도 0.15</b><p>가장 싼 곳만이 아니라, 가깝고 최근에 확인된 곳이 위로 오게<br>세 가지를 가중합한 추천 점수로 정렬해요. 가중치는 설정 파일로 분리했어요.</p></div>
-      <div class="wc"><span class="mono">03 — Write-time aggregation</span><b>제보할 때 미리 계산</b><p>제보가 들어오거나 관리자가 처리할 때 그 약국 · 약품의 대표 가격을 바로 다시 계산해 저장(upsert)해요.<br>검색할 때는 무거운 계산 없이 조인 한 번이면 돼요.</p></div>
-      <div class="wc"><span class="mono">04 — DB constraint</span><b>하루 1회 제보를 DB가 막기</b><p>같은 사용자가 같은 약국 · 약품을 같은 날(KST) 두 번 제보하지 못하게 유니크 인덱스를 걸었어요.<br>날짜 변환을 한국 시간으로 고정해 인덱스에 쓸 수 있게 했어요.</p></div>
+  <!-- 06 FEATURES : 핵심 기능 표 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">프로젝트 주요 기능</span><h2>핵심 기능</h2></div>
+    <table class="ftable">
+      <thead><tr><th>기능</th><th>기능 내용</th></tr></thead>
+      <tbody>
+        <tr><th><i>→</i>약 이름 검색</th><td>약 이름을 입력하면 관련 약품과 판매 약국을 바로 찾아주는 검색</td></tr>
+        <tr><th><i>→</i>근처 약국 최저가 비교</th><td>현재 위치를 기준으로 근처 약국들의 가격을 지도와 목록으로 한눈에 비교</td></tr>
+        <tr><th><i>→</i>인기 상비약 바로가기</th><td>타이레놀 · 게보린 · 판콜에이 등 자주 찾는 상비약을 칩 한 번으로 검색</td></tr>
+        <tr><th><i>→</i>추천 · 가격 · 거리순 정렬</th><td>가격 · 거리 · 정보의 신선도를 함께 따진 추천순이 기본, 가격순 · 거리순으로 전환</td></tr>
+        <tr><th><i>→</i>실사용자 가격 제보</th><td>직접 산 가격을 제보하면 그 약국 · 약품의 대표 가격에 바로 반영</td></tr>
+        <tr><th><i>→</i>관리자 제보 검토</th><td>이상한 제보를 걸러내고, 가격 격차 · 운영 현황 통계를 한 화면에서 확인</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 07 SCREENS : 사용자 화면 목업 -->
+  <section class="sec screens">
+    <div class="center-head"><span class="eyebrow">프로젝트 주요 기능</span><h2>사용자 화면</h2></div>
+    <div class="shots">
+      <figure><div class="frame"><img src="images/yakfit/screen-01.jpg" alt="YAKFIT 검색 결과 — 약국 목록과 지도" loading="lazy"></div><figcaption><b>지도 기반 가격 비교</b><span>카카오맵에 주변 약국 위치와 판매가를 말풍선으로 표시</span><span>반경 500m ~ 5km 조절, 추천순 · 가격순 · 거리순 정렬</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-03.jpg" alt="YAKFIT 약국 상세 화면" loading="lazy"></div><figcaption><b>약국 상세</b><span>가격 · 위치 · 영업 정보를 한 화면에서 확인</span><span>최저가 · 최단거리 · 오래된 정보 배지로 판단 근거 제공</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-04.jpg" alt="YAKFIT 가격 제보 화면" loading="lazy"></div><figcaption><b>실사용자 가격 제보</b><span>직접 산 가격을 제보하면 대표 가격을 바로 다시 계산</span><span>같은 약국 · 약품은 하루 한 번만 제보 가능</span></figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/screen-05.jpg" alt="YAKFIT 관리자 통계 — 가격 격차 Top 10" loading="lazy"></div><figcaption><b>관리자 화면 · 서비스 운영 현황</b><span>지역 간 평균가 차이가 큰 약품 Top 10</span><span>제보 검토와 이상치 처리</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 08 BEFORE / AFTER -->
+  <section class="sec">
+    <div class="row-head"><div><span class="eyebrow">디자인 개선</span><h2>첫 버전에서 완성 화면까지</h2></div></div>
+    <div class="ba">
+      <figure><div class="frame"><img src="images/yakfit/landing-02.jpg" alt="디자인 개편 전 첫 버전(약값알림) 검색 결과 화면" loading="lazy"></div><figcaption><span class="tagk">BEFORE</span>첫 버전 (약값알림)</figcaption></figure>
+      <figure><div class="frame"><img src="images/yakfit/landing-03.jpg" alt="개편 후 YAKFIT 검색 결과 화면 — 약국 목록과 지도" loading="lazy"></div><figcaption><span class="tagt">AFTER</span>최종 (YAKFIT)</figcaption></figure>
+    </div>
+    <ol class="points">
+      <li><span>01</span><b>절약 금액을 제목 바로 아래에</b><p>결과를 열자마자 얼마나 아낄 수 있는지부터 읽히게 했어요.</p></li>
+      <li><span>02</span><b>가격을 가장 크게</b><p>같은 약이라 비교 기준은 결국 가격이라, 카드에서 가장 먼저 보이게 했어요.</p></li>
+      <li><span>03</span><b>배지로 추천 이유 보여주기</b><p>최저가 · 최단거리 · 오래된 정보를 배지로 달아 순위의 이유가 바로 보여요.</p></li>
+    </ol>
+  </section>
+
+  <!-- 09 STACK : 사용 기술 스택 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">기능 구현 방식</span><h2>사용 기술 스택</h2></div>
+    <div class="stack">
+      <div class="st"><span class="lab">Frontend</span><b>Next.js · TypeScript</b><p>검색 · 카카오맵 · 제보 · 관리자 통계</p></div>
+      <i>→</i>
+      <div class="st"><span class="lab">Backend · API</span><b>Spring Boot · JPA</b><p>추천 점수 계산 · JWT 로그인 · 제보 검증</p></div>
+      <i>→</i>
+      <div class="st"><span class="lab">Database</span><b>PostgreSQL</b><p>약국 1,040 · 약품 40 · 제보 87,614건</p></div>
+    </div>
+  </section>
+
+  <!-- 10 HOW IT WORKS : 핵심 구현 -->
+  <section class="sec">
+    <div class="row-head"><div><span class="eyebrow">기능 구현 방식</span><h2>믿을 수 있는 가격을 만드는 방법</h2></div><p>제보 가격은 들쭉날쭉해요.<br>그래서 대표 가격을 정하는 규칙부터 세웠어요.</p></div>
+    <ol class="flow"><li>가격 제보</li><li>하루 1회 중복 차단</li><li>IQR 이상치 제거</li><li>중앙값 = 대표 가격</li><li class="on">추천 점수로 정렬</li></ol>
+    <div class="how">
+      <div><span class="num">1</span><b>평균 대신 중앙값</b><p>최근 90일 제보에서 IQR(1.5배) 밖의 값을 걸러내고 중앙값을 대표 가격으로 써요. 90일 안에 제보가 없으면 180일까지 넓혀 다시 계산해요.</p></div>
+      <div><span class="num">2</span><b>가격 0.60 · 거리 0.25 · 신선도 0.15</b><p>가장 싼 곳만이 아니라 가깝고 최근에 확인된 곳이 위로 오게, 세 가지를 가중합한 추천 점수로 정렬해요. 가중치는 설정 파일로 분리했어요.</p></div>
+      <div><span class="num">3</span><b>쓰기 시점 집계</b><p>제보가 들어오거나 관리자가 처리할 때 그 약국 · 약품의 대표 가격을 바로 다시 계산해 저장(upsert)해요. 검색할 때는 무거운 계산 없이 조인 한 번이면 돼요.</p></div>
+      <div><span class="num">4</span><b>DB 제약조건의 IMMUTABLE 트릭</b><p>같은 사용자가 같은 약국 · 약품을 같은 날(KST) 두 번 제보하지 못하게 유니크 인덱스를 걸었어요. 날짜 변환을 한국 시간으로 고정해 인덱스에 쓸 수 있게 했어요.</p></div>
     </div>
     <pre class="code"><code><i>-- 같은 사용자가 같은 (약국, 약품)에 같은 날(KST) 중복 제보하는 것을 차단</i>
+<i>-- timestamptz → date 캐스트는 세션 TimeZone에 의존해 STABLE이라 인덱스 표현식에 쓸 수 없다.</i>
+<i>-- AT TIME ZONE 'Asia/Seoul'로 timestamp로 고정하면 IMMUTABLE이 된다.</i>
 <b>CREATE UNIQUE INDEX</b> uq_report_user_pair_day
     <b>ON</b> price_report (user_id, pharmacy_id, drug_id,
-        ((created_at <b>AT TIME ZONE</b> 'Asia/Seoul')::date))
-    <b>WHERE</b> user_id <b>IS NOT NULL AND</b> status = 'ACTIVE';</code></pre>
+        ((created_at <b>AT TIME ZONE</b> <s>'Asia/Seoul'</s>)::date))
+    <b>WHERE</b> user_id <b>IS NOT NULL AND</b> status = <s>'ACTIVE'</s>;</code></pre>
   </section>
 
-  <!-- 05-3 RETROSPECTIVE : 배운 점 -->
-  <section style="padding: 0 72px 97px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 56px">
-    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono">Retrospective</span><h2 class="kserif" style="margin: 0; font-size: 32px">만들며 배운 것</h2></div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px"><div class="feat"><span class="mono">01 —</span><b style="font-size: 18px; font-weight: 500">잘된 점</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">PRD · API · DB 문서를 코드보다 먼저 확정해<br>구현 중에 설계를 다시 논의하지 않았어요.<br>대표 가격 · 추천 점수 로직은 테스트로 고정했어요.</p></div><div class="feat"><span class="mono">02 —</span><b style="font-size: 18px; font-weight: 500">가장 어려웠던 점</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">제보 가격은 들쭉날쭉해서 평균을 내면 순위가 흔들렸어요.<br>IQR로 이상치를 거르고 중앙값을 대표가로 삼았는데,<br>JPA로는 표현이 안 돼 PostgreSQL SQL로 직접 짰어요.</p></div><div class="feat"><span class="mono">03 —</span><b style="font-size: 18px; font-weight: 500">다음에 더할 기능</b><p style="margin: 0; font-size: 13px; line-height: 1.7; color: #A3A98F">영수증 사진에서 가격을 읽어 오는 OCR 제보와<br>관심 약의 가격 변동 알림 · 즐겨찾기를<br>더하고 싶어요.</p></div></div>
+  <!-- 11 PROCESS : 만든 과정 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">프로젝트 진행</span><h2>만든 과정</h2></div>
+    <ol class="steps">
+      <li><span>01</span><b>문제 정의</b><p>약값을 비교할 때 불편한 지점을 찾고, 서비스의 목표를 정했어요.</p></li>
+      <li><span>02</span><b>정보 구조</b><p>검색 → 결과 → 약국 상세로 이어지는 흐름과 화면 수를 정리했어요.</p></li>
+      <li><span>03</span><b>UI 디자인</b><p>가격이 가장 먼저 읽히도록 글자 크기와 정렬, 색 규칙을 세웠어요.</p></li>
+      <li><span>04</span><b>개발 · 연결</b><p>프론트엔드와 백엔드 · DB를 직접 연결해 실제로 동작하는 서비스로 만들었어요.</p></li>
+    </ol>
   </section>
 
-  <!-- 06 DESIGN SYSTEM : 컴포넌트 목록 -->
-  <section style="background: #151610 radial-gradient(#2E3123 1.1px, transparent 1.4px) 0 0 / 26px 26px; padding: 72px 0; display: flex; flex-direction: column; gap: 18px">
-    <div style="padding: 0 72px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 10px"><span class="mono" style="color: #A3A98F">Design system</span><h2 class="kserif" style="margin: 0; font-size: 32px">컴포넌트</h2></div>
-    <div class="mq"><div class="mtrack">
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 70%"></span><span class="sig">Search bar</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Pharmacy card</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 60%"></span><span class="sig">Price tag</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 85%"></span><span class="sig">Map pin</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 70%"></span><span class="sig">Search bar</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Pharmacy card</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 60%"></span><span class="sig">Price tag</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 85%"></span><span class="sig">Map pin</span></div>
-    </div></div>
-    <div class="mq"><div class="mtrack rev">
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 75%"></span><span class="sig">Color</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 64%"></span><span class="sig">Typography</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Button</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 50%"></span><span class="sig">Filter chip</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 75%"></span><span class="sig">Color</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 64%"></span><span class="sig">Typography</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 80%"></span><span class="sig">Button</span></div>
-      <div class="tcard"><span class="ln"></span><span class="ln" style="width: 50%"></span><span class="sig">Filter chip</span></div>
-    </div></div>
+  <!-- 12 RETROSPECTIVE : 회고 -->
+  <section class="sec two">
+    <div class="head"><span class="eyebrow">회고</span><h2>잘된 점과<br>아쉬운 점</h2></div>
+    <div class="retro">
+      <div class="good"><span class="lab">잘된 점</span><p>PRD · API · DB 문서를 코드보다 먼저 확정해 구현 중에 설계를 다시 논의하지 않았어요.</p><p>이상치에 강한 대표 가격 · 추천 점수 로직을 테스트로 고정했어요.</p></div>
+      <div class="hard"><span class="lab">어려웠던 점</span><p>제보 가격은 들쭉날쭉해서 평균을 내면 순위가 흔들렸어요. IQR로 이상치를 거르고 중앙값을 대표가로 삼았는데, JPA로는 표현이 안 돼 PostgreSQL SQL로 직접 짰어요.</p></div>
+      <div class="todo"><span class="lab">다음에 더할 기능</span><p>영수증 사진에서 가격을 읽어 오는 OCR 제보와, 관심 약의 가격 변동 알림 · 즐겨찾기를 더하고 싶어요.</p></div>
+    </div>
   </section>
 
-  <!-- 07 NEXT ROOM -->
-  <section class="metal" style="position: relative; overflow: visible; margin: 140px 72px 0; border-radius: 10px; background: #1B1D15; color: #ECEDE4; padding: 56px 48px; display: flex; justify-content: space-between; align-items: center; gap: 40px">
-    <div style="display: flex; flex-direction: column; gap: 12px"><span class="mono" style="color: #A3A98F">NEXT TRACK ▶ 02</span><h2 class="serif" style="margin: 0; font-size: 48px; letter-spacing: -0.02em">WithUs <span style="font-family: 'Noto Sans KR', sans-serif; font-size: 22px; color: #A3A98F; letter-spacing: -0.02em">— 타겟팅 CRM 마케팅 자동화</span></h2></div>
-    <a href="withus.html" class="btn" style="height: 58px; padding: 0 30px; background: #1B1D15; color: #ECEDE4; font-size: 15px">NEXT <span>▶</span></a>
-  </section>
+  <!-- 13 NEXT -->
+  <a href="withus.html" class="nextband">
+    <span class="mini">Next project · 02</span>
+    <b>WITHUS</b>
+    <span class="desc">타겟팅 기반 CRM 마케팅 자동화 솔루션</span>
+    <svg class="arrow" viewBox="0 0 160 70" aria-hidden="true"><path d="M2 35 H150 M120 4 C126 22 136 31 156 35 C136 39 126 48 120 66"/></svg>
+  </a>
 
-  <!-- 08 FOOTER -->
-  <footer style="margin-top: auto; height: 110px; flex: none; padding: 0 72px; display: flex; align-items: center; justify-content: space-between"><a href="home.html#work" class="mono" style="text-decoration: none">← All work</a><span style="display: flex; align-items: center; gap: 24px"><span class="mono" style="display: flex; gap: 24px"><a href="https://www.instagram.com/k.ip0o/" style="text-decoration: none">Instagram</a><a href="https://github.com/Jangahjin" style="text-decoration: none">GitHub</a><a href="mailto:snita8379@gmail.com" style="text-decoration: none">Mail</a></span></span></footer>
+  <footer class="foot"><a href="home.html#index">← Index</a><span>© 2027 Jang Ah Jin</span><span class="links"><a href="https://github.com/Jangahjin">GitHub</a><a href="mailto:snita8379@gmail.com">Mail</a></span></footer>
 </div>
 </body>
 </html>
