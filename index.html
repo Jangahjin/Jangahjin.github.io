@@ -19,7 +19,8 @@
   * { box-sizing: border-box; word-break: keep-all; }
   html, body { margin: 0; height: 100%; overflow: hidden; }
   /* 구겨진 종이 질감 배경 (화이트 계열) */
-  body { background: #F1F0EC url('images/paper.jpg') center / cover no-repeat; }
+  body { background: #FFFFFF; }
+  body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: url('images/paper.jpg') center / cover no-repeat; opacity: .5; }
 
   .stage { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 0 20px; }
   .stage.out { animation: out .8s cubic-bezier(.7,0,.2,1) forwards; }
@@ -43,10 +44,10 @@
 </style>
 </head>
 <body>
-  <main class="stage" id="stage" aria-label="장아진 포트폴리오 인트로">
+  <main class="stage" id="stage" aria-label="장아진 프론트엔드 개발자 포트폴리오 인트로">
     <svg class="burst" viewBox="0 0 600 400" aria-hidden="true"><defs><filter id="spray" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b"/><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.2 -.6" result="m"/><feComposite in="b" in2="m" operator="in"/></filter></defs><g filter="url(#spray)" fill="#D7F23A"><path d="M300 30 C318 150 345 172 590 200 C345 228 318 250 300 370 C282 250 255 228 10 200 C255 172 282 150 300 30Z"/><ellipse cx="300" cy="200" rx="120" ry="80"/></g></svg>
     <h1 class="word">PORTFOLIO</h1>
-    <p class="line">보이는 것과 작동하는 것,<br>둘 다 만드는 디자이너 <b>장아진</b>입니다.</p>
+    <p class="line">보이는 것과 작동하는 것,<br>둘 다 만드는 프론트엔드 개발자 <b>장아진</b>입니다.</p>
   </main>
 
   <a href="home.html" class="skip" id="skip">Skip</a>
