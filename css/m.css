@@ -309,3 +309,9 @@ p[style*="font-size: 24px"] b{font-weight:800}
 
 /* 스킬 라벨이 한글일 때: 모노 자간 대신 Pretendard로 */
 .row em.kr{font-family:"Pretendard Variable",Pretendard,sans-serif!important;letter-spacing:-.01em!important;font-size:12px!important;font-weight:700!important;color:#3F423A!important}
+
+/* 프로젝트 썸네일: 필터·점 무늬 없이 실제 화면을 바로 보여 준다 (폰은 hover가 없어 가려진 채로 남던 문제) */
+.img.thumb{background:#FFFFFF!important;box-shadow:0 0 0 1px rgba(18,19,16,.14),0 18px 40px -26px rgba(18,19,16,.45)!important}
+.img.thumb .mock,.card:hover .img.thumb .mock{filter:none!important;object-position:top left;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.img.filled.thumb::after{display:none!important}
+.card:hover .img.thumb .mock{transform:scale(1.03)}
