@@ -211,3 +211,13 @@ html:not(.js) .hl{background-size:100% 100%}
   .js .rv{opacity:1;transform:none;transition:none}
   .hl{transition:none;background-size:100% 100%}
 }
+
+/* 상단 로고 = 홈과 같은 "JANG AH JIN · SESSION 2027" */
+.brand{display:flex;align-items:baseline;gap:12px}
+.brand-name{font-family:'Big Shoulders Display',sans-serif;font-size:24px;font-weight:400;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:var(--ink)}
+.brand-sub{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#5F6256}
+/* 가로가 넓은 모바일 캡처는 폭에 맞추고 위에서부터 보이게 (양옆 잘림 방지) */
+.phone .screen img.fitw{height:auto;object-fit:contain}
+.phone .screen:has(img.fitw){background:#F3F6FF}
+/* 하단 이동은 프로젝트끼리만: 다음 버튼은 오른쪽 칸, 이전 버튼은 왼쪽 칸 */
+.pager .pg-next:only-child{grid-column:2}

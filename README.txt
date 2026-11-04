@@ -50,6 +50,7 @@
   images/thumb/main-02.jpg                      → home.html, m.html
   images/withus/analytics.jpg                   → withus.html
   images/withus/dashboard.jpg                   → withus.html
+  images/withus/m-coupon.jpg · m-unsubscribe.jpg → withus.html (휴대폰 목업)
   images/withus/project-01.jpg                  → withus.html
   images/withus/project-02.jpg                  → withus.html
   images/withus/project-03.jpg                  → withus.html
@@ -60,8 +61,9 @@
   images/yakfit/landing-01.jpg                  → yakfit.html
   images/yakfit/landing-02.jpg                  → yakfit.html
   images/yakfit/landing-03.jpg                  → yakfit.html
+  images/yakfit/m-home.jpg · m-search.jpg      → yakfit.html (실제 모바일 390px 캡처)
+  images/yakfit/m-pharmacy.jpg                  → (예비) 모바일 약국 상세
   images/yakfit/screen-01.jpg                   → yakfit.html
-  images/yakfit/screen-02.jpg                   → yakfit.html
   images/yakfit/screen-03.jpg                   → yakfit.html
   images/yakfit/screen-04.jpg                   → yakfit.html
   images/yakfit/screen-05.jpg                   → yakfit.html
