@@ -224,3 +224,22 @@ body{margin:0;background:#121310}
 img.mock{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ==== 발표 자료 기반 추가 섹션 (2026-11) ==== */
+.wc{position:relative;padding:26px;border-radius:8px;background:#1B1D15;box-shadow:0 0 0 1px #3A3D30;display:flex;flex-direction:column;gap:10px;transition:transform .3s,box-shadow .3s}
+.wc:hover{transform:translateY(-4px);box-shadow:0 0 0 1px #D7F23A}
+.wc b{font-size:18px;font-weight:500!important;color:#ECEDE4}
+.wc p{margin:0;font-size:13px;line-height:1.7!important;color:#A3A98F}
+.dir{display:grid;grid-template-columns:32px 180px 1fr;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid #3A3D30}
+.dir span{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#D7F23A}
+.dir b{font-size:15px;font-weight:500!important}
+.dir small{font-size:13px;color:#A3A98F}
+.flow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:22px 24px;border-radius:8px;box-shadow:inset 0 0 0 1px #3A3D30}
+.flow span{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;box-shadow:inset 0 0 0 1px #4A4D3E;font-size:14px;color:#ECEDE4}
+.flow span.on{background:#D7F23A;box-shadow:none;color:#121310;font-weight:500}
+.flow i{font-style:normal;font-family:'IBM Plex Mono',monospace;color:#D7F23A}
+.code{margin:0;padding:24px 28px;border-radius:8px;background:#0E0F0B;box-shadow:0 0 0 1px #3A3D30;overflow-x:auto;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.8;color:#ECEDE4}
+.code b,.code i{font-family:'IBM Plex Mono',monospace!important}
+.code b{font-weight:500!important;color:#D7F23A}
+.code i{font-style:normal;color:#7D8270}
+@media (prefers-reduced-motion:reduce){.wc{transition:none}}
