@@ -50,19 +50,6 @@ img{display:block;max-width:100%}
 .hero-foot .arrow{margin-left:auto;width:160px;height:70px}
 .arrow path{fill:none;stroke:var(--ink);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
 
-/* 02 MOCKUP */
-.mock-main{margin:0 72px;padding:64px;background:var(--gray);display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center}
-.browser{margin:0;background:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.35),0 0 0 1px var(--line);overflow:hidden}
-.browser-bar{height:36px;display:flex;align-items:center;gap:7px;padding:0 16px;border-bottom:1px solid var(--line)}
-.browser-bar i{width:10px;height:10px;border-radius:50%;background:#D9D9D9}
-.browser-bar span{margin-left:16px;font-family:var(--mono);font-size:11px;color:#9A9A9A}
-.browser img{width:100%;height:560px;object-fit:cover;object-position:top}
-.info{margin:0;display:flex;flex-direction:column}
-.info div{padding:16px 0;border-bottom:1px solid #D6D6D6}
-.info div:first-child{border-top:2px solid var(--ink)}
-.info dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
-.info dd{margin:6px 0 0;font-size:15px;line-height:1.6}
-
 /* 섹션 공통 */
 .sec{padding:140px 72px 0}
 .two{display:grid;grid-template-columns:380px minmax(0,1fr);gap:0 0}
@@ -75,13 +62,9 @@ img{display:block;max-width:100%}
 /* 03 배경 */
 .para{font-size:20px;font-weight:300;line-height:1.85;color:var(--ink2)}
 .para b{font-weight:600;color:var(--ink)}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
-.fact{padding:32px;background:var(--gray)}
-.fact b{display:block;margin:12px 0 10px;font-size:40px;font-weight:300;letter-spacing:-.03em}
-.fact p{font-size:15px;color:var(--sub)}
 
 /* 04 문제 해결 방안 (DIRECTION 카드) */
-.dirs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.dirs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:40px}
 .dir{background:var(--gray);padding-bottom:40px}
 .dir .ph{position:relative;height:220px;margin-bottom:64px}
 .dir .ph img{width:100%;height:100%;object-fit:cover;object-position:top}
@@ -89,13 +72,6 @@ img{display:block;max-width:100%}
 .dir h3{padding:0 30px;font-size:26px;line-height:1.4;letter-spacing:-.02em;display:flex;flex-direction:column;gap:8px}
 .dir h3 i{font-style:normal;font-size:30px;line-height:1}
 .dir p{margin-top:16px;padding:0 30px;font-size:16px;color:var(--ink2)}
-
-/* 05 타겟 */
-.targets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
-.targets > div{padding:32px 28px 0 0;display:flex;flex-direction:column;gap:12px}
-.targets > div + div{padding-left:28px;border-left:1px solid var(--line)}
-.targets b{font-size:22px;font-weight:400;letter-spacing:-.02em}
-.targets p{font-size:15px;color:var(--sub)}
 
 /* 06 핵심 기능 표 */
 .ftable{width:100%;border-collapse:separate;border-spacing:0 3px}
@@ -157,23 +133,6 @@ img{display:block;max-width:100%}
 .code b{font-weight:500;color:#E6935A}
 .code s{text-decoration:none;color:#9CCB7A}
 
-/* 11 과정 */
-.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
-.steps li{position:relative;padding:32px 24px 0 0;display:flex;flex-direction:column;gap:10px}
-.steps li::before{content:"";position:absolute;left:0;top:-7px;width:12px;height:12px;background:var(--teal)}
-.steps span{font-family:var(--mono);font-size:13px;color:var(--teal)}
-.steps b{font-size:22px;font-weight:400}
-.steps p{font-size:15px;color:var(--sub)}
-
-/* 12 회고 */
-.retro{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.retro > div{padding:32px;display:flex;flex-direction:column;gap:14px;background:var(--gray)}
-.retro .good{background:var(--teal);color:#fff}
-.retro .good .lab{color:#fff}
-.retro p{font-size:15px;line-height:1.8}
-.retro .good p{color:#fff}
-.retro .lab{font-family:var(--sans);font-size:18px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink)}
-
 /* 13 NEXT */
 .nextband{margin:160px 72px 0;position:relative;display:flex;align-items:center;gap:40px;padding:56px 64px;background:var(--ink);color:#fff;transition:background .3s}
 .nextband .mini{color:var(--teal2)}
@@ -188,3 +147,23 @@ img{display:block;max-width:100%}
 .foot a:hover{color:var(--teal)}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nextband,.nextband .arrow,.next,.btn{transition:none}}
+
+/* 목업 이미지 : 노트북 + 휴대폰 */
+.mockups{position:relative;margin:0 72px;height:720px;background:var(--gray);overflow:hidden}
+.laptop{position:absolute;left:64px;top:80px;margin:0;width:760px}
+.laptop .lid{position:relative;padding:22px 22px 26px;border-radius:22px 22px 0 0;background:#1A1A1A;box-shadow:inset 0 0 0 2px #333}
+.laptop .cam{position:absolute;left:50%;top:9px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#444}
+.laptop .screen{height:430px;background:#fff;overflow:hidden}
+.laptop .screen img{width:100%;height:100%;object-fit:cover;object-position:top}
+.laptop .base{height:22px;margin:0 -56px;border-radius:0 0 18px 18px;background:linear-gradient(#D9D9D9,#B9B9B9);box-shadow:0 26px 40px -24px rgba(0,0,0,.45)}
+.laptop .base::before{content:"";display:block;width:140px;height:8px;margin:0 auto;border-radius:0 0 8px 8px;background:#A8A8A8}
+.phone{position:absolute;left:690px;top:170px;margin:0;width:240px;height:490px;padding:14px;border-radius:40px;background:#111;box-shadow:0 30px 50px -24px rgba(0,0,0,.5),inset 0 0 0 2px #333}
+.phone .notch{position:absolute;left:50%;top:14px;width:90px;height:22px;margin-left:-45px;border-radius:0 0 14px 14px;background:#111;z-index:2}
+.phone .screen{height:100%;border-radius:28px;overflow:hidden;background:#fff}
+.phone .screen img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.mockups .info{position:absolute;right:64px;top:64px;width:250px;margin:0;display:flex;flex-direction:column}
+.info div{padding:14px 0;border-bottom:1px solid #D6D6D6}
+.info div:first-child{border-top:2px solid var(--ink)}
+.info dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.info dd{margin:6px 0 0;font-size:14px;line-height:1.6}
+.how p code{font-family:var(--mono);font-size:13px;padding:1px 6px;background:#fff;color:var(--teal)}
