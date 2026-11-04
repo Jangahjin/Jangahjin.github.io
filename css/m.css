@@ -306,3 +306,6 @@ p[style*="font-size: 24px"] b{font-weight:800}
 .page .serif,.page .serif *,.page h1,.page .num{font-family:'Big Shoulders Display',sans-serif!important}
 .page .mono,.page .mono *,.page .row em,.page .tag,.page .cap,.page .skl{font-family:'IBM Plex Mono',monospace!important}
 .page .mono .kr,.page .kr{font-family:'Pretendard Variable',Pretendard,sans-serif!important}
+
+/* 스킬 라벨이 한글일 때: 모노 자간 대신 Pretendard로 */
+.row em.kr{font-family:"Pretendard Variable",Pretendard,sans-serif!important;letter-spacing:-.01em!important;font-size:12px!important;font-weight:700!important;color:#3F423A!important}
