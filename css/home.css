@@ -345,3 +345,7 @@ p[style*="font-size: 24px"] b{font-weight:800}
 .img.thumb .mock,.card:hover .img.thumb .mock{filter:none!important;object-position:top left;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 .img.filled.thumb::after{display:none!important}
 .card:hover .img.thumb .mock{transform:scale(1.03)}
+
+/* 작은 라벨 글씨 대비 보강 */
+.page .mono,.page .mono *{color:#3F423A!important}
+.page .row em{color:#4E5148!important}
