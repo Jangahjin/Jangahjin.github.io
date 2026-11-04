@@ -6,7 +6,7 @@
 <title>YAKFIT — 장아진 프론트엔드 포트폴리오</title>
 <meta name="description" content="약 이름으로 근처 최저가 약국을 찾는 서비스 YAKFIT — Next.js · TypeScript 개인 프로젝트">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="css/yakfit.css?v=20261104c">
+<link rel="stylesheet" href="css/yakfit.css?v=20261104e">
 </head>
 <body>
 <div class="topbar" aria-hidden="true"></div>
@@ -65,8 +65,8 @@
     <table class="ftable">
       <thead><tr><th>기능</th><th>화면에서 하는 일</th></tr></thead>
       <tbody>
-        <tr><th><i>→</i>약 이름 자동완성</th><td>입력하는 동안 관련 약품을 추천하고, 키보드(↑ ↓ Enter)만으로도 선택해 검색</td></tr>
-        <tr><th><i>→</i>지도 기반 가격 비교</th><td>카카오맵에 주변 약국 판매가를 말풍선으로 띄우고, 반경 500m ~ 5km로 조절</td></tr>
+        <tr><th><i>→</i>약 이름 자동완성</th><td>입력하는 동안 관련 약품을 추천, 키보드(↑ ↓ Enter)만으로도 선택</td></tr>
+        <tr><th><i>→</i>지도 기반 가격 비교</th><td>카카오맵에 주변 약국 판매가를 말풍선으로, 반경 500m ~ 5km 조절</td></tr>
         <tr><th><i>→</i>추천 · 가격 · 거리순 정렬</th><td>가격 · 거리 · 신선도를 함께 따진 추천순이 기본, 탭 하나로 정렬 전환</td></tr>
         <tr><th><i>→</i>실사용자 가격 제보</th><td>로그인 후 제보 폼 작성, 로그인 화면을 거쳐도 작성 중인 내용 보존</td></tr>
         </tbody>
@@ -88,10 +88,10 @@
   <section class="sec">
     <div class="row-head"><div><span class="eyebrow">Frontend</span><h2>프론트엔드 구현 포인트</h2></div></div>
     <div class="how">
-      <div><span class="num">1</span><b>서버 상태와 클라이언트 상태 분리</b><p>검색 · 자동완성 · 상세 같은 서버 데이터는 TanStack Query로 캐시하고, 위치 · 로그인 · 제보 초안처럼 화면 사이를 오가는 값만 Redux Toolkit 슬라이스로 관리했어요.</p></div>
-      <div><span class="num">2</span><b>자동완성 300ms 디바운스</b><p>글자를 칠 때마다 요청하지 않도록 <code>useDebouncedValue</code> 훅을 만들고, 검색어가 있을 때만 쿼리가 실행되게 했어요. 키보드 탐색과 ARIA 목록 연결도 함께 넣었어요.</p></div>
-      <div><span class="num">3</span><b>로그인을 거쳐도 제보 내용 유지</b><p>제보 · 마이 · 관리자 경로는 <code>proxy.ts</code>에서 로그인으로 보내는데, 이때 메모리가 비워져요. 작성 중인 초안을 sessionStorage와 동기화해 로그인 후 돌아오면 그대로 이어서 쓸 수 있게 했어요.</p></div>
-      <div><span class="num">4</span><b>카카오맵 SDK를 타입 안전하게</b><p>SDK를 <code>autoload=false</code>로 불러와 준비된 뒤에만 지도를 그리고, 쓰는 API만 TypeScript 인터페이스로 선언했어요. 가격 말풍선은 커스텀 오버레이로 만들고 결과 범위에 맞춰 지도를 이동해요.</p></div>
+      <div><span class="num">1</span><b>서버 상태와 클라이언트 상태 분리</b><p>검색 · 자동완성 · 상세 같은 서버 데이터는 <strong>TanStack Query로 캐시</strong>하고, 위치 · 로그인 · 제보 초안처럼 화면 사이를 오가는 값만 <strong>Redux Toolkit 슬라이스</strong>로 관리했어요.</p></div>
+      <div><span class="num">2</span><b>자동완성 300ms 디바운스</b><p>글자를 칠 때마다 요청하지 않도록 <code>useDebouncedValue</code> 훅을 만들고, <strong>검색어가 있을 때만 쿼리가 실행</strong>되게 했어요. 키보드 탐색과 ARIA 목록 연결도 함께 넣었어요.</p></div>
+      <div><span class="num">3</span><b>로그인을 거쳐도 제보 내용 유지</b><p>제보 · 마이 · 관리자 경로는 <code>proxy.ts</code>에서 로그인으로 보내는데, 이때 메모리가 비워져요. 작성 중인 초안을 <strong>sessionStorage와 동기화</strong>해 로그인 후 돌아오면 그대로 이어서 쓸 수 있게 했어요.</p></div>
+      <div><span class="num">4</span><b>카카오맵 SDK를 타입 안전하게</b><p>SDK를 <code>autoload=false</code>로 불러와 준비된 뒤에만 지도를 그리고, <strong>쓰는 API만 TypeScript 인터페이스로 선언</strong>했어요. 가격 말풍선은 커스텀 오버레이로 만들고 결과 범위에 맞춰 지도를 이동해요.</p></div>
     </div>
   </section>
 

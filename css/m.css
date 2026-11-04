@@ -245,3 +245,28 @@ section[style*="rgba(255,255,255,.72)"]{border-top:1.5px solid #121310;border-bo
 .drawer{background:rgba(255,255,255,.97)!important;border-bottom:1.5px solid #121310!important}
 .drawer a{color:#121310!important;border-color:rgba(18,19,16,.16)!important}
 .menu i{background:#121310!important}
+
+/* ==== 타이포 보완 (2026-11-04) — 강조는 크고 굵게, 보조는 작고 가볍게 ==== */
+.page{letter-spacing:-.015em}
+.page p{line-height:1.75!important}
+mark.hl{color:inherit;background:linear-gradient(transparent 60%,#D7F23A 60%,#D7F23A 92%,transparent 92%);padding:0 .08em;font-weight:600}
+.mono,.mono *{font-size:12px!important;font-weight:500!important;letter-spacing:.08em!important;color:#4E5148!important}
+.mono .kr,.kr{font-size:12px!important;font-weight:600!important}
+.navlink{font-size:15px!important;font-weight:600!important;letter-spacing:-.01em}
+.pill,.btn{font-size:14px!important;font-weight:600!important;letter-spacing:-.01em!important}
+.tag{font-size:12px!important;font-weight:600!important;letter-spacing:.06em!important}
+.stat > span:last-child{font-size:14px!important;font-weight:500;color:#3F423A!important}
+.row{font-size:16px!important;font-weight:500;letter-spacing:-.02em;padding:15px 0!important}
+.row span span{font-weight:400;letter-spacing:-.01em}
+.row em{font-size:12px!important;font-weight:500}
+.skills{gap:14px!important}
+.skl{font-size:12px!important;font-weight:700!important;letter-spacing:.1em!important}
+.skill{height:34px!important;padding:0 15px!important;font-size:14px!important;font-weight:500!important;letter-spacing:-.01em}
+.card{gap:18px!important}
+.card > div > span:last-child{font-size:14px!important;line-height:1.6;color:#4E5148!important}
+#contact a,#contact span{letter-spacing:-.01em}
+
+/* 줄바꿈 다듬기: 본문은 끝줄 한 단어 방지, 제목은 줄 길이 균형 */
+p,li,figcaption,dd,td{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance}
+.skl{white-space:nowrap;letter-spacing:.06em!important}

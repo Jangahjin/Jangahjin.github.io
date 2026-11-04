@@ -177,3 +177,25 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;padding:1px 6px;
 .scr .win img{height:320px}
 .parts{gap:20px}
 .endnav{margin-top:140px}
+
+/* ==== 타이포 보완 (2026-11-04) ==== */
+.h-sub{font-size:26px;font-weight:700;line-height:1.45;letter-spacing:-.045em}
+.team{font-size:26px;font-weight:800}
+.team-me{font-size:15px;font-weight:500}
+.pills span{font-size:14px;font-weight:700;letter-spacing:-.01em}
+.info b{font-size:22px;font-weight:800;letter-spacing:-.045em}
+.info small{font-size:14px;font-weight:500}
+.sec h2{line-height:1.2;letter-spacing:-.06em}
+.lead{font-size:18px;font-weight:500;line-height:1.7;letter-spacing:-.025em;color:var(--ink2);max-width:52em}
+.flow span{font-size:15px;font-weight:700;letter-spacing:-.02em}
+.card b{font-size:21px;font-weight:800;letter-spacing:-.045em}
+.card p{font-size:16px;font-weight:450;line-height:1.75;letter-spacing:-.02em}
+.scr figcaption b{font-size:22px;letter-spacing:-.045em}
+.scr ul{font-size:16px;font-weight:450;line-height:1.8;letter-spacing:-.02em}
+.parts strong{font-weight:800;color:var(--ink);background:linear-gradient(transparent 62%,rgba(181,248,0,.55) 62%)}
+.en-s{font-size:12px;letter-spacing:.16em}
+.endnav small{font-size:15px;font-weight:600}
+
+/* 줄바꿈 다듬기: 본문은 끝줄 한 단어 방지, 제목은 줄 길이 균형 */
+p,li,figcaption,dd,td{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance}
