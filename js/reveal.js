@@ -1,13 +1,13 @@
 // 스크롤 등장 모션 + 수치 카운트업 (움직임 줄이기 설정이면 바로 보여 준다)
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var groups = ['.sec > .sh', '.sec > h2', '.sec > .lead', '.sec > .flow', '.devices', '.nums > div', '.screens > figure', '.parts > .card', '.pager > a'];
+  var groups = ['.sec > .sh', '.sec > h2', '.sec > .lead', '.sec > .flow', '.devices', '.nums > div', '.screens > figure', '.parts > .card', '.trouble > .tb', '.collab', '.pager > a'];
   var targets = [];
   groups.forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (el, i) {
       el.classList.add('rv');
       // 같은 묶음 안에서는 순서대로 조금씩 늦게
-      if (/nums|screens|parts|pager/.test(sel)) el.style.setProperty('--d', (i % 6) * 90 + 'ms');
+      if (/nums|screens|parts|trouble|pager/.test(sel)) el.style.setProperty('--d', (i % 6) * 90 + 'ms');
       targets.push(el);
     });
   });

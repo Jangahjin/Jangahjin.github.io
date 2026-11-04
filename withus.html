@@ -7,9 +7,9 @@
 <meta name="description" content="타겟팅 기반 CRM 마케팅 자동화 솔루션 WITHUS — 4인 팀에서 전환 구간 프론트엔드와 사이트 디자인 담당">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="css/project.css?v=20261104q">
+<link rel="stylesheet" href="css/project.css?v=20261104r">
 <script>/* 폰(화면 폭 768px 미만)이면 기기 폭으로 보여 준다 */ if (screen.width < 768) document.querySelector('meta[name=viewport]').setAttribute('content', 'width=device-width, initial-scale=1'); document.documentElement.classList.add('js')</script>
-<script src="js/reveal.js?v=1" defer></script>
+<script src="js/reveal.js?v=2" defer></script>
 </head>
 <body data-theme="withus">
 <div class="page">
@@ -88,6 +88,17 @@
       <div class="card"><span class="pn">03</span><span class="en">TANSTACK QUERY</span><b>쿼리 키 한 곳 관리 · 이전 결과 유지</b><p>쿼리 키는 <code>query-keys</code>에서만 만들어 캐시 무효화가 어긋나지 않게 했고, 필터 · 페이지를 바꿀 때 <strong>이전 결과를 유지</strong>해 깜빡임을 없앴어요.</p></div>
       <div class="card accent"><span class="pn">04</span><span class="en">DESIGN SYSTEM</span><b>디자인 토큰으로 사이트 전체 정리</b><p><strong>공통 디자인 토큰과 기본 부품</strong>을 만들어 23개 화면 중 22개에 적용하고, 문장은 해요체 · 날짜는 점 형식으로 통일했어요.</p></div>
     </div>
+  </section>
+
+  <!-- 05 문제 해결 · 협업 -->
+  <section class="sec">
+    <div class="sh"><span class="no">05</span><span class="lab">PROBLEM SOLVING</span><span class="tag">코드 리뷰 반영</span></div>
+    <h2>리뷰를 거쳐 <span class="hl">문제를 풀었어요</span></h2>
+    <div class="trouble">
+      <div class="tb"><span class="pn">01</span><span class="en">VALIDATION</span><b>기간을 입력하는 동안 오류가 깜빡이던 문제</b><div class="tr"><span>문제</span><p>기간을 직접 고르는 중에 서버 오류(400)가 잠깐씩 떴어요.</p></div><div class="tr"><span>원인</span><p>366일 초과나 시작 &gt; 종료처럼 <strong>틀린 기간으로도 요청</strong>을 보내고 있었어요.</p></div><div class="tr"><span>해결</span><p>필터에서 먼저 검사해 <strong>요청 자체를 막고</strong> 입력 칸 아래에 안내해요.</p></div><div class="tr"><span>결과</span><p>입력 중 오류 깜빡임이 없어지고, 불필요한 요청도 사라졌어요.</p></div><em class="src">commit 84b47fd · lib/period.ts</em></div>
+      <div class="tb"><span class="pn">02</span><span class="en">TIMEZONE · CACHE</span><b>자정이 지나면 ‘오늘’이 어긋나던 문제</b><div class="tr"><span>문제</span><p>화면을 켜 둔 채 자정이 지나면 어제 날짜 기준으로 조회됐어요.</p></div><div class="tr"><span>원인</span><p>쿼리 키에 <strong>절대 날짜</strong>가 들어 있었고, 날짜도 브라우저 시간대 기준이었어요.</p></div><div class="tr"><span>해결</span><p>쿼리 키엔 기간 종류만 두고, 날짜는 조회할 때 <strong>서울 기준으로 계산</strong>해요. 새 라이브러리 없이 <code>Intl</code>로 처리했어요.</p></div><div class="tr"><span>결과</span><p>서울 자정에 자동으로 갱신돼요. 리뷰 지적 <strong>9건을 모두 반영</strong>해 승인받았어요.</p></div><em class="src">commit c601b72 · 84b47fd · PR #10 → #13</em></div>
+    </div>
+    <div class="collab"><span><b>11</b>개 PR 머지</span><i>·</i><span><b>5</b>개 PR 코드 리뷰 통과</span><i>·</i><span><b>9</b>건 리뷰 반영</span><i>·</i><span>feature → dev → main</span><em>팀 전체 PR 60개 중 제 PR 11개</em></div>
   </section>
 
   <footer class="foot">

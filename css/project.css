@@ -294,3 +294,28 @@ a.brand:hover{opacity:.6}
   .foot-bottom{height:auto;padding:22px 0 28px;flex-direction:column-reverse;align-items:flex-start;gap:10px}
   .foot-bottom .links{flex-wrap:wrap;gap:8px 16px}
 }
+
+/* ==== 05 문제 해결 : 문제 → 원인 → 해결 → 결과 ==== */
+.trouble{margin-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tb{position:relative;padding:24px 26px 20px;border-radius:18px;background:#fff;box-shadow:0 0 0 1px var(--line)}
+.tb .pn{position:absolute;right:24px;top:18px;font-size:38px;font-weight:200;line-height:1;letter-spacing:-.06em;color:var(--main)}
+.tb .en{display:block;margin-bottom:4px;font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--main)}
+.tb > b{display:block;margin-bottom:14px;padding-right:56px;font-size:17px;font-weight:800;letter-spacing:-.04em}
+.tr{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.tr span{font-size:12px;font-weight:800;color:var(--ink);padding-top:1px}
+.tr p{font-size:13.5px;font-weight:300;line-height:1.65;color:var(--ink2)}
+.tr p strong{font-weight:800;background:linear-gradient(transparent 62%,var(--mark) 62%)}
+.tr:last-of-type{background:var(--tint);margin:0 -12px;padding:10px 12px;border-radius:10px;border-top:0}
+.tb .src{display:block;margin-top:12px;font-style:normal;font-family:var(--mono);font-size:11px;color:var(--sub)}
+.collab{margin-top:12px;display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;padding:16px 22px;border-radius:18px;background:var(--main);color:#fff;font-size:13.5px;font-weight:400}
+.collab b{margin-right:3px;font-size:20px;font-weight:900;letter-spacing:-.04em}
+body[data-theme="withus"] .collab b{color:var(--pop)}
+.collab i{font-style:normal;opacity:.5}
+.collab em{margin-left:auto;font-style:normal;font-size:12px;font-weight:300;opacity:.85}
+@media (max-width:767px){
+  .trouble{grid-template-columns:minmax(0,1fr);gap:10px}
+  .tb{padding:20px 20px 16px}
+  .tr{grid-template-columns:38px minmax(0,1fr)}
+  .collab{padding:14px 16px}
+  .collab em{margin-left:0;flex-basis:100%}
+}

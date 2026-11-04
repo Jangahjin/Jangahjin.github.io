@@ -7,9 +7,9 @@
 <meta name="description" content="약 이름으로 근처 최저가 약국을 찾는 서비스 YAKFIT — Next.js · TypeScript 개인 프로젝트, 100% 단독 구현">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="css/project.css?v=20261104q">
+<link rel="stylesheet" href="css/project.css?v=20261104r">
 <script>/* 폰(화면 폭 768px 미만)이면 기기 폭으로 보여 준다 */ if (screen.width < 768) document.querySelector('meta[name=viewport]').setAttribute('content', 'width=device-width, initial-scale=1'); document.documentElement.classList.add('js')</script>
-<script src="js/reveal.js?v=1" defer></script>
+<script src="js/reveal.js?v=2" defer></script>
 </head>
 <body data-theme="yakfit">
 <div class="page">
@@ -87,6 +87,16 @@
       <div class="card"><span class="pn">02</span><span class="en">DEBOUNCE</span><b>자동완성 300ms 디바운스</b><p><code>useDebouncedValue</code> 훅으로 입력이 멈춘 뒤에만, <strong>검색어가 있을 때만 요청</strong>해요. ↑ ↓ Enter 키보드 선택과 ARIA 목록 연결도 넣었어요.</p></div>
       <div class="card"><span class="pn">03</span><span class="en">AUTH FLOW</span><b>로그인을 거쳐도 제보 내용 유지</b><p><code>proxy.ts</code>가 <strong>보호 경로 3개</strong>를 로그인으로 보낼 때 비워지는 초안을 <strong>sessionStorage와 동기화</strong>해 돌아오면 그대로 이어서 써요.</p></div>
       <div class="card accent"><span class="pn">04</span><span class="en">MAP SDK</span><b>카카오맵 SDK를 타입 안전하게</b><p><code>autoload=false</code>로 준비된 뒤에만 그리고, <strong>쓰는 API만 TypeScript로 선언</strong>했어요. 가격 말풍선은 커스텀 오버레이, 결과 범위에 맞춰 지도를 이동해요.</p></div>
+    </div>
+  </section>
+
+  <!-- 05 문제 해결 -->
+  <section class="sec">
+    <div class="sh"><span class="no">05</span><span class="lab">PROBLEM SOLVING</span><span class="tag">지향점 02</span></div>
+    <h2>이렇게 <span class="hl">문제를 풀었어요</span></h2>
+    <div class="trouble">
+      <div class="tb"><span class="pn">01</span><span class="en">ASYNC · CLOSURE</span><b>첫 검색에 내 위치가 빠지던 문제</b><div class="tr"><span>문제</span><p>처음 검색하면 좌표 없이 결과 페이지로 넘어갔어요.</p></div><div class="tr"><span>원인</span><p>GPS 응답은 비동기인데, 요청 직후 <strong>이전 렌더의 위치 값(클로저)</strong>을 읽고 있었어요.</p></div><div class="tr"><span>해결</span><p><code>requestLocation()</code>이 좌표를 <strong>Promise로 돌려주게</strong> 바꾸고, 호출하는 쪽에서 결과를 기다려 써요.</p></div><div class="tr"><span>결과</span><p>좌표가 확보된 뒤에만 이동하고, 위치를 못 얻으면 안내 문구를 보여 줘요.</p></div><em class="src">commit 63e392b · use-user-location.ts</em></div>
+      <div class="tb"><span class="pn">02</span><span class="en">TOKEN · SINGLE-FLIGHT</span><b>새로고침하면 관리자가 로그아웃되던 문제</b><div class="tr"><span>문제</span><p>관리자 페이지에서 새로고침하면 로그인이 풀렸어요.</p></div><div class="tr"><span>원인</span><p>세션 복원과 API 401 재시도가 <strong>같은 토큰으로 동시에 갱신</strong>을 요청해, 토큰 회전 뒤 두 번째 요청이 실패했어요.</p></div><div class="tr"><span>해결</span><p>갱신을 <code>refreshSession()</code> 하나로 모으고 <strong>진행 중인 요청을 함께 기다리게</strong> 했어요.</p></div><div class="tr"><span>결과</span><p>동시에 3번 불러도 요청은 <strong>1번</strong>만 나가요. Vitest 테스트로 검증했어요.</p></div><em class="src">commit cf5ff6b · lib/api.ts · 테스트 12개 통과</em></div>
     </div>
   </section>
 
