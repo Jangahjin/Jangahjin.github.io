@@ -13,17 +13,16 @@
 
 
 ■ 페이지 구성
-  index.html              인트로 (처음 방문할 때만 재생 → 4.4초 뒤 홈으로)
+  index.html              인트로 (처음 방문할 때만 재생 → 4.4초 뒤 홈으로) — 구겨진 종이 배경
                           다시 보고 싶으면 index.html?intro
-  home.html               홈 (데스크톱 1440px)
+  home.html               홈 (데스크톱 1440px) — 프로필 · 목차 · 연락처, 인트로와 같은 종이 디자인
   m.html                  홈 (모바일 390px) — 폰으로 home.html에 들어오면 자동으로 이동
-  yakfit.html             TRACK 01 YAKFIT
-  withus.html             TRACK 02 WithUs
+  yakfit.html             01 YAKFIT — 발표 자료(우리동네약값) 디자인 (흰 바탕 · 청록 · 픽셀 장식)
+  withus.html             02 WITHUS — 발표 자료(WithUs) 디자인 (코발트 블루 · 네온 라임)
 
   css/페이지이름.css       각 페이지 스타일 (캔버스 디자인 그대로)
-  js/carousel.js          YAKFIT 주요 화면 슬라이드 (←/→ 키도 동작)
   js/menu.js              모바일 햄버거 메뉴
-  images/                 이미지 (YAKFIT · WithUs 실제 화면 캡처)
+  images/                 이미지 (YAKFIT · WithUs 실제 화면 캡처, paper.jpg = 종이 질감 배경)
   files/                  이력서 PDF 넣는 곳
 
 
@@ -36,7 +35,7 @@
   1) 이미지 — YAKFIT · WithUs · 홈 썸네일은 실제 화면 캡처(JPG)예요.
      · 같은 이름으로 덮어쓰면 HTML 수정 없이 바뀌어요.
      · 이미지를 바꾸면 alt 설명도 실제 내용으로 바꿔 주세요.
-     · 홈 썸네일은 라임 듀오톤 필터가 자동으로 씌워져요. 원본 색은 마우스를 올리면 보여요.
+     · 홈 목차 썸네일은 흑백으로 보이고, 마우스를 올리면 원본 색이 보여요.
 
   2) 이력서 — files/resume.pdf 파일을 넣으면 "이력서 PDF" 버튼이 다운로드돼요.
 
@@ -76,5 +75,6 @@
 
 
 ■ 폰트
-  Google Fonts에서 불러와요 (Big Shoulders Display, IBM Plex Sans KR, IBM Plex Mono).
+  인트로·홈은 Google Fonts(Big Shoulders Display, IBM Plex Sans KR, IBM Plex Mono),
+  YAKFIT은 Gothic A1, WITHUS는 Pretendard(jsDelivr)를 불러와요.
   인터넷이 연결돼 있어야 디자인 그대로 보여요.
